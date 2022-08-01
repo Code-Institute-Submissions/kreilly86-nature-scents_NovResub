@@ -93,10 +93,35 @@ In order to achieve the goals of the site owner and customer, the following feat
 ## Structure Plane
 -----
 
+**Site flow**
+
+<img src="readme_docs/guestuser.png">
+<br>
+<br>
+<img src="readme_docs/authenticateduser.png">
+
 ## Skeleton Plane
 ----------
+
 
 
 ## Surface Plane
 -------------
 
+**Colour Scheme**
+<br>
+<br>
+<img src="readme_docs/colourscheme.png">
+<br>
+<br> 
+I have chosen this colour scheme as it is a combination or warm and calming tones which I feel matches the mood of the site, and the products on offer. The pink and orange contrast well with the darker blue and grey tones. 
+
+**Fonts**
+<br>
+<br>
+<img src="readme_docs/fonts.png">
+<br>
+<br>
+I chose Josefin Sans as the main font on the site, as it is simple and clean. I combined this with the Cardo font.
+<br>
+<br>
