@@ -124,7 +124,30 @@ In order to achieve the goals of the site owner and customer, the following feat
 <img src="readme_docs/subscriptionmobile.png">
 <br>
 <br>
+<hr>
+<br>
 
+**Desktop View Wireframes**
+<br>
+<br>
+<img src="readme_docs/homepagedesktop.png">
+<br>
+<br>
+<img src="readme_docs/philosophydesktop.png">
+<br>
+<br>
+<img src="readme_docs/productpagesdesktop.png">
+<br>
+<br>
+<img src="readme_docs/shoppingcartdesktop.png">
+<br>
+<br>
+<img src="readme_docs/checkoutdesktop.png">
+<br>
+<br>
+<img src="readme_docs/subscriptiondesktop.png">
+<br>
+<br>
 ## Surface Plane
 -------------
 
