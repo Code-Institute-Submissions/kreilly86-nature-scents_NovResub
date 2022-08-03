@@ -103,7 +103,27 @@ In order to achieve the goals of the site owner and customer, the following feat
 ## Skeleton Plane
 ----------
 
-
+**Mobile View Wireframes**
+<br>
+<br>
+<img src="readme_docs/homepagemobile.png">
+<br>
+<br>
+<img src="readme_docs/philosophymobile.png">
+<br>
+<br>
+<img src="readme_docs/productpagesmobile.png">
+<br>
+<br>
+<img src="readme_docs/shoppingcartmobile.png">
+<br>
+<br>
+<img src="readme_docs/checkoutmobile.png">
+<br>
+<br>
+<img src="readme_docs/subscriptionmobile.png">
+<br>
+<br>
 
 ## Surface Plane
 -------------
@@ -125,3 +145,11 @@ I have chosen this colour scheme as it is a combination or warm and calming tone
 I chose Josefin Sans as the main font on the site, as it is simple and clean. I combined this with the Cardo font.
 <br>
 <br>
+<img src="readme_docs/fonts2.png">
+<br>
+<br>
+
+**Images**
+<br>
+<br>
+All images were found on [Pexels](http://www.pexels.com/)
