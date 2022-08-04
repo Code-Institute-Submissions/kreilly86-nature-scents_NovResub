@@ -22,20 +22,20 @@ This e-commerce sit is a B2C model. The goal of the site is to not only make one
 
 |                          Feature                                | Importance | Feasability |
 | ---------------------------------------------------------------- | ------ | ----- |
-| User can view a list of all products  | 5 |
-| User can see a detailed view of selected product | 5 |
-| User can add products to shopping bag and view bag | 5 |
-| User Account Sign-up and Login | 5 |
-| User Profile Page | |
-| User can edit their profile |  |
-| User can delete their profile | 5 |
-| User can recover a password | 5 |
-| User can filter products by key word | 4|
-| User can purchase products using STRIPE payment |  |
-| Site owner can add products |  |
-| Site owner can edit a product |  |
-| Site owner can  |  |
-| Site owner can login to admin to edit products/approve users |  |
+| User can view a list of all products  | 5 | 5
+| User can see a detailed view of selected product | 5 | 5
+| User can add products to shopping bag and view bag | 5 | 5
+| User Account Sign-up and Login | 5 | 5
+| User Profile Page | 5 | 4
+| User can edit their profile | 5 | 5
+| User can delete their profile | 5 | 5
+| User can recover a password | 5 | 5
+| User can filter products by key word | 4 | 4
+| User can purchase products using STRIPE payment | 5 | 5
+| User can see reviews from other customers | 3 | 3
+| Site owner can add products | 5 | 5
+| Site owner can edit a product | 5 | 5
+| Site owner can login to admin to edit products/approve users | 5 | 5
 
 ### User Stories
 ------
@@ -85,7 +85,7 @@ In order to achieve the goals of the site owner and customer, the following feat
 
 - Landing page with hero image 
 - Responsive navbar that will navigate to the various pages throughout the site
-- Shop page, that displays all products  with the option to filter product category.
+- Shop page, that displays all products with the option to filter product category.
 - Register/login feature using Django AllAuth so that users can create an account.
 - Account page so logged in users can update their details
 - Custom 404 error page
@@ -99,6 +99,23 @@ In order to achieve the goals of the site owner and customer, the following feat
 <br>
 <br>
 <img src="readme_docs/authenticateduser.png">
+<br>
+<br>
+<hr>
+<br>
+
+**Apps**
+<br>
+- Home App
+<br>
+- Checkout App
+<br>
+- Profile App
+<br>
+- Subscription App
+<br>
+- Shopping Cart App
+<br>
 
 ## Skeleton Plane
 ----------
