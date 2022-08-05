@@ -14,7 +14,7 @@ Target Audience:
 - Users interested in health, nature and natural products
 - Users who want to regularly receive new products through subscription 
 
-The user can purchase one off items on the site, which makes the site useful to anyone who visits looking to purchase a product. The site also offers product combination bundles for users who want to try out a range of products, possibly buy as gifts etc. The final option for users is to purchase a yearly membership where they will be 'sent a new scent' every month from the essential oils product section. This yearly subscription keeps the user engaged with the site, and may also lead to further purchases. 
+The user can purchase <strong>one off items</strong> on the site, which makes the site useful to anyone who visits looking to purchase a product. The site also offers <strong>product combination bundles</strong> for users who want to try out a range of products, possibly buy as gifts etc. The final option for users is to purchase a <strong>yearly membership</strong> where they will be <strong>'sent a new scent'</strong> every month from the essential oils product section. This yearly subscription keeps the user engaged with the site, and may also lead to further purchases. 
 
 This e-commerce sit is a B2C model. The goal of the site is to not only make one off sales but to encourage brand loyalty through subscription and a newsletter. The site uses minimal design, and a no frills up front approach to let the products speak for themselves.
 
@@ -95,10 +95,10 @@ In order to achieve the goals of the site owner and customer, the following feat
 
 **Site flow**
 
-<img src="readme_docs/guestuser.png">
+<img src="supporting_docs/flow/guestuser.png">
 <br>
 <br>
-<img src="readme_docs/authenticateduser.png">
+<img src="supporting_docs/flow/authenticateduser.png">
 <br>
 <br>
 <hr>
@@ -106,16 +106,17 @@ In order to achieve the goals of the site owner and customer, the following feat
 
 **Apps**
 <br>
+
 - Home App
-<br>
+
 - Checkout App
-<br>
+
 - Profile App
-<br>
+
 - Subscription App
-<br>
+
 - Shopping Cart App
-<br>
+
 
 ## Skeleton Plane
 ----------
@@ -123,22 +124,22 @@ In order to achieve the goals of the site owner and customer, the following feat
 **Mobile View Wireframes**
 <br>
 <br>
-<img src="readme_docs/homepagemobile.png">
+<img src="supporting_docs/homepagemobile.png">
 <br>
 <br>
-<img src="readme_docs/philosophymobile.png">
+<img src="supporting_docs/philosophymobile.png">
 <br>
 <br>
-<img src="readme_docs/productpagesmobile.png">
+<img src="supporting_docs/productpagesmobile.png">
 <br>
 <br>
-<img src="readme_docs/shoppingcartmobile.png">
+<img src="supporting_docs/shoppingcartmobile.png">
 <br>
 <br>
-<img src="readme_docs/checkoutmobile.png">
+<img src="supporting_docs/checkoutmobile.png">
 <br>
 <br>
-<img src="readme_docs/subscriptionmobile.png">
+<img src="supporting_docs/subscriptionmobile.png">
 <br>
 <br>
 <hr>
@@ -147,31 +148,32 @@ In order to achieve the goals of the site owner and customer, the following feat
 **Desktop View Wireframes**
 <br>
 <br>
-<img src="readme_docs/homepagedesktop.png">
+<img src="supporting_docs/homepagedesktop.png">
 <br>
 <br>
-<img src="readme_docs/philosophydesktop.png">
+<img src="supporting_docs/philosophydesktop.png">
 <br>
 <br>
-<img src="readme_docs/productpagesdesktop.png">
+<img src="supporting_docs/productpagesdesktop.png">
 <br>
 <br>
-<img src="readme_docs/shoppingcartdesktop.png">
+<img src="supporting_docs/shoppingcartdesktop.png">
 <br>
 <br>
-<img src="readme_docs/checkoutdesktop.png">
+<img src="supporting_docs/checkoutdesktop.png">
 <br>
 <br>
-<img src="readme_docs/subscriptiondesktop.png">
+<img src="supporting_docs/subscriptiondesktop.png">
 <br>
 <br>
+
 ## Surface Plane
 -------------
 
 **Colour Scheme**
 <br>
 <br>
-<img src="readme_docs/colourscheme.png">
+<img src="supporting_docs/design/colourscheme.png">
 <br>
 <br> 
 I have chosen this colour scheme as it is a combination or warm and calming tones which I feel matches the mood of the site, and the products on offer. The pink and orange contrast well with the darker blue and grey tones. 
@@ -179,13 +181,13 @@ I have chosen this colour scheme as it is a combination or warm and calming tone
 **Fonts**
 <br>
 <br>
-<img src="readme_docs/fonts.png">
+<img src="supporting_docs/design/fonts.png">
 <br>
 <br>
 I chose Josefin Sans as the main font on the site, as it is simple and clean. I combined this with the Cardo font.
 <br>
 <br>
-<img src="readme_docs/fonts2.png">
+<img src="supporting_docs/design/fonts2.png">
 <br>
 <br>
 
