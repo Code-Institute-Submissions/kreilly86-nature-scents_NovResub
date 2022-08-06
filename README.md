@@ -39,7 +39,6 @@ This e-commerce sit is a B2C model. The goal of the site is to not only make one
 
 ### User Stories
 ------
-User stories have been organized into a Kanban style board here:
 
 **Common user stories**:
 
@@ -95,10 +94,10 @@ In order to achieve the goals of the site owner and customer, the following feat
 
 **Site flow**
 
-<img src="supporting_docs/flow/guestuser.png">
+<img src="supporting_docs/flow/guest-user.png">
 <br>
 <br>
-<img src="supporting_docs/flow/authenticateduser.png">
+<img src="supporting_docs/flow/authenticated-user.png">
 <br>
 <br>
 <hr>
@@ -124,22 +123,22 @@ In order to achieve the goals of the site owner and customer, the following feat
 **Mobile View Wireframes**
 <br>
 <br>
-<img src="supporting_docs/homepagemobile.png">
+<img src="supporting_docs/wiredrames/homepagemobile.png">
 <br>
 <br>
-<img src="supporting_docs/philosophymobile.png">
+<img src="supporting_docs/wireframes/philosophymobile.png">
 <br>
 <br>
-<img src="supporting_docs/productpagesmobile.png">
+<img src="supporting_docs/wireframes/productpagesmobile.png">
 <br>
 <br>
-<img src="supporting_docs/shoppingcartmobile.png">
+<img src="supporting_docs/wireframes/shoppingcartmobile.png">
 <br>
 <br>
-<img src="supporting_docs/checkoutmobile.png">
+<img src="supporting_docs/wireframes/checkoutmobile.png">
 <br>
 <br>
-<img src="supporting_docs/subscriptionmobile.png">
+<img src="supporting_docs/wireframes/subscriptionmobile.png">
 <br>
 <br>
 <hr>
@@ -148,22 +147,22 @@ In order to achieve the goals of the site owner and customer, the following feat
 **Desktop View Wireframes**
 <br>
 <br>
-<img src="supporting_docs/homepagedesktop.png">
+<img src="supporting_docs/wireframes/homepagedesktop.png">
 <br>
 <br>
-<img src="supporting_docs/philosophydesktop.png">
+<img src="supporting_docs/wireframes/philosophydesktop.png">
 <br>
 <br>
-<img src="supporting_docs/productpagesdesktop.png">
+<img src="supporting_docs/wireframes/productpagesdesktop.png">
 <br>
 <br>
-<img src="supporting_docs/shoppingcartdesktop.png">
+<img src="supporting_docs/wireframes/shoppingcartdesktop.png">
 <br>
 <br>
-<img src="supporting_docs/checkoutdesktop.png">
+<img src="supporting_docs/wireframes/checkoutdesktop.png">
 <br>
 <br>
-<img src="supporting_docs/subscriptiondesktop.png">
+<img src="supporting_docs/wireframes/subscriptiondesktop.png">
 <br>
 <br>
 
