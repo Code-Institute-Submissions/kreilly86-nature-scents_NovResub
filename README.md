@@ -123,7 +123,7 @@ In order to achieve the goals of the site owner and customer, the following feat
 **Mobile View Wireframes**
 <br>
 <br>
-<img src="supporting_docs/wiredrames/homepagemobile.png">
+<img src="supporting_docs/wireframes/homepagemobile.png">
 <br>
 <br>
 <img src="supporting_docs/wireframes/philosophymobile.png">
