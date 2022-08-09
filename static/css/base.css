@@ -38,3 +38,18 @@ body {
     text-transform: lowercase;
     text-transform: capitalize;
 }
+
+.home-title {
+    position: absolute;
+    width: 100vw;
+    background-color: transparent;
+    margin-top: 200px;
+    align-content: flex-start;
+    padding: 25px;
+}
+
+.home-title h1 {
+    font-size: 8rem;
+    color: white;
+    font-family: 'Cardo', sans-serif;
+}
