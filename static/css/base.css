@@ -1,13 +1,46 @@
-html {
-    height: 100%;
-}
 
 body {
     font-family: 'Josefin Sans', sans-serif; 
-    background: url('/media/hero-image.jpg') no-repeat center center fixed;
-    background-size: cover; 
-    height: 100%;
 }
+
+.hero {
+    position: relative; 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/media/hero-image.jpg'); 
+    background-size: 100vw;
+    opacity: 0.9; 
+    margin: 0;
+    padding: 0;
+
+    &::before {
+        content: "";
+        background-image: url('/media/hero-image.jpg');
+        background-size: 100vw;
+        position: absolute;  
+        opacity: 0.9;  
+        margin: 0;   
+        padding: 0;
+    }
+}
+
+.index-text {
+    position: relative;
+    text-align: left;
+    font-size: 9rem;
+    font-family: "Cardo", sans-serif;
+    padding: 0;
+    color: #344648;
+}
+
+.lead {
+    font-size: 2rem;
+    color: white;
+}
+
 
 .container-fluid {
     padding: 0;
@@ -16,7 +49,7 @@ body {
 .navbar {
     height: 125px !important;
     width: 100vw !important;
-    background-color: #7D8E95 !important;
+    background-color: #344648 !important;
     align-items: center;
     justify-content: space-between;
 }
@@ -24,32 +57,24 @@ body {
 
 .nav-item a {
     font-size: 1.15rem !important;
+    color: #FBE0C3 !important;
     padding: 5px;
     text-transform: uppercase;
 }
 
 .icons {
     padding: 25px;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     letter-spacing: 10px;
+    color: #FFBB98;
 }
 
 .dropdown-menu a {
     text-transform: lowercase;
     text-transform: capitalize;
+    
 }
 
-.home-title {
-    position: absolute;
-    width: 100vw;
-    background-color: transparent;
-    margin-top: 200px;
-    align-content: flex-start;
-    padding: 25px;
-}
-
-.home-title h1 {
-    font-size: 8rem;
-    color: white;
-    font-family: 'Cardo', sans-serif;
+.dropdown .dropdown-item {
+    color: #7D8E95 !important;
 }
