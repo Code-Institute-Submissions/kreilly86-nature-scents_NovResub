@@ -12,7 +12,7 @@ body {
     justify-content: center;
     background-image: url('/media/hero-image.jpg'); 
     background-size: 100vw;
-    opacity: 0.9; 
+    opacity: 0.9;
     margin: 0;
     padding: 0;
 
@@ -27,17 +27,22 @@ body {
     }
 }
 
+.home-info {
+    margin-left: 2%;
+}
+
 .index-text {
     position: relative;
     text-align: left;
-    font-size: 9rem;
+    margin-top: 40vh;
+    font-size: 7rem;
     font-family: "Cardo", sans-serif;
     padding: 0;
     color: #344648;
 }
 
 .lead {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: white;
 }
 
@@ -52,22 +57,30 @@ body {
     background-color: #344648 !important;
     align-items: center;
     justify-content: space-between;
+    display: inline-block;
+    list-style-type: none;
 }
 
 
 .nav-item a {
     font-size: 1.15rem !important;
-    color: #FBE0C3 !important;
+    color: white !important;
     padding: 5px;
     text-transform: uppercase;
 }
 
 .icons {
-    padding: 25px;
+    padding: 10px;
     font-size: 1.5rem;
-    letter-spacing: 10px;
+    line-height: 2rem;
     color: #FFBB98;
+    text-align: center;
+    align-items: center;
+    display: inline;
+    display: flex;
+    flex-direction: row;
 }
+
 
 .dropdown-menu a {
     text-transform: lowercase;

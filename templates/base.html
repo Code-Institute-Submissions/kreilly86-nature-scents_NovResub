@@ -65,17 +65,33 @@
             </li>
           </ul>
         </div>
+      
         <div class="icons">
-          <span class="icon">
-            <i class="fa-solid fa-user">Log-in</i>
-          </span>
-          <span class="icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </span>
-          <span class="icon">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </span>
+          <div class="dropdown show">
+            <a class="icons" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+              {% endif %}
+              <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+          {% else %}
+              <a href="{% url 'account_signup' %}" class="dropdown-item">Sign-up</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+          {% endif %}
+            </div>
+          </div>
+          <div class>
+            <i class="fa-solid fa-magnifying-glass icons" href="#"></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-cart-shopping icons"></i>
+          </div>
         </div>
+      </div>
       </nav>
       
     </header>
