@@ -1,0 +1,70 @@
+<!--Navbar-->
+<nav class="navbar navbar-dark navbar-expand-m fixed-top d-md-none" id="nav-nature-mobile">
+<div class="nav-mobile">
+  <a class="navbar-brand menu-mobile"></a>
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+      aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+          class="fas fa-bars fa-1x"></i></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item active d-block d-md-none">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+              Shop
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Candles</a>
+              <a class="dropdown-item" href="#">Oils</a>
+              <a class="dropdown-item" href="#">Soaps</a>
+              <a class="dropdown-item" href="#">Bundles</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">All</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Philosophy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Subscription</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div class="icons">
+      <div class="dropdown show">
+        <a class="icons" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa-solid fa-user"></i>
+        </a>
+        <!--Code from Code Institute Boutique Ado Project-->
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          {% if request.user.is_authenticated %}
+          {% if request.user.is_superuser %}
+            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+          {% endif %}
+          <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+          <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+      {% else %}
+          <a href="{% url 'account_signup' %}" class="dropdown-item">Sign-up</a>
+          <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+      {% endif %}
+        </div>
+      </div>
+      <div class>
+        <i class="fa-solid fa-magnifying-glass icons" href="#"></i>
+      </div>
+      <div>
+          <a class="shopping-cart nav-link text-center {% if request.resolver_match.url_name == 'basket_overview' %}
+      active-nav {% endif %}" href=""><i
+                  class="fa-solid fa-cart-shopping icons"></i>
+              <p class="cart-amount my-0">{% if total_cost %}
+                €{{ total_cost|floatformat:2 }}
+                  {% else %}
+                  €0.00
+                  {% endif %}
+              </p>
+      </div>
+    </div>
+  </nav>
+  

@@ -11,7 +11,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/media/hero-image.jpg'); 
+    background-image: url('/media/hero-image.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
     background-size: 100vw;
     opacity: 0.9;
     margin: 0;
@@ -30,13 +32,14 @@ body {
 
 .home-info {
     margin-left: 2%;
+    padding: 0;
 }
 
 .index-text {
     position: relative;
     text-align: left;
     margin-top: 40vh;
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: "Cardo", sans-serif;
     padding: 0;
     color: #344648;
@@ -45,6 +48,9 @@ body {
 .lead {
     font-size: 1.75rem;
     color: white;
+    padding: 20px 0 20px 0;
+    line-height: 2rem;
+    text-align: left;
 }
 
 .container-fluid {
@@ -60,7 +66,6 @@ body {
     display: inline-block;
     list-style-type: none;
 }
-
 
 .nav-item a {
     font-size: 1.15rem !important;
@@ -101,3 +106,48 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
 }
+
+#nav-nature-mobile {
+    padding: 0;
+    display: inline-flexbox;
+    align-items: center;
+    position: fixed;
+}
+
+.home-info {
+    margin: 0;
+    padding: 15px;
+}
+
+
+/*------------------Media Queries */
+
+@media (max-width: 767.98px) { 
+    .navbar {
+        height: 225px !important;
+    }
+
+    .icons {
+        font-size: 1.25rem;
+        justify-content: right;
+        position: relative;
+        margin-top: 5px;
+    }
+
+    .menu-mobile {
+        margin: 30px 0 0 15px;
+    }
+
+    .navbar-collapse {
+        margin-left: 15px;
+        position: absolute;
+    }
+
+    .hero {
+        background-size: cover;
+    }
+
+    .lead {
+        font-size: 1.5rem;
+    }
+ }
