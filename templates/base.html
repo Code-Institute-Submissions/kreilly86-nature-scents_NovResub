@@ -34,7 +34,7 @@
 </head>
 <body>
     <header class="container-fluid fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-flex" id="nav-nature">
+      <nav class="navbar navbar-expand-lg navbar-light pt-lg-2 d-none d-lg-flex" id="nav-nature">
         <a class="navbar-brand" href="#">Navbar w/ text</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -71,6 +71,7 @@
             <a class="icons" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa-solid fa-user"></i>
             </a>
+            <!--Code from Code Institute Boutique Ado Project-->
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
@@ -88,12 +89,19 @@
             <i class="fa-solid fa-magnifying-glass icons" href="#"></i>
           </div>
           <div>
-            <i class="fa-solid fa-cart-shopping icons"></i>
+              <a class="shopping-cart nav-link text-center {% if request.resolver_match.url_name == 'basket_overview' %}
+          active-nav {% endif %}" href=""><i
+                      class="fa-solid fa-cart-shopping icons"></i>
+                  <p class="cart-amount my-0">{% if total_cost %}
+                    €{{ total_cost|floatformat:2 }}
+                      {% else %}
+                      €0.00
+                      {% endif %}
+                  </p>
           </div>
         </div>
       </div>
       </nav>
-      
     </header>
 
   

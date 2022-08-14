@@ -1,6 +1,7 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif; 
+    padding: 0;
 }
 
 .hero {
@@ -46,7 +47,6 @@ body {
     color: white;
 }
 
-
 .container-fluid {
     padding: 0;
 }
@@ -70,7 +70,7 @@ body {
 }
 
 .icons {
-    padding: 10px;
+    padding: 15px;
     font-size: 1.5rem;
     line-height: 2rem;
     color: #FFBB98;
@@ -81,6 +81,10 @@ body {
     flex-direction: row;
 }
 
+.shopping-cart {
+    padding: 0;
+    line-height: 0.2rem;
+}
 
 .dropdown-menu a {
     text-transform: lowercase;
@@ -90,4 +94,10 @@ body {
 
 .dropdown .dropdown-item {
     color: #7D8E95 !important;
+}
+
+.cart-amount {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
 }
