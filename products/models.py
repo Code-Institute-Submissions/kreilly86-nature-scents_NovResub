@@ -18,6 +18,10 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """
+    Creates a product model containing the details of
+    each product
+    """
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     product_code = models.CharField(max_length=50, null=True, blank=True)
     name = models.CharField(max_length=50)
@@ -32,4 +36,10 @@ class Product(models.Model):
 
 
 class Scent(models.Model):
+    """
+    Creates a scent model containing the scents the products come in
+    """
+
     name = models.CharField(max_length=50)
+    product = models.ForeignKey('Product', on_delete=models.CASCADE,
+                                null=True, blank=True)
