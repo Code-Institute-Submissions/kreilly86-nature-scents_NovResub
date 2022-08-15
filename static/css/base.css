@@ -62,9 +62,10 @@ body {
     width: 100vw !important;
     background-color: #344648 !important;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: inline-block;
     list-style-type: none;
+    padding: 0;
 }
 
 .nav-item a {
@@ -84,6 +85,7 @@ body {
     display: inline;
     display: flex;
     flex-direction: row;
+    margin-right: 1%;
 }
 
 .shopping-cart {
