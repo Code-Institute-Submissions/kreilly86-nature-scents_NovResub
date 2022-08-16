@@ -68,6 +68,11 @@ body {
     padding: 0;
 }
 
+.navbar a {
+    width: 3250px;
+    height: 250px;
+}
+
 .nav-item a {
     font-size: 1.15rem !important;
     color: white !important;
