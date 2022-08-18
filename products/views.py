@@ -1,14 +1,14 @@
 from django.shortcuts import render
-from .models import Product
+from .models import Product, Category
 
 
 def all_products(request):
-    """A view to show all products, and include searches """
+    """A view to show all products, and include searches"""
 
-    products = Products.objects.all()
+    products = Product.objects.all()
 
     context = {
         'products': products,
     }
-    
+
     return render(request, 'products/products.html', context)

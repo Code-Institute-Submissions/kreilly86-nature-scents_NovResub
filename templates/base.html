@@ -34,12 +34,14 @@
 </head>
 <body>
     <header class="container-fluid fixed-top nature-head">
-      <nav class="navbar navbar-expand-lg navbar-light pt-lg-2 d-none d-lg-flex w-100" id="nav-nature">
-        <a class="navbar-brand" href="templates/home/index.html" src="media/nature-logo.png"> </a>
+      <nav class="navbar navbar-expand-lg navbar-light pt-lg-2 d-none d-lg-flex" id="nav-nature">
+        <a class="navbar-brand" href="templates/home/index.html">
+          <img src='media/nature-logo.png'>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="nav-text">
+        <div class="nav-text"> 
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
@@ -67,25 +69,24 @@
         </div>
       
         <div class="icons">
-          <div class="dropdown show">
+          <div class="dropdown show d-inline-flex">
             <a class="icons" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa-solid fa-user"></i>
             </a>
-            <!--Code from Code Institute Boutique Ado Project-->
+            <!--Code from Code Institute Boutique Ado Project-
          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              {% if request.user.is_authenticated %}
-              {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-              {% endif %}
-              <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+          {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+                <a href="" class="dropdown-item">Product Management</a>
+            {% endif %}
+              <a href="" class="dropdown-item">My Profile</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
           {% else %}
               <a href="{% url 'account_signup' %}" class="dropdown-item">Sign-up</a>
               <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
           {% endif %}
-            </div>
-          </div>
-          <div class>
+          </div>-->
+          <div class="icons">
             <i class="fa-solid fa-magnifying-glass icons" href="#"></i>
           </div>
           <div>
