@@ -107,17 +107,14 @@
      {% include 'includes/mobile-nav.html' %}
     </header>
 
-  
-
   {% if messages %}
     <div class="message-container"></div>
   {% endif %}
 
-  {% block page_header %}
-  {% endblock %}
-
-  {% block content %} 
-  {% endblock %}
+ 
+	{% block content %}
+	{% endblock content %}
+	
 
   {% block postloadjs %}
   {% endblock %}
