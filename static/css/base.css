@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Josefin Sans', sans-serif; 
+    font-family: 'Josefin Sans', sans-serif !important; 
     padding: 0;
 }
 
@@ -98,6 +98,13 @@ body {
     align-items: center;
 }
 
+.icons i {
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #FFBB98;
+    align-items: center; 
+}
+
 .shopping-cart {
     padding: 0;
     line-height: 0.2rem;
@@ -110,19 +117,14 @@ body {
 
 .dropdown .dropdown-item {
     color: #7D8E95 !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.15rem !important;
 }
 
 .cart-amount {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-}
-
-#nav-nature-mobile {
-    padding: 0;
-    display: inline-flexbox;
-    align-items: center;
-    position: fixed;
 }
 
 .home-info {
@@ -133,31 +135,71 @@ body {
 /*------------------Media Queries */
 
 @media (max-width: 767.98px) { 
-    .navbar {
-        height: 225px !important;
+  
+    .nav-item a {
+        font-size: 1rem !important;
+        color: white !important;
+        padding: 5px;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif !important;
+    }
+    .nav-item .dropdown {
+        height: max-content;
     }
 
-    .icons {
-        font-size: 1.25rem;
-        justify-content: right;
-        position: relative;
-        margin-top: 5px;
+    #nav-nature-mobile {
+        position: absolute !important;
+        height: fit-content !important;
+        width: 100vw !important;
+        background-color: #7D8E95 !important;
+        justify-content: space-evenly;
+        display: flex;
+        padding-bottom: 10px;
+        flex-direction: row;
     }
 
-    .menu-mobile {
-        margin: 30px 0 0 15px;
-    }
-
-    .navbar-collapse {
-        margin-left: 15px;
-        position: absolute;
+    .navbar-toggler {
+        padding: 5px;
+        margin: 10px;
     }
 
     .hero {
         background-size: cover;
+        width: 100vw;
     }
 
     .lead {
         font-size: 1.5rem;
     }
+
+    .mobile-logo {
+        display: flex !important;
+        margin-top: 15px; 
+        justify-content: center;  
+    }
+
+    #mobile-logo {
+        width: 5rem;
+        height: 5rem;
+        padding: 0;    
+    }
+
+    .icons {
+        display: flex;
+        height: 2rem;
+        padding: 5px;
+        justify-content: center;
+    }
+    
+    .icons a {
+        font-size: 1.25rem;
+        margin-top: 5px; 
+        line-height: 2rem;
+    }
+
+    .icons i {
+        font-size: 1.25rem;
+        margin-top: 5px; 
+    }
+
  }
