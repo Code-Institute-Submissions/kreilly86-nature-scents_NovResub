@@ -190,6 +190,7 @@ body {
 }
 
 .footer {
+    position: relative;
     padding: 25px;
     font-family: "Cardo", sans-serif;
     color:#344648;
@@ -200,13 +201,24 @@ body {
 }
 
 .footer-content {
-   display: inline-flexbox;
    margin-left: 2%;
+   height: fit-content;
 }
 
 .footer-line {
     display: inline-flexbox;
     width: 30vw;
+}
+
+.copyright {
+    position: absolute;
+    width: 100vw;
+    line-height: 10px;
+    text-align: center;
+    bottom: 5px;
+    font-family: "Cardo", sans-serif;
+    color:#344648;
+    padding: 5px;
 }
 
 .signup-button {
@@ -221,12 +233,13 @@ body {
 .list-inline-item a {
     padding: 15px;
     font-size: 1.5rem;
-    color: #FFBB98;
+    color: #7D8E95;
     align-items: center;
     list-style: none;
 }
 
 .social-links {
+    margin-right: 1%;
     align-items: right;
     justify-content: right;
     display: inline-flexbox;
