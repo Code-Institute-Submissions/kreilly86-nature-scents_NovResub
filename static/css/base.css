@@ -169,7 +169,7 @@ body {
 .carousel-products {
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 20px;
     display: flex;
     background-color: #FBE0C3;
 }
@@ -187,6 +187,55 @@ body {
     font-family: "Cardo", sans-serif;
     padding: 0;
     color: #344648;
+}
+
+.footer {
+    padding: 25px;
+    font-family: "Cardo", sans-serif;
+    color:#344648;
+    font-size: 16px;
+    display: flex;
+    height: 175px !important;
+    width: 100vw;
+}
+
+.footer-content {
+   display: inline-flexbox;
+   margin-left: 2%;
+}
+
+.footer-line {
+    display: inline-flexbox;
+    width: 30vw;
+}
+
+.signup-button {
+    display: inline-flex;
+    line-height: 1rem;
+}
+
+.signup-form-button {
+    font-size: 14px;
+}
+
+.list-inline-item a {
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #FFBB98;
+    align-items: center;
+    list-style: none;
+}
+
+.social-links {
+    align-items: right;
+    justify-content: right;
+    display: inline-flexbox;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    flex-direction: row;
+    padding: 5px;
+    width: 100%;
+    margin-top: 3rem;
 }
 
 /*------------------Media Queries */
