@@ -1,7 +1,11 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
 
 body {
     font-family: 'Josefin Sans', sans-serif !important; 
     padding: 0;
+    margin: 0;
     overflow-x: hidden;
 }
 
@@ -10,8 +14,6 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-image: url('/media/hero-image.jpg');
     background-repeat: no-repeat; 
     background-size: cover;
@@ -19,10 +21,11 @@ body {
     margin: 0;
     padding: 0;
 
-     &::before {
+&::before {
         content: "";
         background-image: url('/media/hero-image.jpg');
         width: 100vw;
+        height: 100vh;
         position: absolute;  
         opacity: 0.9;  
         margin: 0;   
@@ -30,27 +33,28 @@ body {
     }
 }
 
-.home-info {
-    margin-left: 2%;
+.jumbotron-fluid {
+    margin: 0;
     padding: 0;
+    width: 100vw;
+}
+
+.home-info {
+    justify-content: left;
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 .index-title {
-    position: relative;
-    text-align: left;
-    margin-top: 40vh;
     font-size: 6rem;
     font-family: "Cardo", sans-serif;
     padding: 0;
     color: #344648;
-}
-
-.heading-info { 
-    font-size: 4rem;
-    font-family: "Cardo", sans-serif;
-    padding: 0;
-    color: #344648;
-    text-align: center;
+    justify-content: left;
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 65%;
 }
 
 .index-text {
@@ -58,7 +62,16 @@ body {
     color: white;
     padding: 20px 0 20px 0;
     line-height: 2rem;
+    justify-content: left;
     text-align: left;
+    margin-left: 3%;
+}
+
+.heading-info { 
+    font-size: 4rem;
+    font-family: "Cardo", sans-serif;
+    padding: 0;
+    color: #344648;
 }
 
 .index-info {
@@ -88,6 +101,7 @@ body {
     height: fit-content;
     width: 100vw;
     padding: 20px;
+    margin-left: 2%;
     font-family: 'Cardo', sans-serif;
 }
 
@@ -99,6 +113,7 @@ body {
     justify-content: space-evenly;
     display: flexbox;
     padding: 0;
+    margin: 0;
     flex-direction: row;
 }
 
@@ -118,10 +133,10 @@ body {
 }
 
 .icons {
-    text-align: center;
+    justify-content: right;
     display: inline-flex;
     flex-direction: row;
-    margin-right: 1%;
+    margin-right: 0%;
     padding: 5px;
 }
 
@@ -163,21 +178,35 @@ body {
 
 .home-info {
     margin: 0;
-    padding: 15px;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .carousel-products {
-    align-items: center;
-    justify-content: center;
     padding: 20px;
     display: flex;
+    margin: 0;
+    width: 100vw;
+    height: fit-content;
     background-color: #FBE0C3;
+    overflow-x: hidden;
+}
+
+.carousel-inner {
+    padding: 20px;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+}
+
+.carousel-item {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .card-img-overlay {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .card-title {
@@ -190,19 +219,18 @@ body {
 }
 
 .footer {
-    position: relative;
     padding: 25px;
     font-family: "Cardo", sans-serif;
     color:#344648;
     font-size: 16px;
     display: flex;
+    flex-direction: row;
     height: 175px !important;
     width: 100vw;
 }
 
 .footer-content {
    margin-left: 2%;
-   height: fit-content;
 }
 
 .footer-line {
@@ -230,11 +258,14 @@ body {
     font-size: 14px;
 }
 
+.signup-form-email {
+    width: 30vw;
+}
+
 .list-inline-item a {
-    padding: 15px;
+    padding: 10px;
     font-size: 1.5rem;
     color: #7D8E95;
-    align-items: center;
     list-style: none;
 }
 
@@ -249,11 +280,12 @@ body {
     padding: 5px;
     width: 100%;
     margin-top: 3rem;
+
 }
 
 /*------------------Media Queries */
 
-@media (max-width: 767.98px) { 
+@media (max-width: 576px) {
   
     .nav-item a {
         font-size: 1rem !important;
@@ -262,8 +294,20 @@ body {
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif !important;
     }
-    .nav-item .dropdown {
-        height: max-content;
+
+    .navbar-collapse {
+        height: fit-content;
+        width: 100vw;  
+    }
+
+    .navbar {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;   
     }
 
     #nav-nature-mobile {
@@ -275,6 +319,170 @@ body {
         display: flex;
         padding-bottom: 10px;
         flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .navbar-toggler {
+        padding: 5px;
+        margin: 10px;
+        display: block !important;
+    }
+
+    .mobile-logo {
+        display: flex !important;
+        margin-top: 15px; 
+        justify-content: center;  
+    }
+
+    #mobile-logo {
+        width: 5rem;
+        height: 5rem;
+        padding: 0;    
+    }
+
+    .icons {
+        display: flex;
+        height: 2rem;
+        justify-content: center;
+        text-align: center;
+        margin: 0 50% 2% 50%;
+    }
+    
+    .icons a {
+        font-size: 1.25rem;
+        margin-top: 5px; 
+        line-height: 2rem;
+        padding: 10px;
+    }
+
+    .icons i {
+        font-size: 1.25rem;
+        margin-top: 5px; 
+        padding: 10px;
+    }
+
+    .shopping-cart i {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+
+
+    .home-info {
+        width: 100vw;
+        height: fit-content;
+        padding: 0;
+        margin-top: 100px;
+
+    }
+
+    .index-title {
+        font-size: 1rem;
+        margin-left: 3%;
+        margin-top: 75%;
+        text-align: left;
+    }
+    
+    .index-text {
+        margin-left: 3%;
+        font-size: 0.75rem;
+    }
+
+    .hero {
+        position: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: min-content;
+        padding: 0;
+    }
+
+    .nature-home-info {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .lead {
+        font-size: 1.5rem;
+    }
+
+    .carousel-products {
+        padding: 20px;
+        width: 100vw;
+        height: fit-contents;
+    }
+    
+    .footer {
+        bottom: 0 !important;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: fit-content !important;
+        width: 100vw !important;
+        background-color: white;
+        font-size: 12px;
+    }
+
+    .sign-up-form {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .footer-line {
+        display: inline-flexbox;
+        width: 80vw;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .footer-content {
+        margin: 5px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .social-links {
+        align-items: center;
+        justify-content: center;
+        display: inline-flexbox;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        flex-direction: row;
+        padding: 5px;
+        width: 100%;
+        margin: 0 50% 0 50%;
+    }
+}
+
+ @media (max-width: 766px) {
+    .nav-item a {
+        font-size: 1rem !important;
+        color: white !important;
+        padding: 5px;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif !important;
+    }
+    .nav-item .dropdown {
+        width: fit-content;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav-nature-mobile {
+        position: absolute !important;
+        height: fit-content !important;
+        width: 100vw !important;
+        background-color: #7D8E95 !important;
+        justify-content: space-evenly;
+        display: flex;
+        padding-bottom: 10px;
     }
 
     .navbar-toggler {
@@ -285,6 +493,8 @@ body {
     .hero {
         background-size: cover;
         width: 100vw;
+        height: max-content;
+        margin: 0;
     }
 
     .lead {
@@ -321,4 +531,137 @@ body {
         margin-top: 5px; 
     }
 
+    .carousel-products {
+        padding: 20px;
+        width: 80vw;
+        height: fit-contents;
+    }
+    
+
+    .footer {
+        bottom: 0 !important;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: fit-content !important;
+        width: 100vw !important;
+        background-color: white;
+        font-size: 12px;
+    }
+
+    .sign-up-form {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .footer-line {
+        display: inline-flexbox;
+        width: 80vw;
+        text-align: center;
+        margin-left: 5%;
+    }
+
+    .footer-content {
+        margin: 5px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .socials li {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    } 
+
+    .social-media {
+        width: 100vw;
+        height: fit-content;
+        display: inline-flexbox;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+        margin: 0% 15% 0% 0%;
+        padding: 0;
+    }
  }
+
+ @media (max-width: 992px) {
+    .navbar {
+        height: 225px !important;
+        width: 100vw;
+    }
+
+    #nav-nature img {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown .dropdown-item {
+        font-size: 0.8rem !important;
+    }
+
+    .dropdown-menu a {
+        font-size: 0.8rem !important;
+    }
+
+    .navbar-nav {
+        display: inline-flexbox;
+        flex-direction: row;
+        padding: 25px;
+        margin: 0;
+    }
+
+    .navbar-nav li {
+        padding: 10px;
+    }
+
+    .nav-item a {
+        font-size: 1rem !important;
+        color: white !important;
+        text-transform: uppercase;
+        font-family: 'Josefin Sans', sans-serif !important;
+    }
+    
+    .navbar-toggler {
+        display: none;
+    }
+
+    .icons {
+        padding: 2px;
+        margin-right: 5px;
+        text-align: right;
+        justify-content: right;
+        line-height: 2rem;
+    }
+
+    .icons a {
+        font-size: 1.25rem;
+        display: inline-block;
+    }
+
+    .icons i {
+        font-size: 1.25rem;
+        display: inline-block;
+    }
+
+    .index-title {
+        font-size: 4rem;
+        margin-left: 3%;
+        margin-top: 55%;
+    }
+    
+    .index-text {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        justify-content: left;
+        text-align: left;
+        margin-left: 3%;
+    }
+
+ }
+

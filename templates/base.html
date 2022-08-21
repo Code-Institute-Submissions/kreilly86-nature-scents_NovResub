@@ -43,7 +43,7 @@
 
 <body>
   <header class="container-fluid fixed-top nature-head">
-    <nav class="navbar navbar-expand-lg navbar-light pt-lg-2 d-none d-lg-flex" id="nav-nature">
+    <nav class="navbar navbar-expand-lg navbar-light pt-lg-2 d-xs-none d-sm-flex" id="nav-nature">
       <a class="navbar-brand" href="templates/home/index.html">
         <img src='media/nature-logo.png'>
       </a>
@@ -111,10 +111,13 @@
                 €0.00
                 {% endif %}
               </p>
+            </a>
           </div>
         </div>
+      </div>
+      {% include 'includes/mobile-nav.html' %}
     </nav>
-    {% include 'includes/mobile-nav.html' %}
+
   </header>
 
   {% if messages %}
@@ -123,47 +126,51 @@
 
 
   {% block content %}
-  {% endblock content %}
+  {% endblock %}
 
-  <footer class="footer">
-    <div class="container-fluid footer-content">
-      <h4><strong>Newsletter</strong></h4>
-      <div>
-        <p>Sign-up for exclusive offers, news, and updates about our newest scents.</p>
-      </div>
-      <div class="signup-form">
-        <form method="post" action="" id="newsletter_signup" accept-charset="UTF-8" class="contact-form border-0">
-          <input type="email" placeholder="Enter email" class="signup-form-email border-0" value="" name="email"
-            aria-label="Email">
-          <div class="signup-button"><button class="signup-form-button border-0" type="submit" aria-label="Sign up">
-              <i class="fas fa-arrow-right"></i></button></div>
-          <div class="footer-line">
-            <hr>
-          </div>
-
-        </form>
-      </div>
-    </div>
-    <div class="social-links d-inline-flex">
-      <ul class="socials">
-        <li class="list-inline-item">
-          <a href="https://www.instagram.com" target=_blank rel=noopener
-            aria-label="Visit our Instagram page(opens in a new tab)"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.facebook.com" target=_blank rel=noopener
-            aria-label="Visit our Facebook page(opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.linkedin.com" target=_blank rel=noopener
-            aria-label="Visit our Linkedin page(opens in a new tab)"><i class="fab fa-linkedin"></i></a>
-        </li>
-      </ul>
-    </div>
-    </div>
+  <footer class="footer d-md-flex">
     <div class="container-fluid">
-      <div class="text-center">
-        <p class="copyright">© 2022 Nature Scents. For educational purposes only</p>
+      <div class="row">
+        <div class="footer-content col">
+          <h4><strong>Newsletter</strong></h4>
+          <div>
+            <p>Sign-up for exclusive offers, news, and updates about our newest scents.</p>
+          </div>
+          <div class="signup-form">
+            <form method="post" action="" id="newsletter_signup" accept-charset="UTF-8" class="contact-form border-0">
+              <input type="email" placeholder="Enter email" class="signup-form-email border-0" value="" name="email"
+                aria-label="Email">
+              <div class="signup-button"><button class="signup-form-button border-0" type="submit" aria-label="Sign up">
+                  <i class="fas fa-arrow-right"></i></button>
+              </div>
+
+              <div class="footer-line">
+                <hr>
+              </div>
+          </div>
+        </div>
+        </form>
+
+        <div class="row">
+          <div class="col">
+            <div class="social-links">
+              <ul class="socials d-inline-flex">
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com" target=_blank rel=noopener
+                    aria-label="Visit our Instagram page(opens in a new tab)"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com" target=_blank rel=noopener
+                    aria-label="Visit our Facebook page(opens in a new tab)"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com" target=_blank rel=noopener
+                    aria-label="Visit our Linkedin page(opens in a new tab)"><i class="fab fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
