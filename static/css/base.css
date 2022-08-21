@@ -441,20 +441,19 @@ body {
 
     .footer-content {
         margin: 5px;
-        text-align: center;
         padding: 15px;
     }
 
     .social-links {
-        align-items: center;
-        justify-content: center;
-        display: inline-flexbox;
         font-size: 1.5rem;
         line-height: 2rem;
-        flex-direction: row;
         padding: 5px;
         width: 100%;
-        margin: 0 50% 0 50%;
+    }
+
+    .socials {
+        display: block;
+        width: 100vw;
     }
 }
 
