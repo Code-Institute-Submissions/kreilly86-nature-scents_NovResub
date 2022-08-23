@@ -42,15 +42,13 @@
 </head>
 
 <body>
-  <header class="container-fluid fixed-top nature-head">
-    <nav class="navbar navbar-expand-lg navbar-light pt-lg-2 d-xs-none d-sm-flex" id="nav-nature">
-      <a class="navbar-brand" href="templates/home/index.html">
-        <img src='media/nature-logo.png'>
+  <header>
+    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light pt-lg-2 d-xs-none d-sm-none d-md-flex" id="nav-nature">
+    <div>
+      <a class="navbar-brand" href="">
+        <img src='../media/nature-logo.png'>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    </div>
       <div class="nav-text">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -82,7 +80,7 @@
         <div class="dropdown show d-inline-flex">
           <a class="icons" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            <i class="fa-solid fa-user"></i>
+            <div><i class="fa-solid fa-user"></i></div>
           </a>
           <!--Code from Code Institute Boutique Ado Project-->
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -99,16 +97,17 @@
           </div>
           <div>
             <a class="icons" href="#" role="buttons">
-              <i class="fa-solid fa-magnifying-glass icons" href="#"></i>
+              <div><i class="fa-solid fa-magnifying-glass icons" href="#"></i></div>
             </a>
           </div>
           <div>
             <a class="shopping-cart nav-link text-center {% if request.resolver_match.url_name == 'basket_overview' %}
-          active-nav {% endif %}" href=""><i class="fa-solid fa-cart-shopping icons"></i>
-              <p class="cart-amount my-0">{% if total_cost %}
-                €{{ total_cost|floatformat:2 }}
+          active-nav {% endif %}"><div><i class="fa-solid fa-cart-shopping icons"></i></div>
+              <p class="cart-amount my-0">
+                {% if total_cost %}
+                  €{{ total_cost|floatformat:2 }}
                 {% else %}
-                €0.00
+                  €0.00
                 {% endif %}
               </p>
             </a>
@@ -117,13 +116,12 @@
       </div>
       {% include 'includes/mobile-nav.html' %}
     </nav>
-
-  </header>
-
+  </header> 
+  
+ 
   {% if messages %}
   <div class="message-container"></div>
   {% endif %}
-
 
   {% block content %}
   {% endblock %}

@@ -7,6 +7,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    height: calc(100vh - 175px);
 }
 
 .hero {
@@ -33,10 +34,16 @@ body {
     }
 }
 
+.section {
+    width: 100vw;
+    height: fit-content;
+}
+
 .jumbotron-fluid {
     margin: 0;
     padding: 0;
     width: 100vw;
+    height: fit-content;
 }
 
 .home-info {
@@ -90,14 +97,14 @@ body {
 .nature-head {
     width: 100vw;
     padding: 0;
-    margin: 0;
+    position: fixed;
 }
 
 .nature-home-info {
     background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
     height: fit-content;
     width: 100vw;
     padding: 20px;
@@ -113,7 +120,6 @@ body {
     justify-content: space-evenly;
     display: flexbox;
     padding: 0;
-    margin: 0;
     flex-direction: row;
 }
 
@@ -219,6 +225,7 @@ body {
 }
 
 .footer {
+    bottom: 0;
     padding: 25px;
     font-family: "Cardo", sans-serif;
     color:#344648;
@@ -283,6 +290,31 @@ body {
 
 }
 
+/*-------------------Product Pages */
+
+.product-page {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    margin-top: 200px;
+    padding: 0;
+}
+
+.product-underline {
+    border: 3px solid;
+    border-color: #7D8E95;
+    padding: 0;
+    text-align: center;
+}
+
+.product-title {
+    font-family: "Josefin Sans", sans-serif;
+    color: #344648;
+    font-size: 28px;
+    text-align: center;
+   
+}
+
 /*------------------Media Queries */
 
 @media (max-width: 576px) {
@@ -293,21 +325,20 @@ body {
         padding: 5px;
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif !important;
+        vertical-align: middle;
     }
 
     .navbar-collapse {
         height: fit-content;
         width: 100vw;  
-    }
-
-    .navbar {
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
     }
 
     .navbar-nav {
         display: flex;
-        align-items: center;   
+        align-items: center;
+        justify-content: center; 
+        
     }
 
     #nav-nature-mobile {
@@ -318,9 +349,8 @@ body {
         justify-content: space-evenly;
         display: flex;
         padding-bottom: 10px;
-        flex-direction: row;
-        align-items: center;
         overflow: hidden;
+        text-align: center;
     }
 
     .navbar-toggler {
@@ -332,7 +362,8 @@ body {
     .mobile-logo {
         display: flex !important;
         margin-top: 15px; 
-        justify-content: center;  
+        justify-content: center; 
+        text-align: center; 
     }
 
     #mobile-logo {
@@ -342,38 +373,37 @@ body {
     }
 
     .icons {
-        display: flex;
         height: 2rem;
-        justify-content: center;
         text-align: center;
-        margin: 0 50% 2% 50%;
+        justify-content: center !important;
+        margin-bottom: 75px;
     }
     
     .icons a {
         font-size: 1.25rem;
         margin-top: 5px; 
         line-height: 2rem;
-        padding: 10px;
-    }
-
-    .icons i {
-        font-size: 1.25rem;
-        margin-top: 5px; 
-        padding: 10px;
+        padding: 10px; 
+        justify-content: center;
+        text-align: center;
     }
 
     .shopping-cart i {
         font-size: 1.25rem;
         line-height: 2rem;
+        line-height: 2rem;
+        justify-content: center;
+        text-align: center;
     }
 
+    .hero {
+        margin-top: 200px;
+    }
 
     .home-info {
         width: 100vw;
         height: fit-content;
         padding: 0;
-        margin-top: 100px;
-
     }
 
     .index-title {
@@ -398,9 +428,14 @@ body {
     }
 
     .nature-home-info {
+        font-size: 0.5rem;
+
+    }
+
+    .nature {
         width: 100vw;
-        height: 100vh;
-        margin: 0;
+        height: fit-content;
+        padding: 0;
     }
 
     .lead {
@@ -415,13 +450,12 @@ body {
     
     .footer {
         bottom: 0 !important;
-        position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: fit-content !important;
+        height: 175px;
         width: 100vw !important;
         background-color: white;
         font-size: 12px;
