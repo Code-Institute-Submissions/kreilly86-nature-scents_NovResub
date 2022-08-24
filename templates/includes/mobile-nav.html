@@ -34,8 +34,8 @@
       </li>
     </ul>
   </div>
-  <div class="icons">
-    <div class="dropdown show">
+  <div class="icons container-fluid">
+    <div class="dropdown show justify-content-center">
       <a class="icons" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
         aria-expanded="false">
         <i class="fa-solid fa-user"></i>
@@ -63,9 +63,9 @@
       <a class="icons shopping-cart nav-link text-center {% if request.resolver_match.url_name == 'basket_overview' %}
         active-nav {% endif %}" href=""><i class="fa-solid fa-cart-shopping"></i>
         <p class="cart-amount my-0">{% if total_cost %}
-          €{{ total_cost|floatformat:2 }}
+            €{{ total_cost|floatformat:2 }}
           {% else %}
-          €0.00
+            €0.00
           {% endif %}
         </p>
       </a>

@@ -7,53 +7,32 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    height: calc(100vh - 175px);
 }
 
-.hero {
-    position: relative; 
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+
+.jumbotron {
+    margin: 0;
+    padding: 0;
     background-image: url('/media/hero-image.jpg');
-    background-repeat: no-repeat; 
     background-size: cover;
-    opacity: 0.9;
-    margin: 0;
-    padding: 0;
-
-&::before {
-        content: "";
-        background-image: url('/media/hero-image.jpg');
-        width: 100vw;
-        height: 100vh;
-        position: absolute;  
-        opacity: 0.9;  
-        margin: 0;   
-        padding: 0;
-    }
-}
-
-.section {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     width: 100vw;
     height: fit-content;
-}
 
-.jumbotron-fluid {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: fit-content;
 }
 
 .home-info {
     justify-content: left;
     text-align: left;
     padding: 0;
-    margin: 0;
+    height: fit-content;
+    width: 100vw;
 }
 
 .index-title {
+    position: relative;
     font-size: 6rem;
     font-family: "Cardo", sans-serif;
     padding: 0;
@@ -61,10 +40,11 @@ body {
     justify-content: left;
     text-align: left;
     margin-left: 3%;
-    margin-top: 65%;
+    margin-top: 60%;
 }
 
 .index-text {
+    position: relative;
     font-size: 1.75rem;
     color: white;
     padding: 20px 0 20px 0;
@@ -90,7 +70,7 @@ body {
 .container-fluid {
     padding: 0;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
 }
 
@@ -277,18 +257,14 @@ body {
 }
 
 .social-links {
-    margin-right: 1%;
-    align-items: right;
-    justify-content: right;
-    display: inline-flexbox;
     font-size: 1.5rem;
     line-height: 2rem;
     flex-direction: row;
     padding: 5px;
     width: 100%;
     margin-top: 3rem;
-
 }
+
 
 /*-------------------Product Pages */
 
@@ -319,6 +295,10 @@ body {
 
 @media (max-width: 576px) {
   
+    .body {
+        overflow: hidden;
+    }
+
     .nav-item a {
         font-size: 1rem !important;
         color: white !important;
@@ -337,8 +317,7 @@ body {
     .navbar-nav {
         display: flex;
         align-items: center;
-        justify-content: center; 
-        
+        justify-content: center;     
     }
 
     #nav-nature-mobile {
@@ -373,65 +352,57 @@ body {
     }
 
     .icons {
-        height: 2rem;
+        line-height: 2.5rem;
+        align-items: center;
         text-align: center;
         justify-content: center !important;
-        margin-bottom: 75px;
+        margin-bottom: 40px;
     }
     
     .icons a {
         font-size: 1.25rem;
         margin-top: 5px; 
-        line-height: 2rem;
         padding: 10px; 
-        justify-content: center;
         text-align: center;
     }
 
     .shopping-cart i {
         font-size: 1.25rem;
-        line-height: 2rem;
-        line-height: 2rem;
-        justify-content: center;
         text-align: center;
     }
 
-    .hero {
-        margin-top: 200px;
-    }
-
-    .home-info {
-        width: 100vw;
-        height: fit-content;
-        padding: 0;
+    .jumbotron {
+        padding: 10px;
+        margin-top: 50px;
     }
 
     .index-title {
-        font-size: 1rem;
+        font-size: 0.6rem;
         margin-left: 3%;
-        margin-top: 75%;
-        text-align: left;
+        margin-top: 90%;
     }
     
     .index-text {
         margin-left: 3%;
-        font-size: 0.75rem;
-    }
-
-    .hero {
-        position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: min-content;
-        padding: 0;
+        font-size: 0.4rem;
     }
 
     .nature-home-info {
-        font-size: 0.5rem;
-
+        text-align: center;
+        justify-content: center;
+        width: 100vw;
+        height: fit-content;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        overflow: hidden;
     }
 
+    .heading-info {
+        font-size: 3rem;
+    }
+    
     .nature {
         width: 100vw;
         height: fit-content;
@@ -480,14 +451,15 @@ body {
 
     .social-links {
         font-size: 1.5rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
         padding: 5px;
-        width: 100%;
+        width: 100vw;
+        
     }
 
-    .socials {
-        display: block;
-        width: 100vw;
+    .list-inline-item {
+        padding: 5px;
+        margin: 0 auto;
     }
 }
 
@@ -586,7 +558,7 @@ body {
     }
 
     .sign-up-form {
-        width: 100vw;
+        width: 90vw;
         height: fit-content;
     }
 
@@ -595,6 +567,9 @@ body {
         width: 80vw;
         text-align: center;
         margin-left: 5%;
+    }
+    .footer .row {
+        justify-content: center;
     }
 
     .footer-content {
