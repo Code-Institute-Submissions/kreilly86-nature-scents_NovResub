@@ -20,7 +20,6 @@ body {
     background-position: center;
     width: 100vw;
     height: fit-content;
-
 }
 
 .home-info {
@@ -205,46 +204,50 @@ body {
 }
 
 .footer {
-    padding: 25px;
+    padding: 15px;
     font-family: "Cardo", sans-serif;
     color:#344648;
     font-size: 16px;
-    height: 175px !important;
+    height: fit-content !important;
     width: 100vw;
+    justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .footer-content {
-   margin-left: 2%;
-   padding: 20px;
+   margin-left: 5%;
+   padding: 10px;
+   margin-top: 10px;
 }
 
 .footer-line {
-    display: inline-flexbox;
+    display: inline-block;
     width: 30vw;
 }
 
 .copyright {
-    position: absolute;
-    width: 100vw;
-    line-height: 10px;
+    line-height: 1rem;
     text-align: center;
-    bottom: 5px;
-    font-family: "Cardo", sans-serif;
-    color:#344648;
     padding: 5px;
+    margin-left: 75%;
+    margin-right: 1%;
+    margin-top: 35%;
+    margin-bottom: 10%;
 }
 
-.signup-button {
-    display: inline-flex;
-    line-height: 1rem;
+.sign-up-form {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
 .signup-form-button {
-    font-size: 14px;
+    font-size: 14px; 
 }
 
 .signup-form-email {
     width: 30vw;
+    border: none;
 }
 
 .list-inline-item a {
@@ -252,7 +255,6 @@ body {
     font-size: 1.5rem;
     color: #7D8E95;
     list-style: none;
-    display: inline;
 }
 
 .social-links {
@@ -261,8 +263,10 @@ body {
     flex-direction: row !important;
     padding: 5px;
     width: 100%;
-    margin-top: 3rem;
-    margin-right: 10%;
+    margin-left: 75%;
+    margin-top: 30%;
+    justify-content: center;
+    text-align: center;
 }
 
 
@@ -295,7 +299,6 @@ body {
     margin-top: 20px;
     padding: 10px;
     width: 100vw;
-
 }
 
 /*------------------Media Queries */
@@ -431,12 +434,14 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         text-align: center;
-        height: 175px;
-        width: 100vw !important;
+        height: fit-content;
+        width: 90vw;
         background-color: white;
         font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .sign-up-form {
@@ -453,19 +458,26 @@ body {
 
     .footer-content {
         margin: 5px;
-        padding: 15px;
+        padding: 10px;
     }
 
     .social-links {
         font-size: 1.5rem;
         line-height: 2.5rem;
-        padding: 5px;
+        padding-top: 15px;
         width: 100vw;
-        
+        margin: 0 auto;  
     }
 
     .list-inline-item {
         padding: 5px;
+        margin: 0 auto;
+    }
+
+    .copyright {
+        align-content: center;
+        justify-content: center;
+        width: 100vw;
         margin: 0 auto;
     }
 }
