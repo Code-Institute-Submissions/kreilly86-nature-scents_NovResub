@@ -205,19 +205,17 @@ body {
 }
 
 .footer {
-    bottom: 0;
     padding: 25px;
     font-family: "Cardo", sans-serif;
     color:#344648;
     font-size: 16px;
-    display: flex;
-    flex-direction: row;
     height: 175px !important;
     width: 100vw;
 }
 
 .footer-content {
    margin-left: 2%;
+   padding: 20px;
 }
 
 .footer-line {
@@ -254,22 +252,23 @@ body {
     font-size: 1.5rem;
     color: #7D8E95;
     list-style: none;
+    display: inline;
 }
 
 .social-links {
     font-size: 1.5rem;
     line-height: 2rem;
-    flex-direction: row;
+    flex-direction: row !important;
     padding: 5px;
     width: 100%;
     margin-top: 3rem;
+    margin-right: 10%;
 }
 
 
 /*-------------------Product Pages */
 
 .product-page {
-    display: flex;
     width: 100vw;
     height: fit-content;
     margin-top: 200px;
@@ -288,7 +287,15 @@ body {
     color: #344648;
     font-size: 28px;
     text-align: center;
-   
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.products {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100vw;
+
 }
 
 /*------------------Media Queries */
