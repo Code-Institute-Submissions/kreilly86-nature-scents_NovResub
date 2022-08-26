@@ -6,9 +6,7 @@ body {
     font-family: 'Josefin Sans', sans-serif !important; 
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
 }
-
 
 .jumbotron {
     margin: 0;
@@ -28,7 +26,7 @@ body {
     padding: 0;
     height: fit-content;
     width: 100vw;
-}
+} 
 
 .index-title {
     position: relative;
@@ -82,13 +80,13 @@ body {
 .nature-home-info {
     background-color: white;
     display: flex;
-    text-align: left;
-    justify-content: left;
+    text-align: center;
+    justify-content: center;
     height: fit-content;
     width: 100vw;
-    padding: 20px;
-    margin-left: 2%;
+    padding: 30px;
     font-family: 'Cardo', sans-serif;
+    margin: 0;
 }
 
 .navbar {
@@ -100,6 +98,7 @@ body {
     display: flexbox;
     padding: 0;
     flex-direction: row;
+    margin: 0;
 }
 
 .nav-item a {
@@ -121,7 +120,7 @@ body {
     justify-content: right;
     display: inline-flex;
     flex-direction: row;
-    margin-right: 0%;
+    margin: 0;
     padding: 5px;
 }
 
@@ -142,6 +141,7 @@ body {
 .shopping-cart {
     padding: 0;
     line-height: 0.2rem;
+    margin: 0;
 }
 
 .dropdown-menu a {
@@ -159,12 +159,6 @@ body {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-}
-
-.home-info {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
 }
 
 .carousel-products {
@@ -196,7 +190,7 @@ body {
 
 .card-title {
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
     font-size: 5rem;
     font-family: "Cardo", sans-serif;
     padding: 0;
@@ -304,10 +298,6 @@ body {
 /*------------------Media Queries */
 
 @media (max-width: 576px) {
-  
-    .body {
-        overflow: hidden;
-    }
 
     .nav-item a {
         font-size: 1rem !important;
@@ -325,7 +315,6 @@ body {
     }
 
     .navbar-nav {
-        display: flex;
         align-items: center;
         justify-content: center;     
     }
@@ -336,10 +325,8 @@ body {
         width: 100vw !important;
         background-color: #7D8E95 !important;
         justify-content: space-evenly;
-        display: flex;
-        padding-bottom: 10px;
-        overflow: hidden;
         text-align: center;
+        margin: 0 !important;
     }
 
     .navbar-toggler {
@@ -366,7 +353,8 @@ body {
         align-items: center;
         text-align: center;
         justify-content: center !important;
-        margin-bottom: 40px;
+        margin-bottom: 75px;
+        margin-right: 0px !important;
     }
     
     .icons a {
@@ -379,11 +367,13 @@ body {
     .shopping-cart i {
         font-size: 1.25rem;
         text-align: center;
+        margin: 0;
     }
 
     .jumbotron {
         padding: 10px;
         margin-top: 50px;
+        width: 100vw;
     }
 
     .index-title {
@@ -397,68 +387,107 @@ body {
         font-size: 0.4rem;
     }
 
+    .intro {
+        margin-top: 50px; 
+        overflow: hidden;
+    }
+
     .nature-home-info {
         text-align: center;
         justify-content: center;
         width: 100vw;
         height: fit-content;
-        padding: 10px;
+        padding: 30px 5px 30px 5px;
         display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        overflow: hidden;
+        flex-direction: column; 
     }
 
     .heading-info {
         font-size: 3rem;
-    }
-    
-    .nature {
-        width: 100vw;
-        height: fit-content;
-        padding: 0;
     }
 
     .lead {
         font-size: 1.5rem;
     }
 
+    .card-img-overlay {
+        padding: 5px;
+    }
+
     .carousel-products {
-        padding: 20px;
         width: 100vw;
-        height: fit-contents;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .carousel-item {
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel .slide {
+        width: fit-content;
+        overflow: hidden;
+    }
+    
+    .item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .carousel-item h1 {
+        font-size: 4rem;
+    }
+
+    .carousel-inner {
+        width: 100vw;
+        align-items: center;
+    }
+
+    .carousel-inner img {
+        padding: 5px;
+        width: 80vw;
     }
     
     .footer {
         bottom: 0 !important;
-        display: flex;
+        display: inline-block;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         text-align: center;
         height: fit-content;
-        width: 90vw;
+        width: 100vw;
         background-color: white;
         font-size: 12px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .row {
+        margin: 0;
     }
 
     .sign-up-form {
-        width: 100vw;
+        width: 80vw;
         height: fit-content;
+        margin: 0;
     }
 
     .footer-line {
         display: inline-flexbox;
-        width: 80vw;
+        width: 60vw !important;
+        margin: 0;
         text-align: center;
-        margin-left: 5%;
     }
 
     .footer-content {
-        margin: 5px;
-        padding: 10px;
+        padding: 10px !important;
+        width: 100vw;
+        justify-content: center;
+        text-align: center;
+        margin: 0 !important;
     }
 
     .social-links {
@@ -466,7 +495,8 @@ body {
         line-height: 2.5rem;
         padding-top: 15px;
         width: 100vw;
-        margin: 0 auto;  
+        margin: 0 auto;
+        justify-content: center;
     }
 
     .list-inline-item {
@@ -475,9 +505,9 @@ body {
     }
 
     .copyright {
-        align-content: center;
+        text-align: center;
         justify-content: center;
-        width: 100vw;
+        width: 80vw;
         margin: 0 auto;
     }
 }

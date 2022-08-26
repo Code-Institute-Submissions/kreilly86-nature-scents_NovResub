@@ -78,7 +78,7 @@
       </div>
 
       <div class="icons">
-        <div class="dropdown show justify-content-center d-inline-flex">
+        <div class="dropdown show d-inline-flex">
           <a class="icons" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <div><i class="fa-solid fa-user"></i></div>
@@ -96,12 +96,12 @@
             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
             {% endif %}
           </div>
-          <div class="container-fluid">
+          <div>
             <a class="icons" href="#" role="buttons">
               <div><i class="fa-solid fa-magnifying-glass icons" href="#"></i></div>
             </a>
           </div>
-          <div class="container-fluid text-center">
+          <div class="text-center">
             <a class="shopping-cart nav-link {% if request.resolver_match.url_name == 'basket_overview' %}
           active-nav {% endif %}">
               <div><i class="fa-solid fa-cart-shopping icons"></i></div>
@@ -151,7 +151,8 @@
         </div>
 
         <div class="col-md-3 col-xs-12">
-          <p class="copyright">© Nature Scents 2022 For educational purposes</p>
+          <p class="copyright">© Nature Scents 2022.
+            For educational purposes</p>
         </div>
         <div class="col-md-3 col-xs-12">
           <ul class="social-links">
