@@ -97,9 +97,15 @@
             {% endif %}
           </div>
           <div>
-            <a class="icons" href="#" role="buttons">
-              <div><i class="fa-solid fa-magnifying-glass icons" href="#"></i></div>
+            <a class="icons" href="#searchBar" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
+              <div><i class="fa-solid fa-magnifying-glass icons" type="button" data-toggle="collapse" data-target="#searchBar" aria-expanded="false" aria-controls="collapseExample"></i></div>
             </a>
+          </div>
+          <div class="collapse search-bar" id="searchBar">
+            <div class="card card-body">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+              user activates the relevant trigger.
+            </div>
           </div>
           <div class="text-center">
             <a class="shopping-cart nav-link {% if request.resolver_match.url_name == 'basket_overview' %}
