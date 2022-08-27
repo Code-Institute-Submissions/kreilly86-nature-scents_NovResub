@@ -54,14 +54,14 @@
         {% endif %}
       </div>
     </div>
-    <div>
+    <div class="text-center">
       <a class="icons" href="" role="button">
         <i class="fa-solid fa-magnifying-glass" href="#"></i>
       </a>
     </div>
     <div>
       <a class="icons shopping-cart nav-link text-center {% if request.resolver_match.url_name == 'basket_overview' %}
-        active-nav {% endif %}" href=""><i class="fa-solid fa-cart-shopping"></i>
+        active-nav {% endif %}" href=""><i class="fa-solid fa-cart-shopping" href="#"></i>
         <p class="cart-amount my-0">{% if total_cost %}
             €{{ total_cost|floatformat:2 }}
           {% else %}
