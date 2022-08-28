@@ -20,12 +20,12 @@
             Shop
           </a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Candles</a>
-            <a class="dropdown-item" href="#">Oils</a>
-            <a class="dropdown-item" href="#">Soaps</a>
-            <a class="dropdown-item" href="#">Bundles</a>
+            <a class="dropdown-item" href="{% url 'products' %}?category=Candles">Candles</a>
+            <a class="dropdown-item" href="{% url 'products' %}?category=Oils">Oils</a>
+            <a class="dropdown-item" href="{% url 'products' %}?category=Soaps">Soaps</a>
+            <a class="dropdown-item" href="{% url 'products' %}?category=Bundles">Bundles</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="{% url 'products' %}">All</a>
+            <a class="dropdown-item" href="{% url 'products' %}?category=Candles,Oils,Soaps,Bundles">All</a>
           </div>
         </li>
         <li class="nav-item">
