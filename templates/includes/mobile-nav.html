@@ -80,7 +80,7 @@
       </div>
       <div>
         <a class="icons shopping-cart nav-link {% if request.resolver_match.url_name == 'basket_overview' %}
-        active-nav {% endif %}" href="">
+        active-nav {% endif %}" href="{% url 'view_cart' %}">
           <div>
             <div><i class="fa-solid fa-cart-shopping" href="#"></i></div>
             <p class="cart-amount my-0">{% if total_cost %}
