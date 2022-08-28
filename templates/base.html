@@ -43,7 +43,7 @@
 
 <body class="d-flex flex-column min-vh-100">
   <header>
-    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light pt-lg-2 d-xs-none d-sm-none d-md-flex"
+    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light d-xs-none d-sm-none d-md-flex"
       id="nav-nature">
       <div>
         <a class="navbar-brand" href="">
@@ -51,7 +51,7 @@
         </a>
       </div>
       <div class="nav-text">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
           </li>
@@ -97,14 +97,26 @@
             {% endif %}
           </div>
           <div>
-            <a class="icons" href="#searchBar" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
-              <div><i class="fa-solid fa-magnifying-glass icons" type="button" data-toggle="collapse" data-target="#searchBar" aria-expanded="false" aria-controls="collapseExample"></i></div>
+            <a class="icons" href="#searchBar" data-toggle="collapse" aria-expanded="false"
+              aria-controls="collapseExample">
+              <i class="fa-solid fa-magnifying-glass icons"></i>
             </a>
           </div>
-          <div class="collapse search-bar" id="searchBar">
-            <div class="card card-body">
-              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
-              user activates the relevant trigger.
+          <div class="collapse search-bar fixed-top mx-auto" id="searchBar">
+            <div class="card search-container card-body">
+              <form method="GET" action="{% url 'products' %}">
+                <div class="input-group w-90">
+                  <input class="form-control border border-black rounded-0" type="text" name="q"
+                    placeholder="Search our site">
+                  <div class="input-group-append">
+                    <button class="form-control btn btn-black border rounded-0" type="submit">
+                      <span class="icon">
+                        <i class="fas fa-search"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
           <div class="text-center">
@@ -182,7 +194,6 @@
 
   {% block postloadjs %}
   {% endblock %}
-
 
 </body>
 
