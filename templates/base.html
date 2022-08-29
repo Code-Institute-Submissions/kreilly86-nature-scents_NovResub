@@ -120,12 +120,12 @@
             </div>
           </div>
           <div class="text-center">
-            <a class="shopping-cart nav-link {% if request.resolver_match.url_name == 'basket_overview' %}
-          active-nav {% endif %}" href="{% url 'cart' %}">
+            <a class="{% if grand_total %} shopping-cart font-weight-bold {% else %}
+          active-nav {% endif %} nav-link" href="{% url 'cart' %}">
               <div><i class="fa-solid fa-cart-shopping icons"></i></div>
               <p class="cart-amount my-0">
-                {% if total_cost %}
-                €{{ total_cost|floatformat:2 }}
+                {% if grand_total %}
+                €{{ grand_total|floatformat:2 }}
                 {% else %}
                 €0.00
                 {% endif %}
