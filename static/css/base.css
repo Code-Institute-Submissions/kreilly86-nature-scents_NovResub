@@ -301,7 +301,7 @@ body {
     justify-content: center;
 }
 
-.product-underline {
+.page-underline {
     border: 3px solid;
     border-color: #7D8E95;
     padding: 0;
@@ -309,7 +309,7 @@ body {
     width: 25vw;
 }
 
-.product-title {
+.page-title {
     font-family: "Josefin Sans", sans-serif;
     color: #344648;
     font-size: 28px;
@@ -334,7 +334,7 @@ body {
     transform: scale(0.7);
 }
 
-.product-end {
+.page-end {
     width: 100vw;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -365,6 +365,41 @@ body {
 
 .product-name {
     font-size: 20px;
+}
+
+/* Shopping Cart */
+
+.cart-detail {
+    width: 100vw;
+    height: fit-content;
+    margin-top: 275px;
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-page {
+    width: 100vw;
+    height: fit-content;
+    margin-top: 225px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-button {
+    border-color: #7D8E95;
+}
+
+.shop-button:hover {
+    background-color: #344648;
+    color: white;
+}
+
+.no-items {
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 20px;
 }
 
 /*------------------Media Queries */

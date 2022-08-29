@@ -2,33 +2,50 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row product-detail-overlay">
-        <div class="col-6 product-image">
-            {% if product.image %}
+<div class="container">
+    <div class="row cart-page">
+        <div class="col">
+            <h1 class="page-title">Shopping Cart</h1>
+            <hr class="page-underline">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 cart-detail">
+            {% if cart_items %}
             <a href="{{ product.image.url }}" target="_blank">
                 <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
             </a>
             {% else %}
-            <a href="{% url 'product_detail' product.id %}">
-                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-            </a>
-            {% endif %}
+            <div class="no-items text-center">
+                <p class="lead text-center mb-2">
+                    You have no items in your shopping cart.
+                </p>
+                <a href="{% url 'products' %}" class="btn rounded-2 btn-lg shop-button">
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Continue Shopping</span>
+                </a>
+            </div>
         </div>
+        {% endif %}
 
-        <div class=" col-6 product-detail">
-            <p class="product-name">{{ product.name }}</p>
-            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-            <hr>
-            <p class="product-description">
-                {{ product.description }}
-            </p>
-        </div>
-        <div>
-            <hr class="product-end"></hr>
-        </div>
     </div>
 </div>
+<div class="col-4">
 
+</div>
+
+<div class="col-4">
+
+</div>
+</div>
+
+</div>
+<div>
+    <hr class="page-end">
+    </hr>
+</div>
 
 {% endblock %}
