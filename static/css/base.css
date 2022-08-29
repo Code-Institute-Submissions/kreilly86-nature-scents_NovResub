@@ -388,12 +388,18 @@ body {
 }
 
 .shop-button {
-    border-color: #7D8E95;
+    background-color: #344648;
+    color: white;
 }
 
 .shop-button:hover {
-    background-color: #344648;
-    color: white;
+    background-color: #FFBB98;
+    color: #344648;
+    border-color: #7D8E95;
+}
+
+.arrow {
+    color: #7D8E95;
 }
 
 .no-items {
