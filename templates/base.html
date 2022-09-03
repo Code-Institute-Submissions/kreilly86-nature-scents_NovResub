@@ -78,8 +78,8 @@
       </div>
 
       <div class="icons">
-        <div class="dropdown show d-inline-flex">
-          <a class="icons" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+        <div class="dropdown show users d-inline-flex">
+          <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <div><i class="fa-solid fa-user"></i></div>
           </a>
@@ -97,9 +97,9 @@
             {% endif %}
           </div>
           <div>
-            <a class="icons" href="#searchBar" data-toggle="collapse" aria-expanded="false"
+            <a href="#searchBar" data-toggle="collapse" aria-expanded="false"
               aria-controls="collapseExample">
-              <i class="fa-solid fa-magnifying-glass icons"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
             </a>
           </div>
           <div class="collapse search-bar fixed-top mx-auto" id="searchBar">
@@ -122,13 +122,9 @@
           <div class="text-center">
             <a class="{% if grand_total %} shopping-cart font-weight-bold {% else %}
           active-nav {% endif %} nav-link" href="{% url 'cart' %}">
-              <div><i class="fa-solid fa-cart-shopping icons"></i></div>
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
               <p class="cart-amount my-0">
-                {% if grand_total %}
-                €{{ grand_total|floatformat:2 }}
-                {% else %}
-                €0.00
-                {% endif %}
+              
               </p>
             </a>
           </div>

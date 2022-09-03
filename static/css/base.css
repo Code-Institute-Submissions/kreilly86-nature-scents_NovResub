@@ -129,11 +129,18 @@ body {
     padding: 5px;
 }
 
+.users {
+    line-height: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
 .icons a {
     padding: 15px;
     font-size: 1.5rem;
     color: #FFBB98;
     align-items: center;
+    justify-content: center;
 }
 
 .icons i {
@@ -141,12 +148,13 @@ body {
     font-size: 1.5rem;
     color: #FFBB98;
     align-items: center; 
+    justify-content: center;
 }
 
 .shopping-cart {
     padding: 0;
-    line-height: 0.2rem;
     margin: 0;
+
 }
 
 .dropdown-menu a {
@@ -372,19 +380,39 @@ body {
 .cart-detail {
     width: 100vw;
     height: fit-content;
-    margin-top: 275px;
-    padding-right: 50px;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .cart-page {
     width: 100vw;
-    height: fit-content;
     margin-top: 225px;
+    margin-bottom: 0;
     padding: 0;
     align-items: center;
     justify-content: center;
+}
+
+.cart-contents {
+    padding: 5px;
+    margin-top: 0;
+    height: fit-content;
+}
+
+.cart-image {
+    transform: scale(0.3);
+    padding: 5px;
+    text-align: left;
+}
+
+.cart-quantity {
+    width: 5vw;
+}
+
+.cursor {
+    cursor: pointer;
 }
 
 .shop-button {
@@ -403,9 +431,11 @@ body {
 }
 
 .no-items {
-    align-items: left;
-    justify-content: left;
-    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
 }
 
 /*------------------Media Queries */
