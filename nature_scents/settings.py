@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'fontawesomefree',
     'products',
     'shopping_cart',
+    'checkout',
 ]
 
 
