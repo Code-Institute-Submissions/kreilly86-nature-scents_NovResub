@@ -455,6 +455,11 @@ body {
     height: 2px;
 }
 
+/*------------------------Checkout*/
+
+.card-warning {
+    color: red;
+}
 
 /*------------------Media Queries */
 
