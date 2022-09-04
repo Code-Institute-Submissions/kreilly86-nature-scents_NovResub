@@ -42,7 +42,9 @@
         <h6><strong>Sub Total: €{{ total|floatformat:2 }}</strong></h6>
         <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
         <h4 class="mt-4"><strong>Total: €{{ grand_total|floatformat:2 }}</strong></h4>
-        <button class="btn rounded-2 btn-lg shop-button mb-3" href="{% url 'checkout' %}">Checkout</button>
+        <a href="{% url 'checkout' %}" class="btn rounded-2 btn-lg shop-button mb-3">
+            <span class="text-uppercase">Checkout</span>
+        </a>      
     </div>
 </div>
 {% else %}
