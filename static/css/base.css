@@ -16,7 +16,6 @@ body {
     background-image: url('/media/hero-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     width: 100vw;
     height: fit-content;
@@ -231,7 +230,7 @@ body {
 }
 
 .footer {
-    bottom: 0;
+    margin-bottom: 0;
     padding: 15px;
     font-family: "Cardo", sans-serif;
     color:#344648;
@@ -320,7 +319,6 @@ body {
 .page-title {
     font-family: "Josefin Sans", sans-serif;
     color: #344648;
-    font-size: 28px;
     text-align: center;
     justify-content: center;
 }
@@ -373,6 +371,30 @@ body {
 
 .product-name {
     font-size: 20px;
+}
+
+/* Philosophy Page */
+
+.philosophy {
+    margin: 0;
+    padding: 0;
+    background-image: url('/media/philosophy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: fit-content;
+}
+
+.philosophy-title {
+    font-size: 6rem;
+    font-family: "Cardo", sans-serif;
+    padding: 0;
+    color: white;
+    justify-content: left;
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 35%;
 }
 
 /* Shopping Cart */
@@ -460,6 +482,18 @@ body {
 .card-warning {
     color: red;
 }
+
+/*-----------------------All Auth*/
+
+.allauth {
+    margin-top: 225px;
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    justify-content: center;
+}
+
+
 
 /*------------------Media Queries */
 
