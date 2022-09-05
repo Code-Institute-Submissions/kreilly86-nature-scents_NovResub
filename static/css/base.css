@@ -479,6 +479,15 @@ body {
     color: red;
 }
 
+.stripe-style-input {
+    width: 40vw;
+    padding: 5px;
+}
+
+.card-element {
+    font-family: "Cardo", sans-serif;
+}
+
 /*-----------------------All Auth*/
 
 .allauth {
@@ -1008,5 +1017,6 @@ body {
         margin-left: 3%;
     }
 
- }
+}
+}
 
