@@ -1,5 +1,5 @@
 <!--Navbar-->
-<div>
+<div class="container">
   <nav class="navbar navbar-dark navbar-expand-xs fixed-top d-inline-block d-md-none align-items-end"
     id="nav-nature-mobile">
     <div class="mobile-logo">
@@ -37,7 +37,7 @@
       </ul>
     </div>
     <div class="icons mobile-menu">
-      <div class="dropdown show justify-content-center">
+      <div class="dropdown justify-content-center">
         <a class="icons" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
           <i class="fa-solid fa-user"></i>
@@ -82,13 +82,7 @@
         <a class="icons shopping-cart nav-link {% if request.resolver_match.url_name == 'basket_overview' %}
         active-nav {% endif %}" href="{% url 'cart' %}">
           <div>
-            <div><i class="fa-solid fa-cart-shopping" href="#"></i></div>
-            <p class="cart-amount my-0">{% if total_cost %}
-              €{{ total_cost|floatformat:2 }}
-              {% else %}
-              €0.00
-              {% endif %}
-            </p>
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
           </div>
         </a>
       </div>

@@ -153,7 +153,6 @@ body {
 .shopping-cart {
     padding: 0;
     margin: 0;
-
 }
 
 .dropdown-menu a {
@@ -398,7 +397,36 @@ body {
     justify-content: left;
     text-align: left;
     margin-left: 3%;
-    margin-top: 35%;
+    margin-top: 33%;
+}
+
+/* Subscription */
+
+.subscription {
+    margin: 0;
+    padding: 0;
+    background-image: url('/media/oils-page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: fit-content;
+}
+
+.subscription-title {
+    font-size: 6rem;
+    font-family: "Cardo", sans-serif;
+    padding: 0;
+    color: white;
+    justify-content: left;
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 30%;
+}
+
+.sub-text {
+    color: #344648;
+    font-weight: 600;
 }
 
 /* Shopping Cart */
@@ -498,7 +526,6 @@ body {
     justify-content: center;
 }
 
-
 /*---------------------------Stripe*/
 
 .StripeElement {
@@ -536,14 +563,14 @@ body {
     border: 1px solid #000;
     padding: 10px;
     width: 30vw;
+}
 
 /*------------------Media Queries */
 
 @media (max-width: 576px) {
 
-    .body {
+    body {
         max-width: 100vw;
-        overflow-x: hidden;
         margin: 0 auto;
     }
 
@@ -565,7 +592,7 @@ body {
     .navbar-nav {
         align-items: center;
         justify-content: center;  
-        padding: 0;   
+        padding: 0;
     }
 
     #nav-nature-mobile {
@@ -595,17 +622,13 @@ body {
         display: flex !important;
         margin-top: 15px; 
         justify-content: center; 
-        text-align: center; 
+        text-align: center;    
     }
 
-    #mobile-logo {
-        width: 5rem;
-        height: 5rem;
+    #mobile-logo img {
+        width: 7rem;
+        height: 7rem;
         padding: 0;    
-    }
-
-    .mobile-menu {
-        width: 100 vw;
     }
 
     .icons {
@@ -614,7 +637,8 @@ body {
         text-align: center;
         justify-content: center !important;
         margin-bottom: 75px;
-        margin-right: 0px !important;
+        margin-right: 0px !important; 
+        margin-top: 50px;
     }
     
     .icons a {
@@ -631,12 +655,16 @@ body {
     }
 
     .search-bar-mobile {
-        margin-top: 225px;
+        margin-top: 250px;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0;
         height: fit-content;
         width: 100vw;
+    }
+
+    .input-group {
+        width: 75vw;
     }
 
     .card-body {
@@ -645,7 +673,7 @@ body {
 
     .jumbotron-fluid {
         padding: 5px;
-        margin-top: 0;
+        margin-top: 225px;
         width: 100vw;
     }
 
@@ -817,6 +845,7 @@ body {
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif !important;
     }
+
     .nav-item .dropdown {
         width: fit-content;
     }
@@ -1018,5 +1047,5 @@ body {
     }
 
 }
-}
+
 

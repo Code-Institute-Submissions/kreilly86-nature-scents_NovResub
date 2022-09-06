@@ -108,6 +108,8 @@ In order to achieve the goals of the site owner and customer, the following feat
 
 - Home App
 
+- Products App
+
 - Checkout App
 
 - Profile App
@@ -194,3 +196,34 @@ I chose Josefin Sans as the main font on the site, as it is simple and clean. I 
 <br>
 <br>
 All images were found on [Pexels](http://www.pexels.com/)
+<br>
+<br>
+
+## Features
+<br>
+<br>
+
+### Existing Features
+<br>
+<br>
+- Navigation:
+<br>
+<strong>Main navigation</strong>
+<br>
+<br>
+<img src="supporting_docs/design/main-nav.png">
+<br>
+The main navigation is fixed to the top of the page, with a simple logo, a menu, and three icons which link to account functionality, a search bar and the shopping cart. The shop title on the menu bar is a drop down where the user can select what product category to open and browse.
+<br>
+<br>
+<strong>Mobile navigation</strong>
+<br>
+The mobile navigation containers a burger style menu, which drops down on the left side. 
+<br>
+<img src="supporting_docs/design/mobile-nav.png">
+<br>
+When the dropdown menu is clicked, the content is centered and easy to use.
+<br>
+<img src="supporting_docs/design/navbar-drop-mobile.png">
+
+
