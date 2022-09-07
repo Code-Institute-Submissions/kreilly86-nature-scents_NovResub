@@ -16,7 +16,7 @@ Target Audience:
 
 The user can purchase <strong>one off items</strong> on the site, which makes the site useful to anyone who visits looking to purchase a product. The site also offers <strong>product combination bundles</strong> for users who want to try out a range of products, possibly buy as gifts etc. The final option for users is to purchase a <strong>yearly membership</strong> where they will be <strong>'sent a new scent'</strong> every month from the essential oils product section. This yearly subscription keeps the user engaged with the site, and may also lead to further purchases. 
 
-This e-commerce sit is a B2C model. The goal of the site is to not only make one off sales but to encourage brand loyalty through subscription and a newsletter. The site uses minimal design, and a no frills up front approach to let the products speak for themselves.
+This e-commerce site is a B2C model. The goal of the site is to not only make one off sales but to encourage brand loyalty through subscription and a newsletter. The site uses minimal design, and a no frills up front approach to let the products speak for themselves.
 
 ### Strategy Roadmap
 
@@ -203,6 +203,14 @@ All images were found on [Pexels](http://www.pexels.com/)
 <br>
 <br>
 
+## Project Planning/Agile
+<br>
+<br>
+I have utilised Github's projects section to create a project board with issues in the planning and implementation of the project.
+
+The project board can be found [here] (https://github.com/users/kreilly86/projects/4)
+
+
 ### Existing Features
 <br>
 <br>
@@ -222,7 +230,7 @@ The mobile navigation containers a burger style menu, which drops down on the le
 <br>
 <img src="supporting_docs/design/mobile-nav.png">
 <br>
-When the dropdown menu is clicked, the content is centered and easy to use.
+When the dropdown menu is clicked, the content is centered and easy to access.
 <br>
 <img src="supporting_docs/design/navbar-drop-mobile.png">
 <br>

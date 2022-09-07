@@ -218,8 +218,16 @@ body {
     padding: 0;
 }
 
-.carousel-control-prev.carousel-control-next {
-    color:#344648;
+.carousel-item img {
+    opacity: 0.8;
+}
+
+.carousel-control-prev-icon {
+    background-color: #344648;
+}
+
+.carousel-control-next-icon {
+    background-color: #344648;
 }
 
 .card-img-overlay {
@@ -233,6 +241,7 @@ body {
     font-family: "Cardo", sans-serif;
     padding: 0;
     color: #344648;
+    opacity: 1;
 }
 
 .footer {
@@ -342,7 +351,10 @@ body {
 }
 
 .products img {
-    transform: scale(0.7);
+    height: 60vh;
+    margin: 0; 
+    padding: 0;
+    width: auto;
 }
 
 .card-body {
@@ -479,11 +491,13 @@ body {
     padding: 0;
     align-items: center;
     justify-content: center;
+    margin-top: 225px;
 }
 
 .shopping-card {
     width: 40vw;
     padding: 5px;
+    margin-top: 225px;
     height: fit-content;
     justify-content: center;
 }
