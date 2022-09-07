@@ -225,5 +225,7 @@ The mobile navigation containers a burger style menu, which drops down on the le
 When the dropdown menu is clicked, the content is centered and easy to use.
 <br>
 <img src="supporting_docs/design/navbar-drop-mobile.png">
+<br>
+<br>
 
 

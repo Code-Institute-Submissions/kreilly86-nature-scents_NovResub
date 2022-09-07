@@ -6,92 +6,7 @@ body {
     width: 100vw;
 }
 
-.jumbotron-fluid {
-    width: 100vw;
-}
-
-.jumbotron {
-    margin: 0;
-    padding: 0;
-    background-image: url('/media/hero-image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: fit-content;
-}
-
-.home-info {
-    justify-content: left;
-    text-align: left;
-    padding: 0;
-    height: fit-content;
-    width: 100vw;
-} 
-
-.index-title {
-    font-size: 6rem;
-    font-family: "Cardo", sans-serif;
-    padding: 0;
-    color: #344648;
-    justify-content: left;
-    text-align: left;
-    margin-left: 3%;
-    margin-top: 30%;
-}
-
-.index-text {
-    font-size: 1.75rem;
-    color: white;
-    padding: 20px 0 20px 0;
-    line-height: 2rem;
-    justify-content: left;
-    text-align: left;
-    margin-left: 3%;
-}
-
-.heading-info { 
-    font-size: 4rem;
-    font-family: "Cardo", sans-serif;
-    padding: 0;
-    color: #344648;
-}
-
-.intro {
-    width: 100vw;
-    height: auto;
-}
-
-.index-info {
-    color:#7D8E95;
-    padding: 10px;
-    height: fit-content;
-}
-
-.container-fluid {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    height: fit-content;
-}
-
-.nature-head {
-    width: 100vw;
-    padding: 0;
-    position: fixed;
-}
-
-.nature-home-info {
-    background-color: white;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: fit-content;
-    width: 100vw;
-    padding: 30px;
-    font-family: 'Cardo', sans-serif;
-    margin: 0;
-}
+/* ---------------Navigation */
 
 .navbar {
     height: 175px !important;
@@ -192,13 +107,101 @@ body {
     color:#FFBB98;
 }
 
+/* ------------Home Page */
+
+.jumbotron-fluid {
+    width: 100vw;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 0;
+    background-image: url('/media/hero-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: fit-content;
+}
+
+.home-info {
+    justify-content: left;
+    text-align: left;
+    padding: 0;
+    height: fit-content;
+    width: 100vw;
+} 
+
+.index-title {
+    font-size: 6rem;
+    font-family: "Cardo", sans-serif;
+    padding: 0;
+    color: #344648;
+    justify-content: left;
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 30%;
+}
+
+.index-text {
+    font-size: 1.75rem;
+    color: white;
+    padding: 20px 0 20px 0;
+    line-height: 2rem;
+    justify-content: left;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.heading-info { 
+    font-size: 4rem;
+    font-family: "Cardo", sans-serif;
+    padding: 0;
+    color: #7D8E95;
+}
+
+.intro {
+    width: 100vw;
+    height: auto;
+}
+
+.index-info {
+    color:#7D8E95;
+    padding: 10px;
+    height: fit-content;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: fit-content;
+}
+
+.nature-head {
+    width: 100vw;
+    padding: 0;
+    position: fixed;
+}
+
+.nature-home-info {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: fit-content;
+    width: 100vw;
+    padding: 30px;
+    font-family: 'Cardo', sans-serif;
+    margin: 0;
+}
+
 .carousel-products {
     padding: 20px;
     display: flex;
     margin: 0;
     width: 100vw;
     height: fit-content;
-    background-color: #FBE0C3;
+    background-color:white;
     overflow-x: hidden;
 }
 
@@ -215,6 +218,10 @@ body {
     padding: 0;
 }
 
+.carousel-control-prev.carousel-control-next {
+    color:#344648;
+}
+
 .card-img-overlay {
     text-align: center;
 }
@@ -222,7 +229,7 @@ body {
 .card-title {
     text-align: center;
     margin-top: 10vh;
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: "Cardo", sans-serif;
     padding: 0;
     color: #344648;
@@ -422,11 +429,46 @@ body {
     text-align: left;
     margin-left: 3%;
     margin-top: 30%;
+    margin-bottom: 0%;
 }
 
 .sub-text {
     color: #344648;
     font-weight: 600;
+    padding-bottom: 0;
+}
+
+.sub-photo {
+    height: 60vh;
+    margin: 0; 
+    padding: 0;
+    width: auto;
+
+    animation-name: sub-zoom;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sub-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{ 
+        transform:scale(1.1);
+        opacity: 0.6;
+    }
+
+}
+
+.subscription-info {
+    margin-top: 0;
+    padding: 0;
+}
+
+.sub-detail {
+    align-items: center;
+    justify-content: center;
+    margin-top: 175px;
 }
 
 /* Shopping Cart */
@@ -434,8 +476,6 @@ body {
 .cart-page {
     width: 100vw;
     height: fit-content;
-    margin-top: 225px;
-    margin-bottom: 0;
     padding: 0;
     align-items: center;
     justify-content: center;
