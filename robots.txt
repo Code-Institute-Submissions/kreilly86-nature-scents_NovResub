@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /checkout/
+Disallow: /cart/
+Sitemap: https://nature-scents.herokuapp.com/sitemap.xml

@@ -198,6 +198,22 @@ I chose Josefin Sans as the main font on the site, as it is simple and clean. I 
 All images were found on [Pexels](http://www.pexels.com/)
 <br>
 <br>
+Sources are as follows:
+<br>
+Photos by Meruyert Gonullu
+
+Photos by Tara Winstead
+
+Photos by MART PRODUCTION
+
+Photoss by Monstera from Pexels 
+
+Photos by Alesia Kozik from Pexels
+
+Photos by EKATERINA BOLOVTSOVA from Pexels
+
+Photo by Dominika Roseclay from Pexels
+
 
 ## Project Planning/Agile
 <br>
@@ -205,6 +221,7 @@ I have utilised Github's projects section to create a project board with issues 
 
 The project board can be found [here] (https://github.com/users/kreilly86/projects/4)
 <br>
+
 ## Features
 
 ### Existing Features
@@ -232,4 +249,47 @@ When the dropdown menu is clicked, the content is centered and easy to access.
 <br>
 <br>
 
+### Future Features
+<br>
+<br>
+In it's current state the project is incomplete. There are still features and functionality to be added which include:
+
+    - A display on the shopping cart icon with the number of products in the shopping cart
+    - Custom Django models :
+        A model linking products to mood (relaxing, energising, etc)
+        A subscription model
+        A model for special deals
+<br>
+<br>
+The user is currently able to browse products and add them to their shoppign cart. They are then able to click through to the checkout page but thus remains incomplete. I also need to make a profile page for users. 
+<br>
+<br>
+The subscrition app is incomplete. Further information needs to be added, and a payment option to charge a yearly one off fee in return for a monthly delivery of custom products for the user.
+
+
+## Marketing and SEO
+<br>
+<br>
+
+I have created a (Facebook business page)[https://www.facebook.com/nature.scents.irl]
+<br>
+<br>
+<img src="supporting_docs/design/facebook.png">
+<br>
+Keywords have been used in meta tags based in the base.html file. I have kept the site simple, and didn't overcomplicate this process with lengthy descriptions.
+<br>
+<br>
+
+## Issues
+<br>
+<br>
+
+
+## Credits 
+<br>
+<br>
+Code and structure for this e-commerce site has come from Code Institute's Boutique Ado walkthrough project: 
+<br>
+https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/9ed36dc2c07228041b56b28174dd96ee56e6c59a
+<br>
 
