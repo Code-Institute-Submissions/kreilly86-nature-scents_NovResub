@@ -7,7 +7,7 @@ from products.models import Product
 def cart(request):
     """A view to see the contents of customer shopping cart """
 
-    return render(request, 'shopping_cart/cart.html',)
+    return render(request, 'shopping_cart/cart.html')
 
 
 def add_to_cart(request, item_id):
@@ -16,9 +16,9 @@ def add_to_cart(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
-    cart = request.session.get('cart', {})
-
-    if item_id in list(cart.keys()):
+    
+    if item_id in list(cart.keys()):  
+        cart = request.session.get('cart', {})
         cart[item_id] += quantity
         messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
     else:
@@ -34,8 +34,9 @@ def adjust_cart(request, item_id):
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
-    cart = request.session.get('cart', {})
-    if quantity > 0:
+   
+    if quantity > 0: 
+        cart = request.session.get('cart', {})
         cart[item_id] = quantity
         messages.success(request, f'Updated {product.name} quantity to {cart[item_id]}')
     else:
