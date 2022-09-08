@@ -128,7 +128,7 @@ WSGI_APPLICATION = 'nature_scents.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://unqajtshbxcjkq:42cb7b44aa5ca38e1d030e4035beac098d71641c3ab3c86b8f1d43befc88e936@ec2-63-32-248-14.eu-west-1.compute.amazonaws.com:5432/dfeku9cdtalamq')
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
