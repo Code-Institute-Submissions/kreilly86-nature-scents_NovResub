@@ -199,17 +199,13 @@ All images were found on [Pexels](http://www.pexels.com/)
 <br>
 <br>
 
-## Features
-<br>
-<br>
-
 ## Project Planning/Agile
-<br>
 <br>
 I have utilised Github's projects section to create a project board with issues in the planning and implementation of the project.
 
 The project board can be found [here] (https://github.com/users/kreilly86/projects/4)
-
+<br>
+## Features
 
 ### Existing Features
 <br>
