@@ -265,7 +265,9 @@ The user is currently able to browse products and add them to their shoppign car
 <br>
 <br>
 The subscrition app is incomplete. Further information needs to be added, and a payment option to charge a yearly one off fee in return for a monthly delivery of custom products for the user.
-
+<br>
+<br>
+The newsletter sign-up contained in the footer is not functioning yet.
 
 ## Marketing and SEO
 <br>
@@ -283,6 +285,7 @@ Keywords have been used in meta tags based in the base.html file. I have kept th
 ## Issues
 <br>
 <br>
+The Django Secret_Key was accidentally pushed to git hub, this has been changed and secured in an env.py file
 
 
 ## Credits 
