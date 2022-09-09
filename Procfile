@@ -1,1 +1,1 @@
-web: gunicorn nature-scents.wsgi:application
+web: gunicorn nature_scents.wsgi:application

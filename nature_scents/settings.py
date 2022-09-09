@@ -27,7 +27,6 @@ SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = 'DEVELOPMENT' in os.environ
 
-
 ALLOWED_HOSTS = ['nature-scents.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-kreilly86-naturescents-3wacptter33.ws-eu64.gitpod.io']
