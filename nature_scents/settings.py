@@ -25,9 +25,7 @@ SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-#DEBUG = 'DEVELOPMENT' in os.environ
-
-DEBUG =  'DEVELOPMENT' in os.environ
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['nature-scents.herokuapp.com', 'localhost']
 
@@ -135,17 +133,17 @@ WSGI_APPLICATION = 'nature_scents.wsgi.application'
 
 DATABASE_URL='postgres://opepziriajlsgq:fcb7e08b795aa799de5060cbe50f792343de2dc2a5766456260c0488219614d7@ec2-54-228-30-162.eu-west-1.compute.amazonaws.com:5432/dc0urcii47iup6'
 
-#   if 'DATABASE_URL' in os.environ:
-#    DATABASES = {
-#       'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-#   }
-#   else:
-#    DATABASES = {
-#        'default': {
-#           'ENGINE': 'django.db.backends.sqlite3',
-#           'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#       }
-#    }
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+       'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+   }
+else:
+    DATABASES = {
+        'default': {
+           'ENGINE': 'django.db.backends.sqlite3',
+           'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+       }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
