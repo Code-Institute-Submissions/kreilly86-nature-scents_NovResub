@@ -26,7 +26,6 @@ SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = 'DEVELOPMENT' in os.environ
-USE_S3 = os.environ.get("USE_S3", False)
 
 
 ALLOWED_HOSTS = ['nature-scents.herokuapp.com', 'localhost']
