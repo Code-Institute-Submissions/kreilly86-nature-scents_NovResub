@@ -619,6 +619,19 @@ body {
     width: 30vw;
 }
 
+/* 404 Error Page */
+
+.error-page {
+    margin: 0;
+    padding: 0;
+    background-image: url('/media/error-page.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: fit-content;
+}
+
 /*------------------Media Queries */
 
 @media (max-width: 576px) {
