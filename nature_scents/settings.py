@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+if os.path.isfile('env.py'):
+    import env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,15 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = 'True'
 
 ALLOWED_HOSTS = ['nature-scents.herokuapp.com', 'localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-kreilly86-naturescents-3wacptter33.ws-eu64.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://kreilly86-naturescents-dixr2pcnqjz.ws-eu67.gitpod.io/']
 
 
 # Application definition
@@ -131,7 +133,6 @@ WSGI_APPLICATION = 'nature_scents.wsgi.application'
 # }
 # }
 
-DATABASE_URL = 'postgres://opepziriajlsgq:fcb7e08b795aa799de5060cbe50f792343de2dc2a5766456260c0488219614d7@ec2-54-228-30-162.eu-west-1.compute.amazonaws.com:5432/dc0urcii47iup6'
 
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
