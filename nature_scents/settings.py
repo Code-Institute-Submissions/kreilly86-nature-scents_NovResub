@@ -31,7 +31,7 @@ DEBUG = os.environ.get('DEVELOPMENT')
 
 ALLOWED_HOSTS = ['nature-scents.herokuapp.com', 'localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://kreilly86-naturescents-dixr2pcnqjz.ws-eu67.gitpod.io/']
+CSRF_TRUSTED_ORIGINS = ['https://*.*.gitpod.io/', 'localhost']
 
 
 # Application definition
