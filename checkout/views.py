@@ -5,7 +5,6 @@ from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
-
 from products.models import Product
 from shopping_cart.contexts import cart_contents
 
