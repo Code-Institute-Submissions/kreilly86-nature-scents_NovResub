@@ -15,10 +15,9 @@ import stripe
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
+    cart = request.session.get('cart', {})
 
     if request.method == 'POST':
-        cart = request.session.get('cart', {})
-
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
