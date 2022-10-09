@@ -261,7 +261,7 @@ In it's current state the project is incomplete. There are still features and fu
         A model for special deals
 <br>
 <br>
-The user is currently able to browse products and add them to their shoppign cart. They are then able to click through to the checkout page but thus remains incomplete. I also need to make a profile page for users. 
+The user is currently able to browse products and add them to their shopping cart. They are then able to click through to the checkout page but this remains incomplete. I also need to make a profile page for users. 
 <br>
 <br>
 The subscrition app is incomplete. Further information needs to be added, and a payment option to charge a yearly one off fee in return for a monthly delivery of custom products for the user.
@@ -285,8 +285,24 @@ Keywords have been used in meta tags based in the base.html file. I have kept th
 ## Issues
 <br>
 <br>
+
 The Django Secret_Key was accidentally pushed to git hub, this has been changed and secured in an env.py file
 
+## Testing
+<br>
+<br>
+App Checkout:
+<hr>
+<br>
+As I had not implemented a free delivery threshold, the postage charges generated were quite excessive. e.g. €14
+
+### Code Validation
+<br>
+<br>
+- W3C Mark-up Validation
+- W3C CSS Validtion
+- Lighthouse
+- 
 
 ## Credits 
 <br>
