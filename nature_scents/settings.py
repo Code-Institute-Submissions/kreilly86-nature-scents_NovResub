@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'home',
-    'fontawesomefree',
     'products',
     'shopping_cart',
     'checkout',
