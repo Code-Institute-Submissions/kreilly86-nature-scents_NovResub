@@ -285,8 +285,16 @@ Keywords have been used in meta tags based in the base.html file. I have kept th
 ## Issues
 <br>
 <br>
+The Django Secret_Key was accidentally pushed to git hub, this has been changed and secured in an env.py file. 
+<br>
+<br>
 
-The Django Secret_Key was accidentally pushed to git hub, this has been changed and secured in an env.py file
+### Issue with Stripe Credit card input box when deployed to Heroku
+<hr>
+<br>
+During testing I came up across an issue with the checkout page, specifically the credit/debit card input box. When running locally it was showing up as expected, but on Heroku it was a blank input with no way to input card details. I had various stages of trying to resolve this issue:
+<br>
+
 
 ## Testing
 <br>
@@ -294,7 +302,10 @@ The Django Secret_Key was accidentally pushed to git hub, this has been changed 
 App Checkout:
 <hr>
 <br>
-As I had not implemented a free delivery threshold, the postage charges generated were quite excessive. e.g. €14
+As I had not implemented a free delivery threshold, the postage charges generated were quite excessive. e.g. €14. I changed this by creating a free delivery threshold of €50
+<br>
+<img src="supporting_docs/design/delivery-cost.png">
+<br>
 
 ### Code Validation
 <br>
@@ -307,7 +318,7 @@ As I had not implemented a free delivery threshold, the postage charges generate
 ## Credits 
 <br>
 <br>
-Code and structure for this e-commerce site has come from Code Institute's Boutique Ado walkthrough project: 
+Code and structure for this e-commerce site has largely come from Code Institute's Boutique Ado walkthrough project: 
 <br>
 https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/9ed36dc2c07228041b56b28174dd96ee56e6c59a
 <br>
