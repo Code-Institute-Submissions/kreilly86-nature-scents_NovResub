@@ -9,11 +9,14 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col">
-
-        </div>
-    </div>
+    {% if from_profile %}
+    <a href="{% url 'profile' %}" class="shop-button">
+        <span>
+            <i class="fas fa-angle-left"></i>
+        </span>
+        <span class="text-uppercase">Back to Profile</span>
+    </a>
+    {% endif %}
 
     <div>
         <hr class="page-end mt-5">

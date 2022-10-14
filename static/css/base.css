@@ -686,6 +686,11 @@ select option[value=""] {
     margin-bottom: 5px;
 }
 
+.order-history {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
 /* -----------------------------404 Error Page */
 
 .error-page {
