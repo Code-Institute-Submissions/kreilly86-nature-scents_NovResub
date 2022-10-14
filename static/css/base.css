@@ -678,7 +678,15 @@ select option[value=""] {
     width: 30vw;
 }
 
-/* 404 Error Page */
+/* --------------------User Profile Form */
+
+.profile-form-input {
+    padding: 5px;
+    border-radius: 0;
+    margin-bottom: 5px;
+}
+
+/* -----------------------------404 Error Page */
 
 .error-page {
     margin: 0;
