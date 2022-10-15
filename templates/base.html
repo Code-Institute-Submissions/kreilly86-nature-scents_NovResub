@@ -168,9 +168,9 @@
             <p>Sign-up for exclusive offers, news, and updates about our newest scents.</p>
           </div>
           <div class="signup-form col-md-3 col-xs-12">
-            <form method="post" action="" id="newsletter_signup" accept-charset="UTF-8" class="contact-form border-0">
+            <form method="post" action="{% url 'newsletter_list' %}" id="newsletter_signup" accept-charset="UTF-8" class="contact-form border-0">
               {% csrf_token %}
-              <input type="email" placeholder="Enter email" class="signup-form-email border-0" value="" name="email"
+              <input type="email" placeholder="Enter your email" class="signup-form-email border-0" name="email"
                 aria-label="Email">
               <div class="footer-line">
                 <hr>
