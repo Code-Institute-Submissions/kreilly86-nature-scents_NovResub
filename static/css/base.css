@@ -706,10 +706,17 @@ select option[value=""] {
     border-radius: 0;
 }
 
+.add-product input {
+    margin-bottom: 10px;
+}
+
+#id_category {
+    margin-bottom: 10px;
+}
+
 /* --------------------User Profile Form */
 
 .profile-form-input {
-    padding: 5px;
     border-radius: 0;
     margin-bottom: 5px;
 }
