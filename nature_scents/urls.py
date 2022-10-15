@@ -27,6 +27,6 @@ urlpatterns = [
     path('cart/', include('shopping_cart.urls')),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('user_profiles.urls')),
-    path('', include('newsletter.urls')),
+    path('newsletter/', include('newsletter.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler404 = 'nature_scents.views.handler404'

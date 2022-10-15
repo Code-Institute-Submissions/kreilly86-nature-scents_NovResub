@@ -1,13 +1,14 @@
-from django.shortcuts import render
-from django.shortcuts import render, redirect
-from .models import Newsletter
+from django.shortcuts import redirect
+from .models import NewsletterInput
+from django.contrib import messages
 
 
-def newsletter_list(request):
-
+def newsletter_signup(request):
+    
     if request.method == 'POST':
         email = request.POST.get('email')
-        entry = Newsletter(email=email)
-        entry.save()
+
+        input = NewsletterInput(email=email)
+        input.save()
 
     return redirect('home')
