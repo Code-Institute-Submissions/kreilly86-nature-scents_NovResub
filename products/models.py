@@ -16,6 +16,9 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+    def get_slug(self):
+        return self.slug
+
 
 class Product(models.Model):
     """
