@@ -10,5 +10,6 @@ def newsletter_signup(request):
 
         input = NewsletterInput(email=email)
         input.save()
+        messages.success(request, f'Thanks for subscribing!')
 
     return redirect('home')
