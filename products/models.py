@@ -29,7 +29,7 @@ class Product(models.Model):
     product_code = models.CharField(max_length=50, null=True, blank=True)
     name = models.CharField(max_length=50)
     description = models.TextField()
-    price = models.DecimalField(max_digits=4, decimal_places=2)
+    price = models.DecimalField(max_digits=5, decimal_places=2)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
