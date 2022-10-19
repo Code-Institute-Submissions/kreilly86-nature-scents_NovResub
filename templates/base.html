@@ -56,7 +56,7 @@
 
 <body class="d-flex flex-column min-vh-100">
   <header>
-    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light d-xs-none d-sm-none d-md-flex"
+    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light d-none d-lg-flex"
       id="nav-nature">
       <div>
         <a class="navbar-brand" href="{% url 'home' %}">
@@ -135,11 +135,13 @@
           <div class="text-center">
             <a class="{% if grand_total %} shopping-cart font-weight-bold {% else %}
           active-nav {% endif %} nav-link" href="{% url 'cart' %}">
-              <div><i class="fa-solid fa-cart-shopping"></i></div>
+              <div><i class="fa-solid fa-cart-shopping px-0"></i></div>
             </a>
           </div>
+          <span class="badge badge-info">{{ request.session.cart.keys|length }}</span>
         </div>
-      </div>
+      </div> 
+     
     </nav>
     {% include 'includes/mobile-nav.html' %}
   </header>

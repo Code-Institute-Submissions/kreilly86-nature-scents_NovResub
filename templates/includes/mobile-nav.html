@@ -1,9 +1,8 @@
 <!--Navbar-->
-<div class="container">
-  <nav class="navbar navbar-dark navbar-expand-xs fixed-top d-inline-block d-md-none align-items-end"
-    id="nav-nature-mobile">
+<div class="container-fluid">
+  <div class="navbar navbar-dark navbar-expand-xs fixed-top d-inline-block d-md-none align-items-end" id="nav-nature-mobile">
     <div class="mobile-logo">
-      <a href="templates/home/index.html">
+      <a href="{% url 'home' %}">
         <img src='/media/nature-logo.png' id="mobile-logo">
       </a>
     </div>
@@ -88,5 +87,5 @@
         </a>
       </div>
     </div>
-  </nav>
+  </div>
 </div>

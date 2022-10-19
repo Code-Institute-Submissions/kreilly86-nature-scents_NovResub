@@ -745,7 +745,7 @@ select option[value=""] {
 
     body {
         max-width: 100vw;
-        margin: 0 auto;
+        margin-top: 350px;
     }
 
     .nav-item a {
@@ -776,7 +776,6 @@ select option[value=""] {
         background-color: #7D8E95 !important;
         justify-content: space-evenly;
         text-align: center;
-        margin: 0 !important;
         overflow-x: hidden;
     }
 
@@ -829,7 +828,7 @@ select option[value=""] {
     }
 
     .search-bar-mobile {
-        margin-top: 250px;
+        margin-top: 270px;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0;
@@ -1009,6 +1008,7 @@ select option[value=""] {
         margin: 0;
         width: 80vw;
     }
+
 }
 
  @media (max-width: 766px) {
