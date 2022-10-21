@@ -751,25 +751,25 @@ select option[value=""] {
         flex-direction: column;
     }
 
-    .navbar-nav {
+    .navbar {
         align-items: center;
         justify-content: center;  
         padding: 0;
     }
 
-    #nav-nature-mobile {
-        position: relative !important;
-        height: fit-content !important;
+    .nav-nature-mobile {
         width: 100vw !important;
+        height: fit-content !important;
         background-color: #7D8E95 !important;
         justify-content: space-evenly;
         text-align: center;
         overflow-x: hidden;
+        margin-bottom: 0 !important;
     }
 
     .navbar-toggler {
-        padding: 5px;
-        margin: 10px;
+        padding: 10px;
+        margin-left: 15px;
         display: block !important;
     }
 
@@ -779,24 +779,21 @@ select option[value=""] {
 
     .mobile-logo {
         display: flex !important;
-        margin-top: 15px; 
+        margin-top: 30px; 
         justify-content: center; 
-        text-align: center;    
+        text-align: center;
+        transform: scale(0.8)    
     }
 
-    #mobile-logo img {
-        width: 7rem;
-        height: 7rem;
-        padding: 0;    
+    .mobile-menu {
+        margin: 0 auto;
     }
 
     .icons {
         align-items: center;
         text-align: center;
         justify-content: center !important;
-        margin-bottom: 75px;
-        margin-right: 0px !important; 
-        margin-top: 50px;
+        margin-right: 0px !important;    
     }
     
     .icons a {
@@ -813,7 +810,7 @@ select option[value=""] {
     }
 
     .search-bar-mobile {
-        margin-top: 270px;
+        margin-top: 475px;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0;
@@ -825,14 +822,14 @@ select option[value=""] {
         width: 100vw;
     }
 
-    .jumbotron-fluid {
-        padding: 5px;
-        margin-top: 225px;
+    .jumbotron {
+        padding: 0 !important;
+        margin-top: 200px !important;
         width: 100vw;
     }
 
     .intro {
-        margin-top: 100px;
+        margin-top: 0 ! important;
         width: 90vw;
         justify-content: center;
     }
@@ -1022,6 +1019,10 @@ select option[value=""] {
     #card-element {
         width: 80vw;
     }
+
+    .allauth {
+        margin-top: 150px;
+    }
 }
 
  @media (max-width: 766px) {
@@ -1037,35 +1038,26 @@ select option[value=""] {
         width: fit-content;
     }
 
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
+    .navbar {
+        align-items: center;
+        justify-content: center;  
+        padding: 0;
     }
 
-    #nav-nature-mobile {
-        position: absolute !important;
-        height: fit-content !important;
+    .nav-nature-mobile {
         width: 100vw !important;
+        height: fit-content !important;
         background-color: #7D8E95 !important;
         justify-content: space-evenly;
-        display: flex;
-        padding-bottom: 10px;
+        text-align: center;
+        overflow-x: hidden;
+        margin: 0 !important;
     }
 
     .navbar-toggler {
-        padding: 5px;
-        margin: 10px;
-    }
-
-    .hero {
-        background-size: cover;
-        width: 100vw;
-        height: max-content;
-        margin: 0;
-    }
-
-    .lead {
-        font-size: 1.5rem;
+        padding: 10px;
+        margin-left: 15px;
+        display: block !important;
     }
 
     .mobile-logo {
@@ -1075,27 +1067,72 @@ select option[value=""] {
     }
 
     #mobile-logo {
-        width: 5rem;
-        height: 5rem;
+        width: 10rem;
+        height: 10rem;
         padding: 0;    
     }
 
     .icons {
         display: flex;
-        height: 2rem;
+        height: 4rem;
         padding: 5px;
-        justify-content: center;
+        align-items: center;
+        text-align: center;
+        justify-content: center !important;
+        margin-bottom: 75px;
+        margin-right: 0px !important; 
+        margin-top: 150px;
     }
     
     .icons a {
-        font-size: 1.25rem;
+        font-size: 3rem;
         margin-top: 5px; 
-        line-height: 2rem;
+        line-height: 3rem;
     }
 
     .icons i {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin-top: 5px; 
+    }
+
+    .jumbotron-fluid {
+        padding: 5px;
+        margin-top: 225px;
+        width: 100vw;
+    }
+
+    .intro {
+        margin-top: 25px;
+        width: 100vw !important;
+        justify-content: center;
+    }
+
+    .index-title {
+        font-size: 1 rem;
+        color: white;
+        margin-left: 5% !important;
+    } 
+    
+    .index-text {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .nature-home-info {
+        height: fit-content;
+        padding: 0 !important;
+    }
+
+    .nature-home-info > a {
+        width: 80vw !important;
+    }
+
+    .heading-info {
+        font-size: 5rem;
+    }
+
+    .lead {
+        font-size: 3rem;
     }
 
     .carousel-products {
@@ -1103,57 +1140,35 @@ select option[value=""] {
         width: 80vw;
         height: fit-contents;
     }
-    
 
-    .footer {
-        bottom: 0 !important;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: fit-content !important;
-        width: 100vw !important;
-        background-color: white;
-        font-size: 12px;
-    }
-
-    .sign-up-form {
-        width: 90vw;
-        height: fit-content;
+    .row {
+        margin: 0;
     }
 
     .footer-line {
         display: inline-flexbox;
-        width: 80vw;
+        width: 80vw !important;
+        margin: 0;
         text-align: center;
-        margin-left: 5%;
     }
-    .footer .row {
+
+    .copyright {
+        margin: 50px 0px 50px 0px;
+        padding: 0;
+    }
+
+    .social-links {
+        font-size: 2.5rem;
+        line-height: 4rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 90vw;
+        margin: 0 auto;
         justify-content: center;
     }
 
     .footer-content {
-        margin: 5px;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .socials li {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    } 
-
-    .social-media {
-        width: 100vw;
-        height: fit-content;
-        display: inline-flexbox;
-        align-items: center;
-        justify-content: center; 
-        text-align: center;
-        margin: 0% 15% 0% 0%;
-        padding: 0;
+        justify-content: center;
     }
  }
 
