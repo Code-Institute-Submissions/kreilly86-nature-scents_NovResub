@@ -1005,6 +1005,22 @@ select option[value=""] {
         font-size: 1rem;
     }
 
+    .subscription-title {
+        font-size: 4rem;
+    }
+
+    .subscription-info {
+        margin-top: 25px;
+    }
+
+    .sub-text {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .subscribe-link {
+        margin-top: 35px;
+    }
 }
 
  @media (max-width: 766px) {
