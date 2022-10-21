@@ -3,21 +3,23 @@
 
 {% block content %}
 <div class="container-fluid w-100">
-    <div class="row cart-page">
+    <div class="row cart-page text-center">
         <div class="col-12 mx-auto">
             <h2 class="page-title">Thank you for your order!</h2>
         </div>
+
+        <div class="col-12 justify-content-center mt-3">
+            {% if from_profile %}
+            <a href="{% url 'profile' %}" class="btn rounded-2 btn-lg shop-button">
+                <span class="text-uppercase">Back to Profile</span>
+            </a>
+            {% else %}
+            <a href="{% url 'home' %}" class="btn rounded-2 btn-lg shop-button">
+                <span class="text-uppercase">Back Home</span>
+            </a>
+            {% endif %}
+        </div>
     </div>
-
-    {% if from_profile %}
-    <a href="{% url 'profile' %}" class="shop-button">
-        <span>
-            <i class="fas fa-angle-left"></i>
-        </span>
-        <span class="text-uppercase">Back to Profile</span>
-    </a>
-    {% endif %}
-
     <div>
         <hr class="page-end mt-5">
         </hr>
