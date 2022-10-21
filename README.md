@@ -1,7 +1,17 @@
 # Nature Scents
 ## Bring the aroma of nature into your home ✨
+<br>
+<img src="supporting_docs/design/am-i-responsive.png">
+<br>
+<br>
 
-An e-commerce store with products that fill your home with the scents of the natural world, bringing calm, and brightening your day.
+### A Full-stack Django-based E-commerce store with products that fill your home with the scents of the natural world, bringing calm, and brightening your day.
+<br>
+<br>
+
+[]live link
+<br>
+<br>
 
 ## User Experience(UX)
 
@@ -86,7 +96,7 @@ In order to achieve the goals of the site owner and customer, the following feat
 - Responsive navbar that will navigate to the various pages throughout the site
 - Shop page, that displays all products with the option to filter product category.
 - Register/login feature using Django AllAuth so that users can create an account.
-- Account page so logged in users can update their details
+- Account page so logged in users can update their details, and see previous orders
 - Custom 404 error page
 
 ## Structure Plane
@@ -117,6 +127,8 @@ In order to achieve the goals of the site owner and customer, the following feat
 - Subscription App
 
 - Shopping Cart App
+
+- Newsletter App
 
 
 ## Skeleton Plane
