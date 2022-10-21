@@ -736,7 +736,6 @@ select option[value=""] {
 
 @media (max-width: 576px) {
 
-
     .nav-item a {
         font-size: 1rem !important;
         color: white !important;
@@ -1014,6 +1013,14 @@ select option[value=""] {
 
     .subscribe-link {
         margin-top: 35px;
+    }
+
+    .cart-page {
+        margin-top: 350px;
+    }
+
+    #card-element {
+        width: 80vw;
     }
 }
 
