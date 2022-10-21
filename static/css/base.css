@@ -1126,14 +1126,14 @@ select option[value=""] {
     }
 
     .index-title {
-        font-size: 1 rem;
+        font-size: 3rem;
         color: white;
         margin-left: 5% !important;
     }
 
-    .index-text {
-        font-size: 1rem;
-        text-align: center;
+    .intro p {
+        font-size: 2rem;
+        text-align: left;
     }
 
     .nature-home-info {
