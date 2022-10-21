@@ -971,30 +971,24 @@ select option[value=""] {
         margin: 0 auto;
     }
 
-    .product-detail {
-        width: 100vw;
-        height: fit-content;
-        margin-top: 300px;
-        padding: 5px;
-        align-items: center;
-        justify-content: center;
+    .product-page {
+        margin-top: 350px;
     }
 
     .product-image {
-        margin-top: 350px;
-        transform: scale(1);
-    }
-
-    .product-description {
-        align-items: center;
-        justify-content: center;
+        margin-top: 300px;
+        margin-bottom: 0 !important;
+        transform: scale(0.6);
         padding: 0;
     }
 
-    .product-detail-overlay {
-        height: fit-content;
-        margin: 0;
-        width: 80vw;
+    .product-detail {
+        align-items: center;
+        justify-content: center;
+        width: 80vw !important;
+        margin-bottom: 25px;
+        margin-top: -125px !important;
+        margin-left: 25px;
     }
 
     .philosophy-title {
