@@ -774,6 +774,10 @@ select option[value=""] {
         display: block !important;
     }
 
+    .account-dropdown {
+        height: fit-content;
+    }
+
     .mobile-logo {
         display: flex !important;
         margin-top: 15px; 
@@ -788,7 +792,6 @@ select option[value=""] {
     }
 
     .icons {
-        line-height: 2.5rem;
         align-items: center;
         text-align: center;
         justify-content: center !important;
@@ -817,10 +820,6 @@ select option[value=""] {
         padding: 0;
         height: fit-content;
         width: 100vw;
-    }
-
-    .input-group {
-        width: 75vw;
     }
 
     .card-body {
@@ -996,6 +995,14 @@ select option[value=""] {
         height: fit-content;
         margin: 0;
         width: 80vw;
+    }
+
+    .philosophy-title {
+        font-size: 4rem;
+    }
+
+    .philosophy-text p {
+        font-size: 1rem;
     }
 
 }
