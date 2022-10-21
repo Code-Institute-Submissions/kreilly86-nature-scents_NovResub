@@ -1141,6 +1141,33 @@ select option[value=""] {
         height: fit-contents;
     }
 
+    .carousel-item {
+        width: 80vw !important;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .carousel-inner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .carousel-item img {
+        transform: scale(0.9);
+    }
+
+    .carousel-control-prev-icon {
+        margin-left: 100% !important;
+        padding: 10px;
+    }
+    
+    .carousel-control-next-icon {
+        margin-right: -75% !important;
+        padding: 10px;
+    }
+
+
     .row {
         margin: 0;
     }
