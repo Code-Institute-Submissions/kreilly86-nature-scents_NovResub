@@ -1273,12 +1273,115 @@ select option[value=""] {
         margin-top: 175px;
     }
 
+}
+
     @media (max-width: 992px) {
 
-        
-
-        .product-image a {
-            transform: scale(0.6)
+        #nav-nature {
+            height: 325px !important;
+            width: 100vw !important;
+            align-items: center;
+            justify-content: space-evenly;
         }
+        
+        .nav-item a {
+            font-size: 1rem !important;
+            padding: 5px;
+        }
+        
+        #nav-nature img {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .icons i {
+            justify-content: right;
+            display: inline-flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 5px;
+            font-size: 1.5rem !important;
+        }
+        
+        .users {
+            line-height: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .search-bar {
+            margin-top: 300px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0;
+            height: fit-content;
+            width: 100vw;
+            background-color: #7D8E95;
+            font-size: 12px;
+        }
+
+        .jumbotron-fluid {
+            padding: 5px;
+            margin-top: 300px !important;
+            width: 100vw;
+        }
+
+        .footer-line {
+            display: inline-flexbox;
+            width: 80vw !important;
+            margin: 0;
+            text-align: center;
+        }
+    
+        .copyright {
+            margin: 50px 0px 50px 0px;
+            padding: 0;
+        }
+    
+        .social-links {
+            font-size: 2.5rem;
+            line-height: 4rem;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 90vw;
+            margin: 0 auto;
+            justify-content: center;
+        }
+    
+        .footer-content {
+            justify-content: center;
+        } 
+        
+        .product-page {
+            margin-top: 350px;
+        }
+
+        .product-detail-page {
+            margin-top: 225px !important;
+        }
+
+
+        .shop-button {
+            font-size: 1rem;
+        }
+    
+        .product-detail {
+            margin-top: 175px;   
+        }
+
+        .cart-page {
+            margin-top: 350px !important;
+        }
+        
+        #card-element {
+            width: 70vw;
+        }
+    
+        .allauth {
+            margin-top: 175px;
+        }
+
     }
-}

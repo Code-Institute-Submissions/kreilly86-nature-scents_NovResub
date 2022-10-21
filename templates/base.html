@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Josefin+Sans:wght@300&display=swap"
     rel="stylesheet">
-  
+
   {% block corejs %}
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -53,10 +53,10 @@
   lemongrass, lavendar, sandalwood, essential oils">
 
 </head>
+
 <body class="d-flex flex-column min-vh-100">
   <header>
-    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light d-none d-lg-flex"
-      id="nav-nature">
+    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light d-none d-md-flex" id="nav-nature">
       <div>
         <a class="navbar-brand" href="{% url 'home' %}">
           <img src="{{ MEDIA_URL }}nature-logo.png" alt="website logo">
@@ -91,56 +91,58 @@
       </div>
 
       <div class="icons">
-        <div class="dropdown show users d-inline-flex">
-          <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <div><i class="fa-solid fa-user"></i></div>
-          </a>
-          <!--Code from Code Institute Boutique Ado Project-->
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            {% if request.user.is_authenticated %}
+        <div class="col-md 12">
+          <div class="dropdown show users d-inline-flex">
+            <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div><i class="fa-solid fa-user"></i></div>
+            </a>
+            <!--Code from Code Institute Boutique Ado Project-->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              {% if request.user.is_authenticated %}
               {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Add Products</a>
+              <a href="{% url 'add_product' %}" class="dropdown-item">Add Products</a>
               {% endif %}
               <a href="{% url 'profile' %}" class="dropdown-item">My Account</a>
               <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-            {% else %}
+              {% else %}
               <a href="{% url 'account_signup' %}" class="dropdown-item">Sign-up</a>
               <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-            {% endif %}
-          </div>
-          <div>
-            <a href="#searchBar" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </div>
-          <div class="collapse search-bar fixed-top mx-auto" id="searchBar">
-            <div class="card search-container card-body">
-              <form method="GET" action="{% url 'products' %}">
-                <div class="input-group w-90">
-                  <input class="form-control border border-black rounded-0" type="text" name="q"
-                    placeholder="Search our site">
-                  <div class="input-group-append">
-                    <button class="form-control btn btn-black border rounded-0" type="submit">
-                      <span class="icon">
-                        <i class="fas fa-search p-0"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              </form>
+              {% endif %}
             </div>
-          </div>
-          <div class="text-center">
-            <a class="{% if grand_total %} shopping-cart font-weight-bold {% else %}
+            <div>
+              <a href="#searchBar" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </div>
+            <div class="collapse search-bar fixed-top mx-auto" id="searchBar">
+              <div class="card search-container card-body">
+                <form method="GET" action="{% url 'products' %}">
+                  <div class="input-group w-90">
+                    <input class="form-control border border-black rounded-0" type="text" name="q"
+                      placeholder="Search our site">
+                    <div class="input-group-append">
+                      <button class="form-control btn btn-black border rounded-0" type="submit">
+                        <span class="icon">
+                          <i class="fas fa-search p-0"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="text-center">
+              <a class="{% if grand_total %} shopping-cart font-weight-bold {% else %}
           active-nav {% endif %} nav-link" href="{% url 'cart' %}">
-              <div><i class="fa-solid fa-cart-shopping px-0"></i></div>
-            </a>
+                <div><i class="fa-solid fa-cart-shopping px-0"></i></div>
+              </a>
+            </div>
+            <span class="badge badge-info">{{ request.session.cart.keys|length }}</span>
           </div>
-          <span class="badge badge-info">{{ request.session.cart.keys|length }}</span>
         </div>
-      </div> 
-     
+      </div>
+
     </nav>
     {% include 'includes/mobile-nav.html' %}
   </header>
@@ -149,17 +151,17 @@
   {% if messages %}
   <div class="message-container">
     {% for message in messages %}
-      {% with message.level as level %}
-        {% if level == 40 %}
-          {% include 'includes/toasts/toast_error.html' %}
-        {% elif level == 30 %}
-          {% include 'includes/toasts/toast_warning.html' %}
-        {% elif level == 25 %}
-          {% include 'includes/toasts/toast_success.html' %}
-        {% else %}
-          {% include 'includes/toasts/toast_info.html' %}
-        {% endif %}
-      {% endwith %}
+    {% with message.level as level %}
+    {% if level == 40 %}
+    {% include 'includes/toasts/toast_error.html' %}
+    {% elif level == 30 %}
+    {% include 'includes/toasts/toast_warning.html' %}
+    {% elif level == 25 %}
+    {% include 'includes/toasts/toast_success.html' %}
+    {% else %}
+    {% include 'includes/toasts/toast_info.html' %}
+    {% endif %}
+    {% endwith %}
     {% endfor %}
   </div>
   {% endif %}
@@ -176,7 +178,8 @@
             <p>Sign-up for exclusive offers, news, and updates about our newest scents.</p>
           </div>
           <div class="signup-form col-xs-12 col-lg-3">
-            <form method="post" action="{% url 'newsletter_signup' %}" id="newsletter_signup" accept-charset="UTF-8" class="contact-form border-0">
+            <form method="post" action="{% url 'newsletter_signup' %}" id="newsletter_signup" accept-charset="UTF-8"
+              class="contact-form border-0">
               {% csrf_token %}
               <input type="email" placeholder="Enter your email" class="signup-form-email border-0" name="email"
                 aria-label="Email">
