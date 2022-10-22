@@ -291,6 +291,14 @@ When the dropdown menu is clicked, the content is centered and easy to access.
 <img src="supporting_docs/design/navbar-drop-mobile.png">
 <br>
 <br>
+<strong>Search Bar</strong>
+<br>
+When the font awesome magnifiying glass is clicked on the navbar a search bar pops down. Users can search for keywords, and if they exisit within a product name/decription the results will be rendered.
+<br>
+<br>
+<img src="supporting_docs/design/search-bar.png">
+<br>
+<br>
 
 ### Footer
 
@@ -379,6 +387,25 @@ The checkout page contains a simple form, with address details, and a card input
 <br>
 <img src="supporting_docs/design/thank-you-order.png">
 <br>
+
+<strong>Profile Page</strong>
+<br>
+The profile page displays the users billing/shipping details, along with a list of previous orders. The user is able to update their shipping info by clicking the 'Update Information' button.
+<br>
+<img src="supporting_docs/design/profile-page.png">
+<br>
+
+<strong>Admin</strong>
+<br>
+When the site admin is logged in they are able to add, edit, or delete products to the database from the Frontend. 
+<br>
+<img src="supporting_docs/design/admin-orders.png">
+<br>
+<img src="supporting_docs/design/product-management.png">
+<br>
+
+
+
 
 
 
