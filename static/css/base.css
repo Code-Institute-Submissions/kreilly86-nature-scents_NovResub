@@ -21,7 +21,7 @@ body {
 }
 
 .nav-item a {
-    font-size: 1.15rem !important;
+    font-size: 1.15rem;
     color: white !important;
     padding: 5px;
     text-transform: uppercase;
@@ -109,12 +109,8 @@ body {
 
 /* ------------Home Page */
 
-.jumbotron-fluid {
-    width: 100vw;
-}
-
 .jumbotron {
-    margin: 0;
+    margin-top: 50px;
     padding: 0;
     background-image: url('/media/hero-image.jpg');
     background-size: cover;
@@ -736,21 +732,22 @@ select option[value=""] {
 
 /*------------------Media Queries */
  
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .nav-item a {
-        font-size: 0.8rem !important;
         color: white !important;
+        font-size: 12px;
         padding: 5px;
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif !important;
         vertical-align: middle;
+        line-height: 30px;
     }
 
     .mobile-navigation {
         flex-direction: row;
         line-height: 80px;
     }
-
+ 
     .navbar-collapse {
         width: 100vw;
         flex-direction: row;
@@ -799,7 +796,7 @@ select option[value=""] {
         margin-top: 30px;
         justify-content: center;
         text-align: center;
-        transform: scale(0.7)
+        transform: scale(0.7);
     }
 
     .mobile-menu {
@@ -818,13 +815,17 @@ select option[value=""] {
         margin: 0;
     }
 
-    #search-bar-mobile {
-        margin-top: 249px;
+    .search-bar-mobile {
+        margin-top: 250px !important;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0;
         height: fit-content;
         width: 100vw;
+    }
+
+    .form-control {
+        padding: 0;
     }
 
     .card-body {
@@ -870,7 +871,7 @@ select option[value=""] {
     }
 
     .lead {
-        font-size: 1.5rem;
+        font-size: 1rem !important;
     }
 
     .card-img-overlay {
@@ -979,21 +980,26 @@ select option[value=""] {
     }
 
     .product-page {
-        margin-top: 350px;
+        margin-top: 50px !important;
     }
 
     .product-image {
-        margin-top: 250px;
-        margin-bottom: -150px !important;
-        transform: scale(0.7);
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        transform: scale(0.5) !important;
         padding: 0;
     }
 
-    .product-detail {
+    .product-detail-page {
         align-items: center;
         justify-content: center;
         width: 80vw !important;
         margin-left: 25px;
+        margin-top: 0px !important;
+    }
+
+    .product-detail {
+        margin-top: 0px !important;
     }
 
     .product-detail p {
@@ -1001,7 +1007,7 @@ select option[value=""] {
     }
 
     .shop-button {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .philosophy-title {
@@ -1030,7 +1036,7 @@ select option[value=""] {
     }
 
     .cart-page {
-        margin-top: 350px;
+        margin-top: 50px !important;
     }
 
     #card-element {
@@ -1042,9 +1048,9 @@ select option[value=""] {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .nav-item a {
-        font-size: 2rem !important;
+        font-size: 2rem;
         color: white !important;
         padding: 5px;
         text-transform: uppercase;
@@ -1100,8 +1106,8 @@ select option[value=""] {
     }
 
     #mobile-logo {
-        width: 10rem;
-        height: 10rem;
+        width: 7rem;
+        height: 7rem;
         padding: 0;
     }
 
@@ -1123,6 +1129,7 @@ select option[value=""] {
     .icons i {
         font-size: 1.5rem;
         margin-top: 5px;
+        text-decoration: none;
     }
 
     .search-bar-mobile {
@@ -1134,9 +1141,9 @@ select option[value=""] {
         width: 100vw;
     }
 
-    .jumbotron-fluid {
+    .jumbotron {
         padding: 5px;
-        margin-top: 0px;
+        margin-top: 0px !important;
         width: 100vw;
     }
 
@@ -1162,7 +1169,7 @@ select option[value=""] {
         padding: 0 !important;
     }
 
-    .nature-home-info>a {
+    .nature-home-info > a {
         width: 80vw !important;
     }
 
@@ -1171,7 +1178,7 @@ select option[value=""] {
     }
 
     .lead {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     .carousel-products {
@@ -1237,7 +1244,7 @@ select option[value=""] {
     }
 
     .product-page {
-        margin-top: 350px;
+        margin-top: 50px !important;
     }
 
     .products p {
@@ -1245,21 +1252,31 @@ select option[value=""] {
         font-style: normal;
     }
 
-    .product-detail {
+    .product-detail-page {
         align-items: center;
+        margin-top: 0px !important;
         justify-content: center;
         width: 90vw !important;
-        margin-bottom: 25px;
-        margin-top: 175px !important;
         margin-left: 25px;
+    }
+    
+    .product-detail p {
+        font-size: 1rem;
+    }
+
+    .product-detail {
+        margin-top: 0px;
+    }
+
+    .product-image {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        transform: scale(0.8);
+        padding: 0;
     }
 
     .shop-button {
         font-size: 1rem;
-    }
-
-    .product-detail p {
-        font-size: 1.25rem;
     }
 
     .philosophy-title {
@@ -1275,15 +1292,8 @@ select option[value=""] {
         font-size: 2rem;
     }
 
-    .product-image {
-        margin-top: 250px;
-        margin-bottom: -150px !important;
-        transform: scale(0.7);
-        padding: 0;
-    }
-
     .cart-page {
-        margin-top: 350px;
+        margin-top: 50px !important;
     }
 
     #card-element {
@@ -1291,21 +1301,20 @@ select option[value=""] {
     }
 
     .allauth {
-        margin-top: 175px;
+        margin-top: 50px !important;
     }
-
 }
 
-    @media (max-width: 992px) {
+@media screen and (max-width: 992px) {
         #nav-nature {
-            height: 325px !important;
-            width: 100vw !important;
+            height: 325px;
+            width: 100vw;
             align-items: center;
             justify-content: space-evenly;
         }
         
         .nav-item a {
-            font-size: 1rem !important;
+            font-size: 1rem;
             padding: 5px;
         }
         
@@ -1323,7 +1332,9 @@ select option[value=""] {
             flex-direction: row;
             margin: 0;
             padding: 5px;
-            font-size: 1.5rem !important;
+            font-size: 1.5rem;
+            text-decoration: none;
+            list-style: none;
         }
         
         .users {
@@ -1335,10 +1346,15 @@ select option[value=""] {
         .navbar-collapse.collapse.show {
             width: 50vw;
             padding-top: 15px;
+            margin-top: 50x;
         }
         
+        .nav-text {
+            margin-top: 25px;
+        }
+
         .search-bar {
-            margin-top: 300px;
+            margin-top: 175px;
             margin-left: 0px;
             margin-right: 0px;
             padding: 0;
@@ -1350,7 +1366,7 @@ select option[value=""] {
 
         .jumbotron {
             padding: 0px;
-            margin-top: 325px !important;
+            margin-top: 150px;
             width: 100vw;
         }
 
@@ -1375,30 +1391,30 @@ select option[value=""] {
             margin: 0 auto;
             justify-content: center;
         }
-    
+        
         .footer-content {
             justify-content: center;
         } 
         
         .product-page {
-            margin-top: 350px;
+            margin-top: 225px;
         }
 
         .product-detail-page {
-            margin-top: 225px !important;
+            margin-top: 100px;
         }
 
+        .product-detail {
+            margin-top: 100px;
+        }
 
         .shop-button {
-            font-size: 1rem;
-        }
-    
-        .product-detail {
-            margin-top: 175px;   
+            font-size: 0.8rem;
+            margin-bottom: 50px;
         }
 
         .cart-page {
-            margin-top: 350px !important;
+            margin-top: 225px;
         }
         
         #card-element {
@@ -1406,7 +1422,6 @@ select option[value=""] {
         }
     
         .allauth {
-            margin-top: 175px;
+            margin-top: 125px;
         }
-
     }
