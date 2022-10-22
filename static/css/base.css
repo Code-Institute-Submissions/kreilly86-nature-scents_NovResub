@@ -820,6 +820,7 @@ select option[value=""] {
     .jumbotron {
         padding: 0 !important;
         width: 100vw;
+        margin-top: 0px !important;
     }
 
     .intro {
