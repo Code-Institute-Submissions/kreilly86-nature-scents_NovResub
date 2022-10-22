@@ -480,6 +480,69 @@ PostgreSQL - Heroku's PostgreSQL was used to store data of the deployed site
 <hr>
 <br>
 
+#### Local Deployment 
+<br>
+<br>
+
+I used Github and Gitpod to build and run this project locally. The repositiory was built using Code Institute's template:
+
+Found [here](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+<br>
+Steps:
+
+- Click the Use This Template button in the github repository menu
+- Create your own repository name, and description
+- Click the Create Repository from template to create repository
+- Click Gitpod to open the development environment workspace for the new respository
+- Use this workspace each time, rather than repeat above steps, to ensure any installed dependencies are accessible each time
+- Use git to add commit messages and push regularly to keep track of progress:
+<br>
+- git add . (adds all modified files to a staging area)
+- git commit -m "Insert explanation of commit here": commits all changes to the repository
+- git push: pushes all committed changes to your Github repository.
+<br>
+For this project I didn't use the fork or clone option in GitHub, but these are useful tools. If you want to make changes without affecting the code already pushed you can clone the workspac to work on your repository and 'test' out code and changes. On reflection this would have been a useful tool rather than making changes to the original, and sometimes getting a bit lost as to how any changes were made on one sitting. 
+<br>
+<br>
+
+#### Heroku Deployment
+<br>
+<br>
+
+Steps to Deploy to Heroku:
+<br> 
+* Note Ensure debug mode is FALSE in final deployment to ensure project security
+<br>
+
+Sign into Heroku account and select create a new app.
+<br>
+<img src="supporting_docs/flow/heroku-part1.png">
+<br>
+Choose app name and select Europe region, click create app
+<br>
+<img src="supporting_docs/flow/heroku-part2.png">
+<br>
+In local GitPod environment at project level create a Procfile with the following: web: gunicorn *project name here *_database.wsgi
+<br>
+<img src="supporting_docs/flow/heroku-part3.png">
+<br>
+Click on resources tab in Heroku, and add-ons and select Heroku Postgres
+<br>
+<img src="supporting_docs/flow/heroku-part4.png">
+<br>
+Click Settings tab and select reveal Config Vars
+<br>
+<img src="supporting_docs/flow/heroku-part5.png">
+<br>
+Copy DATABASE_URL value to an env.py file in GitPod (os.environ["DATABASE_URL"] = 'insert value here'), and also create a SECRET_KEY here which is added as a key and value in confing vars on Heroku.
+<br>
+When ready to deploy under deployment tab Select Github as deployment method and type in repository name of project
+Click search and hit connect on repository name
+Next hit deploy branch, and you will see "your app has been deployed", click on link to go to the deployed project
+<br>
+<img src="supporting_docs/flow/heroku-part6.png">
+<br>
 
 ## Credits 
 <br>
@@ -487,5 +550,9 @@ PostgreSQL - Heroku's PostgreSQL was used to store data of the deployed site
 Code and structure for this e-commerce site has largely come from Code Institute's Boutique Ado walkthrough project: 
 <br>
 https://github.com/Code-Institute-Solutions/boutique_ado_v1/tree/9ed36dc2c07228041b56b28174dd96ee56e6c59a
+<br>
+My mentor Simen Daehiln for encouragement and help with project planning and implementation.
+<br>
+Code Institute Tutors for technical help on many occasions!
 <br>
 
