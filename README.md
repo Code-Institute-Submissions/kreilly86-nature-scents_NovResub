@@ -43,6 +43,7 @@ This e-commerce site is a B2C model. The goal of the site is to not only make on
 | User can filter products by key word | 4 | 4
 | User can purchase products using STRIPE payment | 5 | 5
 | User can see reviews from other customers | 3 | 3
+| User can see number of items in shopping bag with nav icon | 3 | 3
 | Site owner can add products | 5 | 5
 | Site owner can edit a product | 5 | 5
 | Site owner can login to admin to edit products/approve users | 5 | 5
@@ -117,18 +118,46 @@ In order to achieve the goals of the site owner and customer, the following feat
 <br>
 
 - Home App
+<hr>
+<br>
+The Home App contains the templates for the home page, subscription page and philosophy page. It is a simple app that exists with views, and urls to render these pages on the website.
+<br>
 
 - Products App
-
-- Checkout App
-
-- Profile App
-
-- Subscription App
+<hr>
+<br>
+The Products App is the main hub of the site, where all users are drawn in order to view products, see them in detail and add them to their shopping cart. The app contains two models: The <strong>Product</strong> model and the <strong>Category</strong>
+model. There is a product detail view linked to a product detail template so that users can clic into an individual product and see further details about it, and if they decide add it to their shopping cart.
+<br>
+Site owners have the ability to add products to the database from the frontend using the add_product view, they can also edit or delete poroducts from the database, using the edit_product, and delete_product views respectively.
+<br>
 
 - Shopping Cart App
+<hr>
+<br>
+The Shopping Cart App has 4 views, cart, add_to_cart, adjust_cart and remove_from_cart. The cart view renders the contents of the users shopping cart into the cart template. The other 3 views allow the user to either add to their cart, adjust the quantity of the product in question or if they change their mind they can remove products from their cart..
+<br>
+
+- Checkout App
+<hr>
+<br>
+The Checkout App consist of two models, Order and OrderLineItem. This app's function is to take what is in the users shoppign cart and enable them to go through the process of payment and order completion.
+<br>
+The Order Line Item model has a Foriegn Key to product, and order. It captures the product, quantity and price of the items in the users shopping cart.
+<br>
+The Order model contains all the users' shipping/billing details, contact details etc. It has a Foreign Key to the User_Profile model, and captures the total cost of the order, also calculating if the customer has hit the free delivery threshold of €50. It also contains information regarding the payment, the stripe PID and has an original cart field to be sent to the admin.
+<br>
+
+- Profile App
+<hr>
+<br>
+The Profile App allows authenticated users to see 2 things about their account. Firstly they are able to see their default address/contact details for orders, using a Form called UserProfileForm. When they are logged in ans go to checkout their default information prepopulates the checkout form which makes for a better user experience. The second thing they are able to access from this app is a run down of their order history, with unique id that is generated from the checkout app. It contains one model, UserProfile.
+<br>
 
 - Newsletter App
+<hr>
+<br>
+The Newsletter App has one model NewsletterInput, with an email field. This app links to a frontend input positioned in the footer of the site, which enables users to enter their email to sign-up for news updates, special offers etc.
 
 
 ## Skeleton Plane
