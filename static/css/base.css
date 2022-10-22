@@ -233,11 +233,12 @@ body {
     opacity: 1;
 }
 
-.footer {
+footer {
     margin-bottom: 0;
-    padding: 15px;
+    padding: 0px;
     font-family: "Cardo", sans-serif;
-    color: #344648;
+    background-color: #7D8E95 !important;
+    color: white;
     font-size: 16px;
     height: fit-content !important;
     width: 100vw;
@@ -248,7 +249,7 @@ body {
 .footer-content {
     margin-left: 5%;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .footer-line {
@@ -284,7 +285,7 @@ body {
 .list-inline-item a {
     padding: 10px;
     font-size: 1.5rem;
-    color: #7D8E95;
+    color: #FFBB98;
     list-style: none;
 }
 
@@ -353,13 +354,11 @@ body {
 
 .page-end {
     width: 100vw;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     border: 0;
     border-top: 2px solid;
     border-color: #7D8E95;
     margin: 0;
-    padding-bottom: 10px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -506,12 +505,12 @@ body {
 }
 
 .shop-button {
-    background-color: #8e9A82;
+    background-color: #344648;
     color: white;
 }
 
 .shop-button:hover {
-    background-color: #344648;
+    background-color: #8e9A82;
     color: white ;
     border-color: #7D8E95;
 }
