@@ -340,6 +340,54 @@ The subscription page is similar to the Philosophy page in that is has a strikin
 <img src="supporting_docs/design/subscription-detail.png">
 <br>
 
+<strong>Products Page</strong>
+<br>
+Users can access the products page from the main nav bar by clicking 'Shop' and selecting a type of products, or 'all products'. This will filter the products into sections, with the all selection showing the titles of all the categories at the top of the page.
+<br>
+<img src="supporting_docs/design/products-page.png">
+<br>
+<img src="supporting_docs/design/shop-menu.png">
+<br>
+<img src="supporting_docs/design/all-products.png">
+<br>
+
+<strong>Product Detail</strong>
+<br>
+When a user clicks on one of the products they are taken to the product detail page. This displays an image of the product, a description, the price, a quantity selector, and an add to cart button. Once the user clicks on add to cart they see a bootstrap success message pop up. Otherwise they can can click on keep shopping to be taken back to the products page, which shows all products.
+<br>
+<img src="supporting_docs/design/product-detail-page.png">
+<br>
+<img src="supporting_docs/design/cart-success.png">
+<br>
+
+<strong>Cart Page</strong>
+<br>
+The cart page displays all items the user has addedd, displayed stacked in a bootstrap col-12 div. The user can click to delete the item from the cart, or edit the quantity. The total price is displayed including delivery, which is free over €50. The checkout button brings the user to the final step in the process.
+<br>
+<img src="supporting_docs/design/cart-view.png">
+<br>
+
+<strong>Checkout Page</strong>
+<br>
+The checkout page contains a simple form, with address details, and a card input box made using Stripe. Once the users enters all information they are given a warning of how much they will be charged before proceeding. There is also a checkbox if logged in users would like to save their address details for future purchases. When the payment is processed the user is shown a success pop up, and message thanking them for their order.
+<br>
+<img src="supporting_docs/design/checkout-page.png">
+<br>
+<br>
+<img src="supporting_docs/design/card-charge.png">
+<br>
+<br>
+<img src="supporting_docs/design/thank-you-order.png">
+<br>
+
+
+
+
+
+
+
+
+
 ### Future Features
 <br>
 <br>
