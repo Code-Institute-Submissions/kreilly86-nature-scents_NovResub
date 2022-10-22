@@ -739,7 +739,7 @@ select option[value=""] {
 @media (max-width: 576px) {
 
     .nav-item a {
-        font-size: 1rem !important;
+        font-size: 0.8rem !important;
         color: white !important;
         padding: 5px;
         text-transform: uppercase;
@@ -748,25 +748,24 @@ select option[value=""] {
     }
 
     .navbar-collapse {
-        height: fit-content;
         width: 100vw;
-        flex-direction: column;
+        flex-direction: row;
     }
 
-    .navbar {
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        height: 300px;
+    .list-inline-item {
+        list-style: none;
     }
 
     .nav-nature-mobile {
+        padding: 0;
         width: 100vw !important;
         background-color: #7D8E95 !important;
-        justify-content: space-evenly;
-        text-align: center;
-        overflow-x: hidden;
-        margin-bottom: 0 !important;
+        margin-bottom: 0 !important;  
+    }
+
+    .mobile-collapse-bar {
+        display: inline-block;
+        margin: 0;
     }
 
     .dropdown-menu {
@@ -774,8 +773,7 @@ select option[value=""] {
     }
 
     .navbar-toggler {
-        padding: 10px;
-        margin-left: 15px;
+        padding: 15px 10px 15px 10px !important;
         display: block !important;
     }
 
@@ -784,7 +782,7 @@ select option[value=""] {
         margin-top: 30px;
         justify-content: center;
         text-align: center;
-        transform: scale(0.8)
+        transform: scale(0.7)
     }
 
     .mobile-menu {
@@ -792,27 +790,22 @@ select option[value=""] {
     }
 
     .icons {
-        align-items: center;
-        text-align: center;
-        justify-content: center !important;
-        margin-right: 0px !important;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
     }
 
     .icons a {
         font-size: 1.25rem;
-        margin-top: 5px;
         padding: 10px;
-        text-align: center;
     }
 
     .shopping-cart i {
         font-size: 1.25rem;
-        text-align: center;
         margin: 0;
     }
 
-    .search-bar-mobile {
-        margin-top: 475px;
+    #search-bar-mobile {
+        margin-top: 249px;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0;
@@ -826,7 +819,6 @@ select option[value=""] {
 
     .jumbotron {
         padding: 0 !important;
-        margin-top: 200px !important;
         width: 100vw;
     }
 
