@@ -117,14 +117,12 @@ In order to achieve the goals of the site owner and customer, the following feat
 **Apps**
 <br>
 
-- Home App
-<hr>
+- <strong>Home App</strong>
 <br>
 The Home App contains the templates for the home page, subscription page and philosophy page. It is a simple app that exists with views, and urls to render these pages on the website.
 <br>
 
-- Products App
-<hr>
+- <strong>Products App</strong>
 <br>
 The Products App is the main hub of the site, where all users are drawn in order to view products, see them in detail and add them to their shopping cart. The app contains two models: The <strong>Product</strong> model and the <strong>Category</strong>
 model. There is a product detail view linked to a product detail template so that users can clic into an individual product and see further details about it, and if they decide add it to their shopping cart.
@@ -132,14 +130,12 @@ model. There is a product detail view linked to a product detail template so tha
 Site owners have the ability to add products to the database from the frontend using the add_product view, they can also edit or delete poroducts from the database, using the edit_product, and delete_product views respectively.
 <br>
 
-- Shopping Cart App
-<hr>
+- <strong>Shopping Cart App</strong>
 <br>
 The Shopping Cart App has 4 views, cart, add_to_cart, adjust_cart and remove_from_cart. The cart view renders the contents of the users shopping cart into the cart template. The other 3 views allow the user to either add to their cart, adjust the quantity of the product in question or if they change their mind they can remove products from their cart..
 <br>
 
-- Checkout App
-<hr>
+- <strong>Checkout App</strong>
 <br>
 The Checkout App consist of two models, Order and OrderLineItem. This app's function is to take what is in the users shoppign cart and enable them to go through the process of payment and order completion.
 <br>
@@ -148,14 +144,12 @@ The Order Line Item model has a Foriegn Key to product, and order. It captures t
 The Order model contains all the users' shipping/billing details, contact details etc. It has a Foreign Key to the User_Profile model, and captures the total cost of the order, also calculating if the customer has hit the free delivery threshold of €50. It also contains information regarding the payment, the stripe PID and has an original cart field to be sent to the admin.
 <br>
 
-- Profile App
-<hr>
+- <strong>Profile App</strong>
 <br>
 The Profile App allows authenticated users to see 2 things about their account. Firstly they are able to see their default address/contact details for orders, using a Form called UserProfileForm. When they are logged in ans go to checkout their default information prepopulates the checkout form which makes for a better user experience. The second thing they are able to access from this app is a run down of their order history, with unique id that is generated from the checkout app. It contains one model, UserProfile.
 <br>
 
-- Newsletter App
-<hr>
+- <strong>Newsletter App</strong>
 <br>
 The Newsletter App has one model NewsletterInput, with an email field. This app links to a frontend input positioned in the footer of the site, which enables users to enter their email to sign-up for news updates, special offers etc.
 
@@ -435,8 +429,6 @@ During testing I came up across an issue with the checkout page, specifically th
 <br>
 
 
-
-
 ## Testing
 <br>
 <br>
@@ -465,6 +457,8 @@ Font Awesome - Used for navigation icons and social links
 SQLite - Was used to run the project localy
 AWS - Amazon Web Services S3  was used to host static files
 PostgreSQL - Heroku's PostgreSQL was used to store data of the deployed site
+Stripe- For payment processing
+Balsamic - Used for wireframe drawings and planning
 
 ### Code Validation
 <br>
