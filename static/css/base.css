@@ -792,15 +792,12 @@ select option[value=""] {
     .icons {
         margin-top: 0px !important;
         margin-bottom: 0px !important;
-    }
-
-    .icons a {
-        font-size: 1.25rem;
+        font-size: 1rem;
         padding: 10px;
     }
 
     .shopping-cart i {
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin: 0;
     }
 
@@ -824,8 +821,8 @@ select option[value=""] {
     }
 
     .intro {
-        margin-top: 0 ! important;
         width: 90vw;
+        margin-top: 0px;
         justify-content: center;
     }
 
@@ -1023,7 +1020,7 @@ select option[value=""] {
     }
 
     .allauth {
-        margin-top: 150px;
+        margin-top: 0px;
     }
 }
 
