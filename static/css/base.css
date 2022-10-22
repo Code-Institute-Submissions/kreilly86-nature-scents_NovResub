@@ -776,6 +776,19 @@ select option[value=""] {
         position: relative;
     }
 
+    .dropdown-menu.show {
+        width: 60vw !important;  
+    }
+
+    .dropdown-menu.account-dropdown.show {
+        position: absolute;
+        z-index: 2;
+    }
+
+    .account-icon {
+        position: relative;
+    }
+
     .navbar-toggler {
         padding: 15px 10px 15px 10px !important;
         display: block !important;
@@ -822,6 +835,7 @@ select option[value=""] {
         padding: 0 !important;
         width: 100vw;
         margin-top: 0px !important;
+        z-index: 1;
     }
 
     .intro {
@@ -1047,12 +1061,28 @@ select option[value=""] {
         padding: 0;
     }
 
+    .mobile-navigation {
+        flex-direction: row;
+        line-height: 100px;
+        justify-content: space-around !important;
+        padding-top: 10px;
+    }
+
+    .navbar-toggler {
+        padding: 15px 10px 15px 10px !important;
+        margin-top: 10px;
+        display: block !important;
+    }
+
+    .navbar-collapse.collapse.show {
+        width: 50vw;
+        padding: 5px;
+    }
+
     .nav-nature-mobile {
         width: 100vw !important;
         height: fit-content !important;
         background-color: #7D8E95 !important;
-        justify-content: space-around;
-        text-align: center;
         overflow-x: hidden;
         margin: 0 !important;
     }
@@ -1065,7 +1095,7 @@ select option[value=""] {
 
     .mobile-logo {
         display: flex !important;
-        margin-top: 15px;
+        margin-top: 25px;
         justify-content: center;
     }
 
@@ -1073,6 +1103,14 @@ select option[value=""] {
         width: 10rem;
         height: 10rem;
         padding: 0;
+    }
+
+    .dropdown-menu {
+        position: relative;
+    }
+
+    .dropdown-menu.show {
+        width: 60vw !important;  
     }
 
     .icons {
@@ -1088,7 +1126,7 @@ select option[value=""] {
     }
 
     .search-bar-mobile {
-        margin-top: 475px;
+        margin-top: 225px;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0;
@@ -1259,7 +1297,6 @@ select option[value=""] {
 }
 
     @media (max-width: 992px) {
-
         #nav-nature {
             height: 325px !important;
             width: 100vw !important;
@@ -1294,6 +1331,11 @@ select option[value=""] {
             align-items: center;
             justify-content: center;
         }
+
+        .navbar-collapse.collapse.show {
+            width: 50vw;
+            padding-top: 15px;
+        }
         
         .search-bar {
             margin-top: 300px;
@@ -1306,9 +1348,9 @@ select option[value=""] {
             font-size: 12px;
         }
 
-        .jumbotron-fluid {
-            padding: 5px;
-            margin-top: 0px !important;
+        .jumbotron {
+            padding: 0px;
+            margin-top: 325px !important;
             width: 100vw;
         }
 
