@@ -267,8 +267,10 @@ The project board can be found [here] (https://github.com/users/kreilly86/projec
 
 ### Existing Features
 <br>
-<br>
-- Navigation:
+<hr>
+
+ ### Navigation
+
 <br>
 <strong>Main navigation</strong>
 <br>
@@ -290,16 +292,59 @@ When the dropdown menu is clicked, the content is centered and easy to access.
 <br>
 <br>
 
+### Footer
+
+<br>
+<strong>Desktop Footer</strong>
+<br>
+The footer is simple, with a white background and is divided from the main content with a horizontal bar. It contains a newsletter sign-up input, copyright information and social media icon links
+<br>
+<img src="supporting_docs/design/main-footer.png">
+<br>
+<strong>Mobile/Tablet Footer</strong>
+<br>
+
+The footer contents stack on mobile and tablet view:
+<br>
+
+<img src="supporting_docs/design/mobile-footer.png">
+<br>
+<strong>Home Page</strong>
+<br>
+
+The home page contains a hero image with natural products and an H1 title with bootstrap class 'display-4'. It is follwed by a lead description expplaining to the user what the site is about, "Bring the aroma of nature into your home".
+<br>
+
+<img src="supporting_docs/design/homepage-top.png">
+<br>
+
+The bottom half of the home page contains a 'Shop' button to take users to the products page and below a bootstrap carousel of images showing the different category of productd available.
+
+<br>
+<img src="supporting_docs/design/homepage-carousel.png">
+<br>
+
+<strong>Philosophy Page</strong>
+<br>
+The Philosophy page is simple, with a short description of the company's ethos. It contains a striking image and bold title in white
+<br>
+<img src="supporting_docs/design/philosophy-page.png">
+<br>
+
+<strong>Subscription Page</strong>
+<br>
+The subscription page is similar to the Philosophy page in that is has a striking ikage and cold title in white. Below is a deacription of the yearly membership, which provides users with a monthly delivery of new 'scents' to their door. I have use a zoom effect on the images inspired by the Code Institute Love running club project effect. This brings a bit of life to the page. Users can then click on the more info button and the subscription product is displayed in the product detail template. From there they can add the product to their shopping cart.
+<br>
+<img src="supporting_docs/design/subscription-page.png">
+<br>
+<img src="supporting_docs/design/subscription-detail.png">
+<br>
+
 ### Future Features
 <br>
 <br>
-In it's current state the project is incomplete. There are still features and functionality to be added which include:
 
-    - A display on the shopping cart icon with the number of products in the shopping cart
-    - Custom Django models :
-        A model linking products to mood (relaxing, energising, etc)
-        A subscription model
-        A model for special deals
+
 <br>
 <br>
 The user is currently able to browse products and add them to their shopping cart. They are then able to click through to the checkout page but this remains incomplete. I also need to make a profile page for users. 
