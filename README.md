@@ -404,31 +404,9 @@ When the site admin is logged in they are able to add, edit, or delete products 
 <img src="supporting_docs/design/product-management.png">
 <br>
 
-
-
-
-
-
-
-
-
-
-
-
 ### Future Features
 <br>
 <br>
-
-
-<br>
-<br>
-The user is currently able to browse products and add them to their shopping cart. They are then able to click through to the checkout page but this remains incomplete. I also need to make a profile page for users. 
-<br>
-<br>
-The subscrition app is incomplete. Further information needs to be added, and a payment option to charge a yearly one off fee in return for a monthly delivery of custom products for the user.
-<br>
-<br>
-The newsletter sign-up contained in the footer is not functioning yet.
 
 ## Marketing and SEO
 <br>
@@ -470,13 +448,38 @@ As I had not implemented a free delivery threshold, the postage charges generate
 <img src="supporting_docs/design/delivery-cost.png">
 <br>
 
+### Technologies Used
+<br>
+<hr>
+
+Python - This project uses Python as its' core language
+Django - This project is built with the Django framework
+Bootstrap - Bootstrap is used throughout the site to add style, and responsiveness to the site
+GitHub - Used to store code for the project
+Git - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+Gitpod - Used as the development environment.
+Heroku - Used to deploy and host the final application.
+Google Fonts - Used for website fonts
+Google Developer Tools - I used google developer tools throughout the build process to test the site, fix issues etc
+Font Awesome - Used for navigation icons and social links
+SQLite - Was used to run the project localy
+AWS - Amazon Web Services S3  was used to host static files
+PostgreSQL - Heroku's PostgreSQL was used to store data of the deployed site
+
 ### Code Validation
 <br>
 <br>
 - W3C Mark-up Validation
 - W3C CSS Validtion
 - Lighthouse
-- 
+- Pep 8
+
+<br>
+
+### Deployment
+<hr>
+<br>
+
 
 ## Credits 
 <br>
