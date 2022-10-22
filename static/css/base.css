@@ -735,9 +735,8 @@ select option[value=""] {
 }
 
 /*------------------Media Queries */
-
+ 
 @media (max-width: 576px) {
-
     .nav-item a {
         font-size: 0.8rem !important;
         color: white !important;
@@ -745,6 +744,11 @@ select option[value=""] {
         text-transform: uppercase;
         font-family: 'Josefin Sans', sans-serif !important;
         vertical-align: middle;
+    }
+
+    .mobile-navigation {
+        flex-direction: row;
+        line-height: 80px;
     }
 
     .navbar-collapse {
@@ -1047,7 +1051,7 @@ select option[value=""] {
         width: 100vw !important;
         height: fit-content !important;
         background-color: #7D8E95 !important;
-        justify-content: space-evenly;
+        justify-content: space-around;
         text-align: center;
         overflow-x: hidden;
         margin: 0 !important;
@@ -1072,20 +1076,9 @@ select option[value=""] {
     }
 
     .icons {
-        display: flex;
-        height: 4rem;
-        padding: 5px;
-        align-items: center;
-        text-align: center;
-        justify-content: center !important;
-        margin-bottom: 75px;
-        margin-right: 0px !important;
-        margin-top: 150px;
-    }
-
-    .icons a {
         font-size: 3rem;
-        margin-top: 5px;
+        margin-top: 0px;
+        margin-bottom: 0px;
         line-height: 3rem;
     }
 
@@ -1105,7 +1098,7 @@ select option[value=""] {
 
     .jumbotron-fluid {
         padding: 5px;
-        margin-top: 225px;
+        margin-top: 0px;
         width: 100vw;
     }
 
@@ -1315,7 +1308,7 @@ select option[value=""] {
 
         .jumbotron-fluid {
             padding: 5px;
-            margin-top: 300px !important;
+            margin-top: 0px !important;
             width: 100vw;
         }
 
