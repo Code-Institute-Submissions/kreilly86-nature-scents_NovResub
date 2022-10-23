@@ -102,6 +102,14 @@ In order to achieve the goals of the site owner and customer, the following feat
 
 ## Structure Plane
 -----
+<br>
+<br>
+
+### Data Schema
+<hr>
+<br>
+<img src="supporting_docs/flow/nature-scents-schema.png">
+<br>
 
 **Site flow**
 
@@ -129,6 +137,12 @@ model. There is a product detail view linked to a product detail template so tha
 <br>
 Site owners have the ability to add products to the database from the frontend using the add_product view, they can also edit or delete poroducts from the database, using the edit_product, and delete_product views respectively.
 <br>
+<br> 
+
+## Current state of custom models:
+<hr>
+
+I have two custom models in the Products App, Review and mood. As detailed in the issues section the Review model and it's application are still showing bugs. The intention of the Mood model is to seperate products into different moods e.g. Calming, Energising. Depending on their mood a symbol can be displayed beside the product. Unfortunately I have ran out of time to implement this fully in the projects current form.
 
 - <strong>Shopping Cart App</strong>
 <br>
@@ -425,6 +439,14 @@ The Django Secret_Key was accidentally pushed to git hub, this has been changed 
 <br>
 <br>
 
+### App Checkout:
+<hr>
+<br>
+As I had not implemented a free delivery threshold, the postage charges generated for orders were quite excessive. e.g. €14. I changed this by creating a free delivery threshold of €50 in settings.py
+<br>
+<img src="supporting_docs/design/delivery-cost.png">
+<br>
+
 ### Issue with Stripe Credit card input box when deployed to Heroku
 <hr>
 <br>
@@ -447,15 +469,32 @@ During testing I came up across an issue with the checkout page, specifically th
 - Finally, with the help of tutor support we discovered there was a clash with a previously installed Django plug-in called 'fontawesomefree'. I removed this package, and the stripe input worked as intended in the deployed Heroku version.
 <br>
 
-## Testing
-<br>
-<br>
-App Checkout:
+### Issues with image files loading
 <hr>
 <br>
-As I had not implemented a free delivery threshold, the postage charges generated for orders were quite excessive. e.g. €14. I changed this by creating a free delivery threshold of €50 in settings.py
+Throughout the project I had issues with images not rendering, mostly this was due to incorrect url format. In the example below I was not using the correct Django url tags:
 <br>
-<img src="supporting_docs/design/delivery-cost.png">
+<img src="supporting_docs/design/logo-fail.png">
+<br>
+<br>
+<img src="supporting_docs/design/incorrect-url.png">
+<br>
+<br>
+Once I chaged this to '{{ MEDIA_URL }}nature-logo.png', the logo loaded correctly.
+<br>
+<br>
+
+### Review app
+<hr>
+<br>
+I have used a youtube tutorial, found here: https://www.youtube.com/watch?v=eIN1nZCt7Ww to create a custom review model for products. This is a form on the front end in the product_detail page. I have set up the models, urls, views and made a template on the product detail page but am receiving an error when I test the review:
+<br>
+<img src="supporting_docs/flow/test-review.png">
+<br>
+<img src="supporting_docs/flow/error-msg-review-1.png">
+<br>
+<img src="supporting_docs/flow/error-msg-review-2.png">
+<br>
 <br>
 
 ### Technologies Used
