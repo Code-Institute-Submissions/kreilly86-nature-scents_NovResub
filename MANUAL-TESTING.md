@@ -78,6 +78,60 @@ The home page functions on all screen sizes. During testing there were issues wi
 <img src="supporting_docs/design/homepage-carousel-slider.png">
 <br>
 At the time of testing the user could not interact anymore with the carousel, so I decided to insert anchor links on each product title, which when clicked would bring the user to the respective products page, e.g. 'Candles'. When the title is hovered over the font colour changes from dark green to white.
+<br>
+
+#### Product Page
+<hr>
+Whether a user clicks on a product category from the nav bar, clicks the home apge button 'Shop Now', or clicks on one of the category titles in the image carousel, they are brought to a page displaying their desired products. Whenever a category is clicked the product page code will filter out just the products that fit this category, as shown in the code block below:
+<br>
+<img src="supporting_docs/flow/product-category-code.png">
+<br>
+For example, this is what a user sees when they click soaps, the title is displayed at the top of the page and the soap products are displayed, with responsiveness across all screen sizes
+<br>
+<img src="supporting_docs/flow/soap-page.png">
+<br>
+The product image, title and price is displayed and if a user clicks on the image they are then taken to the Product Detail Page.
+<br>
+
+#### Product Detail Page
+<hr>
+When a user clicks on a product the product opens up in the product detail page. This displays the product image, title, description, price, a selector to add quantity of the product, and add to cart button, and a keep shopping button if the users wants to go back to the products page.
+<br>
+<img src="supporting_docs/design/product-detail-soap.png">
+<br>
+
+##### Functionality
+<br>
+-The Keep Shopping button is functioning, and will bring users to the product page, where all products of the store are listed. 
+- The add to cart button is functiion and will add the selected product and quantity to the shopping cart. The user sees a success message displayed:
+<br>
+<img src="supporting_docs/flow/add-to-cart-success.png">
+<br>
+
+#### Shopping Cart Page
+<hr>
+<br>
+Users can get to the shopping cart page by clicking the shopping cart icon on the nav bar. Here they will see a display of the products they have added to their cart. The items are displayed in a simple bootstrap card. They are able to update the product quantity or click to remove the product from the cart if they have changed their mind.
+<br>
+The user is able to see the breakdown of the costs, with the sub-total, delivery and grand total listed. They are able to click on a button which takes them to the checkout page. 
+<br>
+<img src="supporting_docs/flow/shopping-cart-page.png">
+<br>
+
+#### Checkout Page
+<hr>
+<br>
+The checkout page displays a form for the user to input their delivery/contact information. If a user is signed in they are able to save this delivery information which will be saved to their profile. If they are not signed in they are promopted to sign-up if they want to benefit from having an account, and quicker checkout in future.
+<br>
+I have used crispy forms to style the form, and the payment is processed through stripe. This functionality has been tested and is successful with the stripe practice card number (There were some formatting issues on the success page where the footer was floating which needs to be fixed with CSS.)
+<br>
+<img src="supporting_docs/flow/test-stripe-payment.png">
+<br>
+<img src="supporting_docs/flow/payment-success.png">
+<br>
+
+
+
 
 
 
