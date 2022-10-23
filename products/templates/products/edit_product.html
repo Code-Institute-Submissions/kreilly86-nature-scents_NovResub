@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="col-12 mt-3">
+    <div class="col-12 mt-3 mb-3">
         <p class="text-muted text-center">Edit a Product</p>
         <form action="{% url 'edit_product' product.id %}" method="POST" class="text-center"
             enctype="multipart/form-data">
@@ -23,7 +23,7 @@
                 {% endif %}
             {% endfor %}
             <div>
-                <a class="shop-button" href="{% url 'products' %}">Cancel</a>
+                <a class="shop-button p-2" href="{% url 'products' %}">Cancel</a>
                 <button class="shop-button" type="submit">Update Product</button>
             </div>
         </form>

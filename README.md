@@ -299,7 +299,7 @@ When the font awesome magnifiying glass is clicked on the navbar a search bar po
 <br>
 <strong>Desktop Footer</strong>
 <br>
-The footer is simple, with a white background and is divided from the main content with a horizontal bar. It contains a newsletter sign-up input, copyright information and social media icon links
+The footer is simple and clean, with the background matching the nav bar. The footer contains a newsletter sign-up input, copyright information and social media icon links.
 <br>
 <img src="supporting_docs/design/main-footer.png">
 <br>
@@ -401,6 +401,9 @@ When the site admin is logged in they are able to add, edit, or delete products 
 ### Future Features
 <br>
 <br>
+- I would like to extend the store product base
+- The site could also benefit from further information on the ingredients used in the products, perhaps a blog with useful articles an customer interaction
+- A display on the shopping cart alerting the user to how many items they have in their cart
 
 ## Marketing and SEO
 <br>
@@ -425,9 +428,24 @@ The Django Secret_Key was accidentally pushed to git hub, this has been changed 
 ### Issue with Stripe Credit card input box when deployed to Heroku
 <hr>
 <br>
-During testing I came up across an issue with the checkout page, specifically the credit/debit card input box. When running locally it was showing up as expected, but on Heroku it was a blank input with no way to input card details. I had various stages of trying to resolve this issue:
+During testing I came up across an issue with the checkout page, specifically the credit/debit card input box. When running locally it was showing up as expected, but on Heroku it was a blank input with no way to input card details. I had various stages of trying to resolve this issue with Tutor Support:
 <br>
-
+<img src="supporting_docs/flow/stripe_element.js-load-fail.png">
+<br>
+- I first tried to remove the DISABLE_COLLECTSTATIC variable from the config vars in Heroku, and re-deploy the site. This didn't work and gave activity feedback of : '$ python manage.py collectstatic --noinput'
+<br>
+- I noticed that I had installed whitenoise early on in the project to process the static files for Heroku, but since switching over to AWS I had forgotten to remove this package from settings and uninstall. I tried doing this but it still didn't give me the result I needed.
+<br>
+- I checked to make sure static files were being served by AWS and they were:
+<br>
+<img src="supporting_docs/flow/AWS-static.png">
+<br>
+- I then realised a setting in my settings.py could have been causing the issue,I compared it to the Boutique Ado code and changed it, but it still didn't fix the issue
+<br>
+<img src="supporting_docs/flow/incorrect-settings.py.png">
+<br>
+- Finally, with the help of tutor support we discovered there was a clash with a previously installed Django plug-in called 'fontawesomefree'. I removed this package, and the stripe input worked as intended in the deployed Heroku version.
+<br>
 
 ## Testing
 <br>
@@ -435,7 +453,7 @@ During testing I came up across an issue with the checkout page, specifically th
 App Checkout:
 <hr>
 <br>
-As I had not implemented a free delivery threshold, the postage charges generated were quite excessive. e.g. €14. I changed this by creating a free delivery threshold of €50
+As I had not implemented a free delivery threshold, the postage charges generated for orders were quite excessive. e.g. €14. I changed this by creating a free delivery threshold of €50 in settings.py
 <br>
 <img src="supporting_docs/design/delivery-cost.png">
 <br>
