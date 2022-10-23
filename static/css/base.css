@@ -223,6 +223,14 @@ body {
     text-align: center;
 }
 
+.card-img-overlay a {
+    text-decoration: none;
+}
+
+#carousel-title:hover {
+    color: #ffffff;
+}
+
 .card-title {
     text-align: center;
     margin-top: 10vh;

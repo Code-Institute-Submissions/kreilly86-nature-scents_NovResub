@@ -31,25 +31,33 @@
           <div class="carousel-item justify-content-center active mb-5">
             <img class="mx-auto img-responsive" src="{{ MEDIA_URL }}candles.png" alt="candles">
             <div class="card-img-overlay">
-              <h3 class="card-title">Candles</h3>
+              <a href="{% url 'products' %}?category=Candles">
+                <h3 class="card-title" id="carousel-title">Candles</h3>
+              </a>
             </div>
           </div>
           <div class="carousel-item mb-5">
             <img class="mx-auto img-responsive" src="{{ MEDIA_URL }}oils.png" alt="oils">
             <div class="card-img-overlay">
-              <h3 class="card-title">Oils</h3>
+              <a href="{% url 'products' %}?category=Oils">
+                <h3 class="card-title" id="carousel-title">Oils</h3>
+              </a>
             </div>
           </div>
           <div class="carousel-item mb-5">
             <img class="mx-auto img-responsive" src="{{ MEDIA_URL }}soaps.png" alt="soaps">
             <div class="card-img-overlay">
-              <h3 class="card-title">Soaps</h3>
+              <a href="{% url 'products' %}?category=Soaps">
+                <h3 class="card-title" id="carousel-title">Soaps</h3>
+              </a>
             </div>
           </div>
           <div class="carousel-item mb-5">
             <img class="mx-auto img-responsive" src="{{ MEDIA_URL }}bundles.png" alt="bundles">
             <div class="card-img-overlay">
-              <h3 class="card-title">Bundles</h3>
+              <a href="{% url 'products' %}?category=Bundles">
+                <h3 class="card-title" id="carousel-title">Bundles</h3>
+              </a>
             </div>
           </div>
         </div>
