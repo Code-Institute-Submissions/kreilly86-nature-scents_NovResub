@@ -54,9 +54,39 @@
                 </div>
             </form>
         </div>
-        <div>
-            <hr class="page-end">
-            </hr>
+
+        <div class="review-card m-0">
+            <div class="row justify-content-center">
+                <div class="col-12-xs p-0 mb-1">
+                    <div class="card-body">
+                        <form action="{% url 'submit_review' product.id %}" method="POST">
+                            {% csrf_token %}
+                            <h5 class="card-title review-title m-3">Write Your Review</h5>
+                            <div class>
+                                <p>Review Title:</p>
+                                <input type="text" class="form-control" name="subject" required>
+                                <br>
+                                <p>Review:</p>
+                                <textarea name="review" class="form-control" rows="4" required></textarea>
+                                <br>
+                                {% if user.is_authenticated %}
+                                <input type="submit" value="Submit Review">
+                                {% else %}
+                                <p>You must be logged in to post a review. <span><a href="{% url 'login' %}">Login
+                                            now</a></span></p>
+                                {% endif %}
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-12-xs p-0 mb-5">
+                    <div class="card-header">
+                        Product Reviews
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

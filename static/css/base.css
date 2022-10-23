@@ -391,6 +391,10 @@ footer {
     font-size: 20px;
 }
 
+.review-card {
+    width: 50vw;
+}
+
 /* Philosophy Page */
 
 .philosophy {
@@ -1011,6 +1015,20 @@ select option[value=""] {
 
     .product-detail p {
         font-size: 1rem;
+    }
+
+    .review-card {
+        width: 50vw !important;
+        justify-content: left !important;
+        margin: 0 !important;
+    }
+
+    .review-card h5 {
+        transform: scale(0.5);
+    }
+
+    .review-title {
+        margin: 0 !important;
     }
 
     .shop-button {
