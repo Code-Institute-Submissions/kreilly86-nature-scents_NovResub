@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
-DEBUG = os.environ.get('DEVELOPMENT')
+DEBUG = False
 
 ALLOWED_HOSTS = ['nature-scents.herokuapp.com', 'localhost']
 
@@ -153,7 +153,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
-USE_AWS = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -175,7 +174,7 @@ if 'USE_AWS' in os.environ:
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media' 
+    MEDIAFILES_LOCATION = 'media'
 
 
     # Override static and media URLs in production
