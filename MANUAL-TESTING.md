@@ -129,6 +129,30 @@ I have used crispy forms to style the form, and the payment is processed through
 <br>
 <img src="supporting_docs/flow/payment-success.png">
 <br>
+- Stripe built in error messages:
+If a user fails to input a required field, gives an incorrectly formatted entry, or invalid card details error messages will pop up.
+
+#### User Profile
+<hr>
+<br>
+If a user is signed in they are able to access their account profile from the account icon on the navbar, and selecting 'My Account'. The profile page displays default delivery information on the left, and previous order information on the right. Displayed below is a test user, after successfully updating their default delivery information.
+<br>
+<img src="supporting_docs/flow/user-profile.png">
+<br>
+When I tested the past orders, the user is brought to an order history page the same as the end of the checkout process, and an info message is displayed stating it is a previous order : "This is a past confirmation for order number 8F2F335E6A574EFD84FB84BB10E6E8CA. A confirmation email was sent on the order date". I changed this from bootstrap toast info, to a bootstrap toast success message because the info message disappeared too quickly.
+<br>
+
+#### Admin
+<hr>
+<br>
+The Admin can be accessed by adding 'admin' to the end of the webpage address. The admin section is Django's built in admin interface. I have tested out adding, editing, deleting categories and products here. I had a list of test orders which I have successfully removed from the database in the admin interface. I have also deleted test newsletter sign-up inputs, and test user profiles.
+<br>
+<img src="supporting_docs/flow/test-product.png">
+<br>
+<img src="supporting_docs/flow/delete-orders.png">
+<br>
+
+
 
 
 
