@@ -7,15 +7,17 @@
 
 ### A Full-stack Django-based E-commerce store with products that fill your home with the scents of the natural world, bringing calm, and brightening your day.
 <br>
-<br>
 
-[]live link
-<br>
+[LIVE LINK](https://nature-scents.herokuapp.com/)
+
 <br>
 
 ## User Experience(UX)
+<hr>
 
 ### Strategy Plane
+<hr>
+<br>
 Target Audience:
 
 - People aged 16-55
@@ -29,6 +31,7 @@ The user can purchase <strong>one off items</strong> on the site, which makes th
 This e-commerce site is a B2C model. The goal of the site is to not only make one off sales but to encourage brand loyalty through subscription and a newsletter. The site uses minimal design, and a no frills up front approach to let the products speak for themselves.
 
 ### Strategy Roadmap
+<hr>
 
 |                          Feature                                | Importance | Feasability |
 | ---------------------------------------------------------------- | ------ | ----- |
@@ -102,14 +105,11 @@ In order to achieve the goals of the site owner and customer, the following feat
 
 ## Structure Plane
 -----
-<br>
-<br>
 
 ### Data Schema
 <hr>
 <br>
 <img src="supporting_docs/flow/nature-scents-schema.png">
-<br>
 
 **Site flow**
 
@@ -122,8 +122,8 @@ In order to achieve the goals of the site owner and customer, the following feat
 <hr>
 <br>
 
-**Apps**
-<br>
+## Apps
+<hr>
 
 - <strong>Home App</strong>
 <br>
@@ -136,13 +136,7 @@ The Products App is the main hub of the site, where all users are drawn in order
 model. There is a product detail view linked to a product detail template so that users can clic into an individual product and see further details about it, and if they decide add it to their shopping cart.
 <br>
 Site owners have the ability to add products to the database from the frontend using the add_product view, they can also edit or delete poroducts from the database, using the edit_product, and delete_product views respectively.
-<br>
 <br> 
-
-## Current state of custom models:
-<hr>
-
-I have two custom models in the Products App, Review and mood. As detailed in the issues section the Review model and it's application are still showing bugs. The intention of the Mood model is to seperate products into different moods e.g. Calming, Energising. Depending on their mood a symbol can be displayed beside the product. Unfortunately I have ran out of time to implement this fully in the projects current form.
 
 - <strong>Shopping Cart App</strong>
 <br>
@@ -241,8 +235,8 @@ I chose Josefin Sans as the main font on the site, as it is simple and clean. I 
 <br>
 <br>
 
-**Images**
-<br>
+## Images
+<hr>
 <br>
 All images were found on [Pexels](http://www.pexels.com/)
 <br>
@@ -263,21 +257,25 @@ Photos by EKATERINA BOLOVTSOVA from Pexels
 
 Photo by Dominika Roseclay from Pexels
 
+<br>
 
 ## Project Planning/Agile
+<hr>
 <br>
 I have utilised Github's projects section to create a project board with issues in the planning and implementation of the project.
 
 The project board can be found [here] (https://github.com/users/kreilly86/projects/4)
 <br>
+<br>
 
 ## Features
-
-### Existing Features
-<br>
 <hr>
 
- ### Navigation
+### Existing Features
+<hr>
+
+### Navigation
+<hr>
 
 <br>
 <strong>Main navigation</strong>
@@ -309,15 +307,20 @@ When the font awesome magnifiying glass is clicked on the navbar a search bar po
 <br>
 
 ### Footer
+<hr>
 
 <br>
 <strong>Desktop Footer</strong>
+<hr>
 <br>
 The footer is simple and clean, with the background matching the nav bar. The footer contains a newsletter sign-up input, copyright information and social media icon links.
 <br>
+<br>
 <img src="supporting_docs/design/main-footer.png">
 <br>
+<br>
 <strong>Mobile/Tablet Footer</strong>
+<hr>
 <br>
 
 The footer contents stack on mobile and tablet view:
@@ -326,64 +329,95 @@ The footer contents stack on mobile and tablet view:
 <img src="supporting_docs/design/mobile-footer.png">
 <br>
 <strong>Home Page</strong>
+<hr>
 <br>
 
 The home page contains a hero image with natural products and an H1 title with bootstrap class 'display-4'. It is follwed by a lead description expplaining to the user what the site is about, "Bring the aroma of nature into your home".
 <br>
-
+<br>
 <img src="supporting_docs/design/homepage-top.png">
+<br>
 <br>
 
 The bottom half of the home page contains a 'Shop' button to take users to the products page and below a bootstrap carousel of images showing the different category of productd available.
 
 <br>
+<br>
 <img src="supporting_docs/design/homepage-carousel.png">
+<br>
 <br>
 
 <strong>Philosophy Page</strong>
+<hr>
 <br>
 The Philosophy page is simple, with a short description of the company's ethos. It contains a striking image and bold title in white
 <br>
+<br>
 <img src="supporting_docs/design/philosophy-page.png">
+<br>
 <br>
 
 <strong>Subscription Page</strong>
+<hr>
 <br>
 The subscription page is similar to the Philosophy page in that is has a striking ikage and cold title in white. Below is a deacription of the yearly membership, which provides users with a monthly delivery of new 'scents' to their door. I have use a zoom effect on the images inspired by the Code Institute Love running club project effect. This brings a bit of life to the page. Users can then click on the more info button and the subscription product is displayed in the product detail template. From there they can add the product to their shopping cart.
 <br>
+<br>
 <img src="supporting_docs/design/subscription-page.png">
+<br>
 <br>
 <img src="supporting_docs/design/subscription-detail.png">
 <br>
+<br>
 
 <strong>Products Page</strong>
+<hr>
 <br>
 Users can access the products page from the main nav bar by clicking 'Shop' and selecting a type of products, or 'all products'. This will filter the products into sections, with the all selection showing the titles of all the categories at the top of the page.
 <br>
+<br>
 <img src="supporting_docs/design/products-page.png">
+<br>
 <br>
 <img src="supporting_docs/design/shop-menu.png">
 <br>
+<br>
 <img src="supporting_docs/design/all-products.png">
+<br>
 <br>
 
 <strong>Product Detail</strong>
+<hr>
 <br>
 When a user clicks on one of the products they are taken to the product detail page. This displays an image of the product, a description, the price, a quantity selector, and an add to cart button. Once the user clicks on add to cart they see a bootstrap success message pop up. Otherwise they can can click on keep shopping to be taken back to the products page, which shows all products.
 <br>
+<br>
 <img src="supporting_docs/design/product-detail-page.png">
+<br>
 <br>
 <img src="supporting_docs/design/cart-success.png">
 <br>
+<br>
+
+### Current state of custom models in product app:
+<br>
+
+I have two custom models in the Products App, Review and mood. As detailed in the issues section the Review model and it's application are still showing bugs. The intention of the Mood model is to seperate products into different moods e.g. Calming, Energising. Depending on their mood a symbol can be displayed beside the product. Unfortunately I have ran out of time to implement this fully in the projects current form.
+<br>
+<br>
 
 <strong>Cart Page</strong>
+<hr>
 <br>
 The cart page displays all items the user has addedd, displayed stacked in a bootstrap col-12 div. The user can click to delete the item from the cart, or edit the quantity. The total price is displayed including delivery, which is free over €50. The checkout button brings the user to the final step in the process.
 <br>
+<br>
 <img src="supporting_docs/design/cart-view.png">
+<br>
 <br>
 
 <strong>Checkout Page</strong>
+<hr>
 <br>
 The checkout page contains a simple form, with address details, and a card input box made using Stripe. Once the users enters all information they are given a warning of how much they will be charged before proceeding. There is also a checkbox if logged in users would like to save their address details for future purchases. When the payment is processed the user is shown a success pop up, and message thanking them for their order.
 <br>
@@ -395,32 +429,48 @@ The checkout page contains a simple form, with address details, and a card input
 <br>
 <img src="supporting_docs/design/thank-you-order.png">
 <br>
+<br>
 
 <strong>Profile Page</strong>
+<hr>
 <br>
 The profile page displays the users billing/shipping details, along with a list of previous orders. The user is able to update their shipping info by clicking the 'Update Information' button.
 <br>
+<br>
 <img src="supporting_docs/design/profile-page.png">
+<br>
 <br>
 
 <strong>Admin</strong>
+<hr>
 <br>
-When the site admin is logged in they are able to add, edit, or delete products to the database from the Frontend. 
+When the site admin is logged in they are able to add, edit, or delete products to the database from the Frontend:
 <br>
-<img src="supporting_docs/design/admin-orders.png">
+<br>
+<img src="supporting_docs/design/admin-options.png">
+<br>
 <br>
 <img src="supporting_docs/design/product-management.png">
 <br>
+<br>
 
-### Future Features
+## Future Features
+<hr>
 <br>
-<br>
+
 - I would like to extend the store product base
-- The site could also benefit from further information on the ingredients used in the products, perhaps a blog with useful articles an customer interaction
+
+- The site could also benefit from further information on the ingredients used in the products, perhaps a blog with useful articles and customer interaction
+
 - A display on the shopping cart alerting the user to how many items they have in their cart
 
-## Marketing and SEO
+- The completion of the review model, and mood models
+
 <br>
+<br>
+
+## Marketing and SEO
+<hr>
 <br>
 
 I have created a (Facebook business page)[https://www.facebook.com/nature.scents.irl]
@@ -433,7 +483,7 @@ Keywords have been used in meta tags based in the base.html file. I have kept th
 <br>
 
 ## Issues
-<br>
+<hr>
 <br>
 The Django Secret_Key was accidentally pushed to git hub, this has been changed and secured in an env.py file. 
 <br>
@@ -444,7 +494,9 @@ The Django Secret_Key was accidentally pushed to git hub, this has been changed 
 <br>
 As I had not implemented a free delivery threshold, the postage charges generated for orders were quite excessive. e.g. €14. I changed this by creating a free delivery threshold of €50 in settings.py
 <br>
+<br>
 <img src="supporting_docs/design/delivery-cost.png">
+<br>
 <br>
 
 ### Issue with Stripe Credit card input box when deployed to Heroku
@@ -452,7 +504,7 @@ As I had not implemented a free delivery threshold, the postage charges generate
 <br>
 During testing I came up across an issue with the checkout page, specifically the credit/debit card input box. When running locally it was showing up as expected, but on Heroku it was a blank input with no way to input card details. I had various stages of trying to resolve this issue with Tutor Support:
 <br>
-<img src="supporting_docs/flow/stripe_element.js-load-fail.png">
+<img src="supporting_docs/flow/stripe_elements.js-load-fail.png">
 <br>
 - I first tried to remove the DISABLE_COLLECTSTATIC variable from the config vars in Heroku, and re-deploy the site. This didn't work and gave activity feedback of : '$ python manage.py collectstatic --noinput'
 <br>
@@ -474,6 +526,7 @@ During testing I came up across an issue with the checkout page, specifically th
 <br>
 Throughout the project I had issues with images not rendering, mostly this was due to incorrect url format. In the example below I was not using the correct Django url tags:
 <br>
+<br>
 <img src="supporting_docs/design/logo-fail.png">
 <br>
 <br>
@@ -486,39 +539,50 @@ Once I chaged this to '{{ MEDIA_URL }}nature-logo.png', the logo loaded correctl
 
 ### Review app
 <hr>
-<br>
 I have used a youtube tutorial, found here: https://www.youtube.com/watch?v=eIN1nZCt7Ww to create a custom review model for products. This is a form on the front end in the product_detail page. I have set up the models, urls, views and made a template on the product detail page but am receiving an error when I test the review:
+<br>
 <br>
 <img src="supporting_docs/flow/test-review.png">
 <br>
+<br>
 <img src="supporting_docs/flow/error-msg-review-1.png">
+<br>
 <br>
 <img src="supporting_docs/flow/error-msg-review-2.png">
 <br>
 <br>
 
-### Technologies Used
+## Testing
+<hr>
 <br>
+
+### A seperate Testing document can be found 
+
+[here](https://github.com/kreilly86/nature-scents/blob/main/MANUAL-TESTING.md)
+
+<br>
+
+### Technologies Used
 <hr>
 
-Python - This project uses Python as its' core language
-Django - This project is built with the Django framework
-Bootstrap - Bootstrap is used throughout the site to add style, and responsiveness to the site
-GitHub - Used to store code for the project
-Git - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
-Gitpod - Used as the development environment.
-Heroku - Used to deploy and host the final application.
-Google Fonts - Used for website fonts
-Google Developer Tools - I used google developer tools throughout the build process to test the site, fix issues etc
-Font Awesome - Used for navigation icons and social links
-SQLite - Was used to run the project localy
-AWS - Amazon Web Services S3  was used to host static files
-PostgreSQL - Heroku's PostgreSQL was used to store data of the deployed site
-Stripe- For payment processing
-Balsamic - Used for wireframe drawings and planning
-
-### Code Validation
+- Python - This project uses Python as its' core language
+- Django - This project is built with the Django framework
+- Bootstrap - Bootstrap is used throughout the site to add style, and responsiveness to the site
+- GitHub - Used to store code for the project
+- Git - Used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
+- Gitpod - Used as the development environment.
+- Heroku - Used to deploy and host the final application.
+- Google Fonts - Used for website fonts
+- Google Developer Tools - I used google developer tools throughout the build process to test the site, fix issues etc
+- Font Awesome - Used for navigation icons and social links
+- SQLite - Was used to run the project localy
+- AWS - Amazon Web Services S3  was used to host static files
+- PostgreSQL - Heroku's PostgreSQL was used to store data of the deployed site
+- Stripe- For payment processing
+- Balsamiq - Used for wireframe drawings and planning
 <br>
+### Code Validation
+<hr>
 <br>
 - W3C Mark-up Validation
 - W3C CSS Validtion
@@ -531,8 +595,7 @@ Balsamic - Used for wireframe drawings and planning
 <hr>
 <br>
 
-#### Local Deployment 
-<br>
+### Local Deployment 
 <br>
 
 I used Github and Gitpod to build and run this project locally. The repositiory was built using Code Institute's template:
@@ -557,8 +620,7 @@ For this project I didn't use the fork or clone option in GitHub, but these are 
 <br>
 <br>
 
-#### Heroku Deployment
-<br>
+### Heroku Deployment
 <br>
 
 Steps to Deploy to Heroku:
@@ -568,35 +630,48 @@ Steps to Deploy to Heroku:
 
 Sign into Heroku account and select create a new app.
 <br>
+<br>
 <img src="supporting_docs/flow/heroku-part1.png">
+<br>
 <br>
 Choose app name and select Europe region, click create app
 <br>
+<br>
 <img src="supporting_docs/flow/heroku-part2.png">
+<br>
 <br>
 In local GitPod environment at project level create a Procfile with the following: web: gunicorn *project name here *_database.wsgi
 <br>
+<br>
 <img src="supporting_docs/flow/heroku-part3.png">
+<br>
 <br>
 Click on resources tab in Heroku, and add-ons and select Heroku Postgres
 <br>
+<br>
 <img src="supporting_docs/flow/heroku-part4.png">
+<br>
 <br>
 Click Settings tab and select reveal Config Vars
 <br>
+<br>
 <img src="supporting_docs/flow/heroku-part5.png">
 <br>
+<br>
 Copy DATABASE_URL value to an env.py file in GitPod (os.environ["DATABASE_URL"] = 'insert value here'), and also create a SECRET_KEY here which is added as a key and value in confing vars on Heroku.
+<br>
 <br>
 When ready to deploy under deployment tab Select Github as deployment method and type in repository name of project
 Click search and hit connect on repository name
 Next hit deploy branch, and you will see "your app has been deployed", click on link to go to the deployed project
 <br>
+<br>
 <img src="supporting_docs/flow/heroku-part6.png">
+<br>
 <br>
 
 ## Credits 
-<br>
+<hr>
 <br>
 Code and structure for this e-commerce site has largely come from Code Institute's Boutique Ado walkthrough project: 
 <br>
