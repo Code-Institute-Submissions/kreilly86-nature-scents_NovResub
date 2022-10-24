@@ -1343,7 +1343,7 @@ select option[value=""] {
         }
         
         #nav-nature img {
-            display: inline-flexbox;
+            display: inline-flex;
             width: 100px;
             height: 100px;
             padding: 0;
