@@ -14,7 +14,7 @@ body {
     background-color: #7D8E95 !important;
     align-items: center;
     justify-content: space-evenly;
-    display: flexbox;
+    display: flex;
     padding: 0;
     flex-direction: row;
     margin: 0;
@@ -950,7 +950,7 @@ select option[value=""] {
     }
 
     .footer-line {
-        display: inline-flexbox;
+        display: inline-block;
         width: 80vw !important;
         margin: 0;
         text-align: center;
@@ -1209,7 +1209,6 @@ select option[value=""] {
     .carousel-products {
         padding: 20px;
         width: 80vw;
-        height: fit-contents;
     }
 
     .carousel-item {
@@ -1371,7 +1370,7 @@ select option[value=""] {
         .navbar-collapse.collapse.show {
             width: 50vw;
             padding-top: 15px;
-            margin-top: 50x;
+            margin-top: 50px;
         }
         
         .nav-text {
@@ -1396,7 +1395,7 @@ select option[value=""] {
         }
 
         .footer-line {
-            display: inline-flexbox;
+            display: inline-block;
             width: 80vw !important;
             margin: 0;
             text-align: center;
