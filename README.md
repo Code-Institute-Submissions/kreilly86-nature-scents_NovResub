@@ -585,9 +585,16 @@ I have used a youtube tutorial, found here: https://www.youtube.com/watch?v=eIN1
 <hr>
 <br>
 - W3C Mark-up Validation
+<br>
+There are still soem html errors showing, but to change these would change the integrity of what I have in place right now. E.g. li elements, collapsing menus etc.
+
 - W3C CSS Validtion
+<br>
+CSS errors were found but have since been fixed.
+
 - Lighthouse
-- Pep 8
+<br>
+Lighthouse showed room for improvement, but nothing scored lower than 83
 
 <br>
 
