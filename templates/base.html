@@ -1,6 +1,6 @@
 {% load static %}
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,10 +18,10 @@
   {% endblock %}
 
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
-  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'favicon/manifest.json' %}">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -134,14 +134,13 @@
             </div>
             <div class="text-center">
               <a class="{% if grand_total %} shopping-cart font-weight-bold {% else %}
-          active-nav {% endif %} nav-link" href="{% url 'cart' %}">
+           active-nav {% endif %} nav-link" href="{% url 'cart' %}">
                 <div><i class="fa-solid fa-cart-shopping px-0"></i></div>
               </a>
             </div>
           </div>
         </div>
       </div>
-
     </nav>
     {% include 'includes/mobile-nav.html' %}
   </header>
