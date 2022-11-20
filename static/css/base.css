@@ -39,9 +39,11 @@ body {
     justify-content: right;
     display: inline-flex;
     flex-direction: row;
+    align-items: center;
     margin: 0;
     padding: 15px;
     font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .icon {
