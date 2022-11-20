@@ -11,7 +11,7 @@ body {
 .navbar {
     height: 175px !important;
     width: 100vw !important;
-    background-color: red !important;
+    background-color:#7D8E95 !important;
     align-items: center;
     justify-content: space-evenly;
     display: flex;
