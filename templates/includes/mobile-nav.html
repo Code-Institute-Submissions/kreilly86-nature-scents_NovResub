@@ -45,9 +45,9 @@
           </div>
         </div>
 
-        <li class="dropdown list-inline-item">
-          <a class="icons account-icon" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
+        <div class="dropdown">
+          <a class="icons account-icon" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-user"></i>
           </a>
           <!--Code from Code Institute Boutique Ado Project-->
@@ -63,41 +63,37 @@
             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
             {% endif %}
           </div>
+        </div>
 
-        <li class="list-inline-item">
-          <div>
-            <a class="icons" href="#searchBar" data-toggle="collapse" aria-expanded="false"
-              aria-controls="collapseExample">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </div>
-          <div class="collapse search-bar-mobile fixed-top mx-auto w-100" id="searchBar">
-            <div class="card card-body">
-              <form method="GET" action="{% url 'products' %}">
-                <div class="input-group w-95">
-                  <input class="form-control border border-black rounded-0" type="text" name="q"
-                    placeholder="Search our site">
-                  <div class="input-group-append">
-                    <button class="form-control btn btn-black border rounded-0" type="submit">
-                      <span class="icons">
-                        <i class="fas fa-search p-0 mr-3"></i>
-                      </span>
-                    </button>
-                  </div>
+        <div>
+          <a class="icons" href="#searchBar" data-toggle="collapse" aria-expanded="false"
+            aria-controls="collapseExample">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+        </div>
+        <div class="collapse search-bar-mobile fixed-top mx-auto w-100" id="searchBar">
+          <div class="card card-body">
+            <form method="GET" action="{% url 'products' %}">
+              <div class="input-group w-95">
+                <input class="form-control border border-black rounded-0" type="text" name="q"
+                  placeholder="Search our site">
+                <div class="input-group-append">
+                  <button class="form-control btn btn-black border rounded-0" type="submit">
+                    <span class="icons">
+                      <i class="fas fa-search p-0 mr-3"></i>
+                    </span>
+                  </button>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
-        </li>
-        <li class="list-inline-item">
+        </div>
+        <div>
           <a class="icons shopping-cart nav-link {% if request.resolver_match.url_name == 'basket_overview' %}
         active-nav {% endif %}" href="{% url 'cart' %}">
-            <div>
-              <div><i class="fa-solid fa-cart-shopping"></i></div>
-            </div>
+            <div><i class="fa-solid fa-cart-shopping"></i></div>
           </a>
-        </li>
+        </div>
       </div>
-    </div>
   </nav>
 </div>
