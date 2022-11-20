@@ -35,30 +35,23 @@ body {
     margin: 0;
 }
 
-.icons {
+#dropdownMenuLink {
+    color: white;
+}
+
+.icons i {
     justify-content: right;
     display: inline-flex;
     flex-direction: row;
     margin: 0;
     padding: 5px;
     text-decoration: none;
-}
-
-.mobile-navigation i {
     color:#FFBB98;
     text-decoration: none;
 }
 
 .users {
     line-height: 2rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.icons a {
-    padding: 15px;
-    font-size: 1.5rem;
-    color:#FFBB98;
     align-items: center;
     justify-content: center;
 }
