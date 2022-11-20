@@ -41,6 +41,12 @@ body {
     flex-direction: row;
     margin: 0;
     padding: 5px;
+    text-decoration: none;
+}
+
+.mobile-navigation i {
+    color:#FFBB98;
+    text-decoration: none;
 }
 
 .users {
@@ -745,7 +751,7 @@ select option[value=""] {
         line-height: 30px;
     }
 
-    a i:hover {
+    a:hover {
         text-decoration: none;
     }
 
