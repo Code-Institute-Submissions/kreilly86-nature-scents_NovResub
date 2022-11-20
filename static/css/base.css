@@ -35,25 +35,23 @@ body {
     margin: 0;
 }
 
-#dropdownMenuLink {
-    color: white;
-}
-
-.icons i {
+.icons {
     justify-content: right;
     display: inline-flex;
     flex-direction: row;
     margin: 0;
     padding: 5px;
-    text-decoration: none;
-    color:#FFBB98;
-    text-decoration: none;
 }
 
 .users {
-    line-height: 2rem;
     align-items: center;
     justify-content: center;
+}
+
+.users i {
+    padding: 15px;
+    font-size: 4rem;
+    color: #FFBB98;
 }
 
 .shopping-cart {
@@ -744,15 +742,6 @@ select option[value=""] {
         line-height: 30px;
     }
 
-    a:hover {
-        text-decoration: none;
-    }
-
-    .mobile-navigation {
-        flex-direction: row;
-        line-height: 80px;
-    }
- 
     .navbar-collapse {
         width: 100vw;
         flex-direction: row;
@@ -779,10 +768,6 @@ select option[value=""] {
         position: absolute;   
     }
 
-    .account-icon {
-        position: relative;
-    }
-
     .navbar-toggler {
         padding: 15px 10px 15px 10px !important;
         display: block !important;
@@ -796,20 +781,28 @@ select option[value=""] {
         transform: scale(0.7);
     }
 
-    .mobile-menu {
-        margin: 0 auto;
+    .mobile-navigation {
+        margin: 0;
+        padding: 0 !important;
     }
 
-    .icons {
+    .icon-bar {
         margin-top: 0px !important;
         margin-bottom: 0px !important;
-        font-size: 1rem;
-        padding: 10px;
-        display: inline-block;
+        font-size: 2rem;
+        flex-direction: row;
+        line-height: 100px;
+        padding-top: 0;
+    }
+
+    .icons i {
+        justify-content: center !important;
+        margin: 0;
+        padding: 5px;
+        text-decoration: none;
     }
 
     .shopping-cart i {
-        font-size: 1rem;
         margin: 0;
     }
 
@@ -962,11 +955,6 @@ select option[value=""] {
 
     .signup-form-email {
         width: 80vw;
-    }
-
-    .list-inline-item {
-        padding: 5px;
-        margin: 0 auto;
     }
 
     .copyright {

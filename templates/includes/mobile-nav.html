@@ -9,8 +9,8 @@
           </a>
         </div>
       </div>
-      <div class="mobile-navigation col-12 justify-content-space-around d-flex m-0">
-        <div class="mobile-collapse-bar">
+      <div class="mobile-navigation col-12 justify-content-space-around row d-flex m-0">
+        <div class="mobile-collapse-bar col-12">
           <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
             aria-label="Toggle navigation"><span class="dark-blue-text"><i
@@ -44,8 +44,9 @@
             </ul>
           </div>
         </div>
-
-        <div class="dropdown">
+        <br>
+      <div class="icon-bar d-flex row">
+        <div class="dropdown col-4">
           <a class="icons account-icon" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             <i class="fa-solid fa-user"></i>
@@ -65,7 +66,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="col-4">
           <a class="icons" href="#searchBar" data-toggle="collapse" aria-expanded="false"
             aria-controls="collapseExample">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -88,7 +89,7 @@
             </form>
           </div>
         </div>
-        <div>
+        <div class="col-4">
           <a class="icons shopping-cart nav-link {% if request.resolver_match.url_name == 'basket_overview' %}
         active-nav {% endif %}" href="{% url 'cart' %}">
             <div><i class="fa-solid fa-cart-shopping"></i></div>
