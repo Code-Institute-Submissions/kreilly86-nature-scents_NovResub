@@ -41,17 +41,13 @@ body {
     flex-direction: row;
     margin: 0;
     padding: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .users {
     align-items: center;
     justify-content: center;
-}
-
-.users i {
-    padding: 15px;
-    font-size: 4rem;
-    color: #FFBB98;
 }
 
 .shopping-cart {
