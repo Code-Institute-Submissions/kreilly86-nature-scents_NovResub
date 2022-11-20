@@ -11,7 +11,7 @@ body {
 .navbar {
     height: 175px !important;
     width: 100vw !important;
-    background-color: #7D8E95 !important;
+    background-color: red !important;
     align-items: center;
     justify-content: space-evenly;
     display: flex;
@@ -52,7 +52,7 @@ body {
 .icons a {
     padding: 15px;
     font-size: 1.5rem;
-    color: red;
+    color:#FFBB98;
     align-items: center;
     justify-content: center;
 }
