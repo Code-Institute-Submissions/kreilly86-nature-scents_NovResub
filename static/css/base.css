@@ -40,19 +40,14 @@ body {
     display: inline-flex;
     flex-direction: row;
     margin: 0;
-    padding: 5px;
-    font-size: 3rem;
-    text-decoration: none;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+.icon {
     color:#FFBB98;
-}
-
-.icons i {
-    text-decoration-line: none;
-}
-
-.users {
-    align-items: center;
-    justify-content: center;
+    text-decoration: none;
+    padding: 10px;
 }
 
 .shopping-cart {
@@ -92,11 +87,6 @@ body {
     background-color: #7D8E95;
     font-size: 12px;
 }
-
-.icon {
-    color: #FFBB98;
-}
-
 
 /* ------------Home Page */
 
