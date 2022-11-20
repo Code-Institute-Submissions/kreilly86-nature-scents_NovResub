@@ -52,15 +52,7 @@ body {
 .icons a {
     padding: 15px;
     font-size: 1.5rem;
-    color: #FFBB98;
-    align-items: center;
-    justify-content: center;
-}
-
-.icons i {
-    padding: 15px;
-    font-size: 1.5rem;
-    color: #FFBB98;
+    color: red;
     align-items: center;
     justify-content: center;
 }
@@ -106,6 +98,7 @@ body {
 .icon {
     color: #FFBB98;
 }
+
 
 /* ------------Home Page */
 
@@ -470,7 +463,6 @@ footer {
         transform: scale(1.1);
         opacity: 0.6;
     }
-
 }
 
 .subscription-info {
@@ -640,7 +632,6 @@ select option[value=""] {
     /* text-info */
 }
 
-
 /*---------------------------Stripe*/
 
 .StripeElement {
@@ -754,6 +745,10 @@ select option[value=""] {
         line-height: 30px;
     }
 
+    a i:hover {
+        text-decoration: none;
+    }
+
     .mobile-navigation {
         flex-direction: row;
         line-height: 80px;
@@ -762,10 +757,6 @@ select option[value=""] {
     .navbar-collapse {
         width: 100vw;
         flex-direction: row;
-    }
-
-    .list-inline-item {
-        list-style: none;
     }
 
     .nav-nature-mobile {
@@ -780,17 +771,13 @@ select option[value=""] {
         margin: 0;
     }
 
-    .dropdown-menu {
-        position: relative;
-    }
-
     .dropdown-menu.show {
         width: 60vw !important;  
+        z-index: 2;
     }
 
     .dropdown-menu.account-dropdown.show {
-        position: absolute;
-        z-index: 2;
+        position: absolute;   
     }
 
     .account-icon {
@@ -819,6 +806,7 @@ select option[value=""] {
         margin-bottom: 0px !important;
         font-size: 1rem;
         padding: 10px;
+        display: inline-block;
     }
 
     .shopping-cart i {
@@ -864,7 +852,6 @@ select option[value=""] {
     }
 
     .intro p {
-        font-size: 1.5rem;
         text-align: left;
     }
 
@@ -1154,7 +1141,7 @@ select option[value=""] {
     .icons i {
         font-size: 1.5rem;
         margin-top: 5px;
-        text-decoration: none;
+        text-decoration: none !important;
     }
 
     .search-bar-mobile {
@@ -1357,8 +1344,10 @@ select option[value=""] {
             margin: 0;
             padding: 5px;
             font-size: 1.5rem;
-            text-decoration: none;
-            list-style: none;
+        }
+
+        .icons i:hover {
+            text-decoration: none !important;
         }
         
         .users {
