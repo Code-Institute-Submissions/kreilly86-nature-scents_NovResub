@@ -17,7 +17,7 @@ body {
     display: flex;
     padding: 0;
     flex-direction: row;
-    margin: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 .nav-item a {
@@ -737,7 +737,6 @@ select option[value=""] {
         padding: 0;
         width: 100vw !important;
         background-color: #7D8E95 !important;
-        margin-bottom: 0 !important;
     }
 
     .mobile-collapse-bar {
@@ -768,24 +767,28 @@ select option[value=""] {
     }
 
     .mobile-navigation {
-        margin: 0;
+        margin: 0 !important;
         padding: 0 !important;
     }
 
     .icon-bar {
         margin-top: 0px !important;
         margin-bottom: 0px !important;
-        font-size: 2rem;
+       
         flex-direction: row;
-        line-height: 3rem;
+        line-height: 3rem !important;
         align-items: center;
         margin-right: 25px !important;
     }
 
     .icons i {
-        margin-bottom: 50px;
         padding: 5px;
-        color: #FFBB98;
+        color: #FFBB98; 
+        font-size: 1.5rem !important;
+    }
+
+    body {
+        margin: 0 !important;
     }
 
     .icons:hover {
@@ -822,7 +825,7 @@ select option[value=""] {
 
     .intro {
         width: 90vw;
-        margin-top: 0px;
+        margin-top: 0px !important;
         justify-content: center;
     }
 
@@ -1056,6 +1059,10 @@ select option[value=""] {
         padding: 0;
     }
 
+    body {
+        margin: 0 !important;
+    }
+
     .mobile-navigation {
         flex-direction: row;
         line-height: 100px;
@@ -1093,24 +1100,24 @@ select option[value=""] {
         padding-top: 5px !important;
     }
 
-    .mobile-logo {
+    #mobile-logo {
         display: flex !important;
         margin-top: 25px;
-    }
-
-    #mobile-logo {
-        width: 12rem;
-        height: 12rem;
-        padding: 0;
+        text-align: center;
         justify-content: center;
+        width: 9rem;
+        height: 9rem;
     }
 
     .dropdown-menu {
         position: relative;
     }
 
-    .dropdown-menu.show {
+    .navbar-nav {
         width: 60vw !important;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
     }
 
     .icons {
@@ -1134,6 +1141,7 @@ select option[value=""] {
         margin-bottom: 50px;
         padding: 5px;
         color: #FFBB98;
+        font-size: 1.75rem;
     }
 
     .icons:hover {
@@ -1313,81 +1321,51 @@ select option[value=""] {
 }
 
 @media screen and (max-width: 992px) {
-    .nav-nature-mobile {
-        width: 100vw !important;
+    #nav-nature {
         height: fit-content !important;
-        background-color: #7D8E95 !important;
-        overflow-x: hidden;
-        margin: 0 !important;
+        width: 100vw !important;
+        align-items: center;
+        justify-content: space-evenly; 
     }
-
+    
     .nav-item a {
-        font-size: 2rem;
+        font-size: 1rem;
         padding: 5px;
-    }
-
-    .dropdown-menu {
-        position: relative;
-    }
-
-    .dropdown-menu.show {
-        width: 60vw !important;
     }
 
     .icons {
         font-size: 3rem;
         margin-top: 0px;
         margin-bottom: 0px;
-        line-height: 3rem;
     }
 
-    .icon-bar {
+    .users {
         margin-top: 0px !important;
         margin-bottom: 0px !important;
-        font-size: 2rem;
+        font-size: 1.75rem;
         flex-direction: row;
         line-height: 3rem;
-        align-items: center;
         margin-right: 25px !important;
-    }
-
-    .icons i {
-        margin-bottom: 50px;
-        padding: 5px;
-        color: #FFBB98;
-    }
-
-    .mobile-logo {
-        padding: 25px;
-        transform: scale(0.6);
-    }
-
-    #mobile-logo {
+        align-items: center;
         justify-content: center;
     }
 
-    .icons i {
-        justify-content: right;
+    #nav-nature img {
         display: inline-flex;
-        flex-direction: row;
+        width: 100px;
+        height: 100px;
+        padding: 0;
         margin: 0;
-        padding: 5px;
-        font-size: 1.5rem;
     }
 
     .icon:hover {
         text-decoration: none;
     }
 
-    .users {
-        line-height: 2rem;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .navbar-collapse.collapse.show {
-        width: 50vw;
+    .dropdown-menu {
+        width: 50vw !important;
         padding-top: 15px;
+        justify-content: center;
         margin-top: 50px;
     }
 
@@ -1396,7 +1374,7 @@ select option[value=""] {
     }
 
     .search-bar {
-        margin-top: 350px;
+        margin-top: 250px;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0;
@@ -1406,10 +1384,14 @@ select option[value=""] {
         font-size: 12px;
     }
 
-    .jumbotron {
+    body {
         padding: 0px;
-        margin-top: 150px;
+        margin-top: 250px;
         width: 100vw;
+    }
+
+    .jumbotron {
+        margin-top: 0;
     }
 
     .footer-line {

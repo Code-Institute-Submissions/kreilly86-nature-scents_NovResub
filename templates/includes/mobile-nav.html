@@ -1,11 +1,11 @@
 <!--Navbar-->
-<div class="container-fluid m-0">
-  <nav class="navbar nav-nature-mobile navbar-dark d-xs d-inline-block d-lg-none static-top">
+<div class="container-fluid">
+  <nav class="navbar nav-nature-mobile navbar-dark d-xs d-md-none static-top">
     <div class="row nav-icons">
       <div class="col-12">
-        <div class="mobile-logo">
+        <div class="mobile-logo text-center">
           <a href="{% url 'home' %}">
-            <img src='{{ MEDIA_URL }}nature-logo.png' id="mobile-logo" alt="website logo">
+            <img src='{{ MEDIA_URL }}nature-logo.png' id="mobile-logo" alt="website logo" class="mx-auto">
           </a>
         </div>
       </div>
@@ -45,56 +45,58 @@
           </div>
         </div>
         <br>
-      <div class="icon-bar text-center d-flex row p-0">
-        <div class="dropdown col-4">
-          <a class="icons account-icon" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-user"></i>
-          </a>
-          <!--Code from Code Institute Boutique Ado Project-->
-          <div class="dropdown-menu account-dropdown" aria-labelledby="dropdownMenuLink">
-            {% if request.user.is_authenticated %}
-            {% if request.user.is_superuser %}
-            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-            {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-            {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Sign-up</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-            {% endif %}
+        <div class="icon-bar text-center d-flex row p-0">
+          <div class="dropdown col-4">
+            <a class="icons account-icon" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-user"></i>
+            </a>
+            <!--Code from Code Institute Boutique Ado Project-->
+            <div class="dropdown-menu account-dropdown" aria-labelledby="dropdownMenuLink">
+              {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+              <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+              {% endif %}
+              <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+              {% else %}
+              <a href="{% url 'account_signup' %}" class="dropdown-item">Sign-up</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+              {% endif %}
+            </div>
           </div>
-        </div>
 
-        <div class="col-4">
-          <a class="icons" href="#searchBar" data-toggle="collapse" aria-expanded="false"
-            aria-controls="collapseExample">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </a>
-        </div>
-        <div class="collapse search-bar-mobile fixed-top mx-auto w-100" id="searchBar">
-          <div class="card card-body">
-            <form method="GET" action="{% url 'products' %}">
-              <div class="input-group w-95">
-                <input class="form-control border border-black rounded-0" type="text" name="q"
-                  placeholder="Search our site">
-                <div class="input-group-append">
-                  <button class="form-control btn btn-black border rounded-0" type="submit">
-                    <span class="icons">
-                      <i class="fas fa-search p-0 mr-3"></i>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </form>
+          <div class="col-4">
+            <a class="icons" href="#searchBar" data-toggle="collapse" aria-expanded="false"
+              aria-controls="collapseExample">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
           </div>
-        </div>
-        <div class="col-4">
-          <a class="icons shopping-cart nav-link {% if request.resolver_match.url_name == 'basket_overview' %}
+          <div class="collapse search-bar-mobile fixed-top mx-auto w-100" id="searchBar">
+            <div class="card card-body">
+              <form method="GET" action="{% url 'products' %}">
+                <div class="input-group w-95">
+                  <input class="form-control border border-black rounded-0" type="text" name="q"
+                    placeholder="Search our site">
+                  <div class="input-group-append">
+                    <button class="form-control btn btn-black border rounded-0" type="submit">
+                      <span class="icons">
+                        <i class="fas fa-search p-0 mr-3"></i>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-4">
+            <a class="icons shopping-cart nav-link {% if request.resolver_match.url_name == 'basket_overview' %}
         active-nav {% endif %}" href="{% url 'cart' %}">
-            <div><i class="fa-solid fa-cart-shopping"></i></div>
-          </a>
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
+            </a>
+          </div>
         </div>
       </div>
+    </div>
   </nav>
 </div>

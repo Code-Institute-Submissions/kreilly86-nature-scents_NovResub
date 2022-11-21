@@ -56,7 +56,7 @@
 
 <body class="d-flex flex-column min-vh-100">
   <header>
-    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light d-none d-lg-flex" id="nav-nature">
+    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light d-none d-md-flex" id="nav-nature">
       <div>
         <a class="navbar-brand" href="{% url 'home' %}">
           <img src="{{ MEDIA_URL }}nature-logo.png" alt="website logo">
@@ -90,8 +90,8 @@
         </ul>
       </div>
 
-      <div class="icons">
-        <div class="dropdown show users d-inline-flex">
+      <div class="icons row">
+        <div class="dropdown show users d-inline-flex col-md-12 col-lg-4">
           <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <div><i class="icon fa-solid fa-user"></i></div>
