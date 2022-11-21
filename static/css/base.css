@@ -37,24 +37,22 @@ body {
 
 .icons {
     justify-content: right;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin: 0;
-    padding: 15px;
     font-size: 1.5rem;
-    line-height: 2rem;
 }
 
 .icon {
     color:#FFBB98;
     text-decoration: none;
-    padding: 10px;
+    padding: 25px;
 }
 
-.shopping-cart {
-    padding: 0;
-    margin: 0;
+.users {
+    line-height: 3rem;
+    align-items: center;
 }
 
 .dropdown-menu a {
@@ -66,12 +64,6 @@ body {
     color: #7D8E95 !important;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.15rem !important;
-}
-
-.cart-amount {
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
 }
 
 .search-bar {
