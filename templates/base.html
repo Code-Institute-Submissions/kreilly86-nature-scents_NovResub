@@ -56,14 +56,14 @@
 
 <body class="d-flex flex-column min-vh-100">
   <header>
-    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light d-none d-md-flex" id="nav-nature">
+    <nav class="fixed-top nature-head navbar navbar-expand-lg navbar-light d-none d-md-flex text-center" id="nav-nature">
       <div>
-        <a class="navbar-brand" href="{% url 'home' %}">
+        <a class="navbar-brand mx-5" href="{% url 'home' %}">
           <img src="{{ MEDIA_URL }}nature-logo.png" alt="website logo">
         </a>
       </div>
-      <div class="nav-text">
-        <ul class="navbar-nav">
+      <div class="nav-text text-center row">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'home' %}">Home<span class="sr-only">(current)</span></a>
           </li>
@@ -90,8 +90,8 @@
         </ul>
       </div>
 
-      <div class="icons row">
-        <div class="dropdown show users d-inline-flex col-md-12 col-lg-4">
+      <div class="icons row text-center">
+        <div class="dropdown show users d-inline-flex col-md-12 col-lg-4 mx-auto">
           <a href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             <div><i class="icon fa-solid fa-user"></i></div>
