@@ -4,12 +4,12 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.http import HttpResponse
 
+from user_profiles.models import UserProfile
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
-from user_profiles.models import UserProfile
 
 
-def all_products(request):
+def products(request):
     """ A view to show all products, and include searches """
 
     products = Product.objects.all()
