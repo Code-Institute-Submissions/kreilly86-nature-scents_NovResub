@@ -22,7 +22,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://nature-scents.herokuapp.com/', 'localhost']
+ALLOWED_HOSTS = ['nature-scents.herokuapp.com', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.*.gitpod.io/', 'localhost']
 
