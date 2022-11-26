@@ -9,7 +9,7 @@ from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 
 
-def products(request):
+def all_products(request):
     """ A view to show all products, and include searches """
 
     products = Product.objects.all()
