@@ -708,7 +708,7 @@ select option[value=""] {
 /* -----------------------------404 Error Page */
 
 .error-page {
-    margin: 0;
+    margin-top: 50px;
     padding: 0;
     background-image: url("https://res.cloudinary.com/kreilly86/image/upload/v1669475705/media/error-page_fmjrs5.png");
     background-size: cover;
