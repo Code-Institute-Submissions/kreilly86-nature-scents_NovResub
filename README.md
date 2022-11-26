@@ -265,6 +265,7 @@ Photo by Dominika Roseclay from Pexels
 I have utilised Github's projects section to create a project board with issues in the planning and implementation of the project.
 
 The project board can be found [here] (https://github.com/users/kreilly86/projects/4)
+
 <br>
 <br>
 
