@@ -403,7 +403,7 @@ footer {
 .subscription {
     margin: 0;
     padding: 0;
-    background-image: url(https://res.cloudinary.com/kreilly86/image/upload/v1669475741/media/oils-page_nttpvb.jpg);
+    background-image: url("https://res.cloudinary.com/kreilly86/image/upload/v1669475741/media/oils-page_nttpvb.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -710,7 +710,7 @@ select option[value=""] {
 .error-page {
     margin: 0;
     padding: 0;
-    background-image: url('/media/error-page.png');
+    background-image: url("https://res.cloudinary.com/kreilly86/image/upload/v1669475705/media/error-page_fmjrs5.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
