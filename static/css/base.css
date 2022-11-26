@@ -90,7 +90,7 @@ body {
 .jumbotron {
     margin-top: 50px;
     padding: 0;
-    background-image: url('/media/hero-image.jpg');
+    background-image: url('https://res.cloudinary.com/kreilly86/image/upload/v1669475740/media/hero_jt7ef9.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -379,7 +379,7 @@ footer {
 .philosophy {
     margin: 0;
     padding: 0;
-    background-image: url('/media/philosophy.jpg');
+    background-image: url("https://res.cloudinary.com/kreilly86/image/upload/v1669476951/media/philosophy_zxgvph.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

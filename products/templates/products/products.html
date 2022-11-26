@@ -32,11 +32,11 @@
             <div class="card product-card text-center mb-1 border-0">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid my-3" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid my-3" src="{% static 'product.image' %}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid" src="https://res.cloudinary.com/kreilly86/image/upload/v1669475721/media/noimage_scnmkd.png" alt="{{ product.name }}">
                 </a>
                 {% endif %}
                 <div class="card-body pb-0">
