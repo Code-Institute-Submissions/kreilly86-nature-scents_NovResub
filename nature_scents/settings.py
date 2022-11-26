@@ -24,7 +24,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['nature-scents.herokuapp.com', 'localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.*.gitpod.io/', 'localhost']
+CSRF_TRUSTED_ORIGINS = ['https://*.*.gitpod.io/', 'localhost', 'nature-scents.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
