@@ -32,7 +32,7 @@
             <div class="card product-card text-center mb-1 border-0">
                 {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top img-fluid my-3" src="{% static 'product.image' %}" alt="{{ product.name }}">
+                    <img class="card-img-top img-fluid my-3" src="{{ MEDIA_URL }}product.image" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="{% url 'product_detail' product.id %}">
