@@ -1,10 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from checkout.models import Order
 from .models import UserProfile
 from .forms import UserProfileForm
-
-from checkout.models import Order
 
 
 @login_required
@@ -16,9 +15,11 @@ def profile(request):
         form = UserProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Your profile has been updated successfully')
+            messages.success(request, 'Your profile has been updated\
+                             successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(request, 'Update failed. Please ensure the form is\
+                           valid.')
     else:
         form = UserProfileForm(instance=profile)
 

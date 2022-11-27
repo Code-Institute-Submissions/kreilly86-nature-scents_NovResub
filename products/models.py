@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
-from user_profiles.models import UserProfile
 from cloudinary.models import CloudinaryField
+from user_profiles.models import UserProfile
 
 
 class Category(models.Model):
@@ -28,7 +28,8 @@ class Product(models.Model):
     Creates a product model containing the details of
     each product
     """
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True,
+                                 on_delete=models.SET_NULL)
     product_code = models.CharField(max_length=50, null=True, blank=True)
     name = models.CharField(max_length=50)
     description = models.TextField()

@@ -1,10 +1,10 @@
 from django.shortcuts import redirect
-from .models import NewsletterInput
 from django.contrib import messages
+from .models import NewsletterInput
 
 
 def newsletter_signup(request):
- 
+
     if request.method == 'POST':
         email = request.POST.get('email')
 

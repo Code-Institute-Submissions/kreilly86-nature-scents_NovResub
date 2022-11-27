@@ -24,7 +24,8 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any search\
+                               criteria!")
                 return redirect(reverse('products'))
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
@@ -66,7 +67,8 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure the\
+            form is valid.')
     else:
         form = ProductForm()
 
@@ -93,7 +95,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product. Please ensure\
+            the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -126,10 +129,12 @@ def submit_review(request, product_id):
     url = request.META.get('HTTP_REFERER')
     if request.method == 'POST':
         try:
-            reviews = Review.objects.get(user=request.user.userprofile, product__id=product_id)
+            reviews = Review.objects.get(user=request.user.userprofile,
+                                         product__id=product_id)
             form = ReviewForm(request.POST, instance=reviews)
             form.save()
-            messages.success(request, 'Thank you! Your review has been updated')
+            messages.success(request, 'Thank you! Your review has been\
+                             updated')
             return redirect(url)
 
         except Review.DoesNotExist:
@@ -142,5 +147,6 @@ def submit_review(request, product_id):
                 review.user = request.user.userprofile
                 review.save()
 
-                messages.success(request, 'Thank you! Your review has been submitted')
+                messages.success(request, 'Thank you! Your review has\
+                                 been submitted')
                 return redirect(url)
