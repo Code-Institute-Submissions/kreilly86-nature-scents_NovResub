@@ -45,7 +45,7 @@ class Review(models.Model):
     A model enabling users to review
     products
     """
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey('Product', on_delete=models.CASCADE)
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     subject = models.CharField(max_length=100, blank=True)
     review = models.TextField(max_length=500, blank=True)
@@ -62,8 +62,8 @@ class Mood(models.Model):
     A model displaying the mood
     category of products
     """
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    product = models.ForeignKey('Product', on_delete=models.CASCADE)
     mood = models.CharField(max_length=30)
 
     def __str__(self):
-        return self.name
+        return self.mood
