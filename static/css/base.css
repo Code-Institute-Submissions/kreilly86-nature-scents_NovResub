@@ -11,7 +11,7 @@ body {
 .navbar {
     height: 175px !important;
     width: 100vw !important;
-    background-color: #7D8E95 !important;
+    background-color: rgba(125, 142, 149, 1) !important;
     display: inline-flex;
     padding: 0;
     flex-direction: row;
@@ -224,7 +224,7 @@ footer {
     margin-bottom: 0;
     padding: 0px;
     font-family: "Cardo", sans-serif;
-    background-color: #7D8E95 !important;
+    background-color: rgba(125, 142, 149, 1) !important;
     color: white;
     font-size: 16px;
     height: fit-content !important;

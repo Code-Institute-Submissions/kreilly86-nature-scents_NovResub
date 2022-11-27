@@ -594,7 +594,7 @@ reviews = Review.objects.filter(product_id=product.id, status=True)
 <br>
 - W3C Mark-up Validation
 <br>
-There are still soem html errors showing, but to change these would change the integrity of what I have in place right now. E.g. li elements, collapsing menus etc.
+There are still some html errors showing, but to change these would change the integrity of what I have in place right now. E.g. li elements, collapsing menus etc.
 
 - W3C CSS Validtion
 <br>
