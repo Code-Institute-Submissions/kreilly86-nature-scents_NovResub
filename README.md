@@ -560,7 +560,7 @@ reviews = Review.objects.filter(product_id=product.id, status=True)
 
 ### AWS
 <hr>
-For a previous version of the project I was using AWS to host my media and static files. I came into issues with this, as a,days after I had deployed there was a security alert, this was dealt with but I came to learn that the account had been disabled and my site images, and static files were not serving. After this I decided to change to Cloudinary to host my static and media files, so have since converted the project to link to Cloudinary.
+For a previous version of the project I was using AWS to host my media and static files. I had issues using AWS, just days after I had deployed there was a security alert, this was dealt with but I came to learn that the account had been disabled and my site images, and static files were not serving. After this I decided to change to Cloudinary to host my static and media files, so have since converted the project to link to Cloudinary.
 
 ## Testing
 <hr>
@@ -590,7 +590,6 @@ For a previous version of the project I was using AWS to host my media and stati
 - PostgreSQL - Heroku's PostgreSQL was used to store data of the deployed site
 - Stripe- For payment processing
 - Balsamiq - Used for wireframe drawings and planning
-<br>
 <br>
 
 ### Code Validation
