@@ -133,11 +133,12 @@ def submit_review(request, product_id):
         except Review.DoesNotExist:
             form = ReviewForm(request.POST)
             if form.is_valid():
-                data = Review()
-                data.subject = form['subject']
-                data.review = form['review']
-                data.product_id = product_id
-                data.user = request.user.userprofile
-                data.save()
+                review = Review()
+                review.subject = form.data['subject']
+                review.review = form.data['review']
+                review.product_id = product_id
+                review.user = request.user.userprofile
+                review.save()
+                
                 messages.success(request, 'Thank you! Your review has been submitted')
                 return redirect(url)
