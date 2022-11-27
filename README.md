@@ -400,10 +400,10 @@ When a user clicks on one of the products they are taken to the product detail p
 <br>
 <br>
 
-### Current state of custom models in product app:
+### Custom models in product app:
 <br>
 
-I have two custom models in the Products App, Review and mood. As detailed in the issues section the Review model and it's application are still showing bugs. The intention of the Mood model is to seperate products into different moods e.g. Calming, Energising. Depending on their mood a symbol can be displayed beside the product. Unfortunately I have ran out of time to implement this fully in the projects current form.
+I have two custom models in the Products App, Review and mood. The intention of the Mood model is to seperate products into different moods e.g. Calming, Energising. Depending on their mood a symbol can be displayed beside the product. Unfortunately I have ran out of time to implement this fully in the projects current form.
 <br>
 <br>
 
@@ -465,7 +465,7 @@ When the site admin is logged in they are able to add, edit, or delete products 
 
 - A display on the shopping cart alerting the user to how many items they have in their cart
 
-- The completion of the review model, and mood models
+- The completion of the mood model with features on the front end, such as icons displayed beside each product showing their 'mood'
 
 <br>
 <br>
@@ -540,7 +540,7 @@ Once I chaged this to '{{ MEDIA_URL }}nature-logo.png', the logo loaded correctl
 
 ### Review app
 <hr>
-I have used a youtube tutorial, found here: https://www.youtube.com/watch?v=eIN1nZCt7Ww to create a custom review model for products. This is a form on the front end in the product_detail page. I have set up the models, urls, views and made a template on the product detail page but am receiving an error when I test the review:
+I have used a youtube tutorial, found here: https://www.youtube.com/watch?v=eIN1nZCt7Ww to create a custom review model for products. This is a form on the front end in the product_detail page. I set up the models, urls, views and made a template on the product detail page and received an error when I tested the review:
 <br>
 <br>
 <img src="supporting_docs/flow/test-review.png">
@@ -550,6 +550,11 @@ I have used a youtube tutorial, found here: https://www.youtube.com/watch?v=eIN1
 <br>
 <br>
 <img src="supporting_docs/flow/error-msg-review-2.png">
+<br>
+<br>
+I was able to fix these errors by adding a variable to the product_detail view:
+<br>
+reviews = Review.objects.filter(product_id=product.id, status=True)
 <br>
 <br>
 
@@ -582,6 +587,8 @@ I have used a youtube tutorial, found here: https://www.youtube.com/watch?v=eIN1
 - Stripe- For payment processing
 - Balsamiq - Used for wireframe drawings and planning
 <br>
+<br>
+
 ### Code Validation
 <hr>
 <br>
