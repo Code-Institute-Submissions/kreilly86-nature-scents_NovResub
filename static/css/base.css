@@ -300,6 +300,10 @@ footer {
     justify-content: center;
 }
 
+.product-detail-page {
+    margin-bottom: -25px;
+}
+
 .page-underline {
     border: 3px solid;
     border-color: #7D8E95;
@@ -358,12 +362,14 @@ footer {
     height: fit-content;
     margin-top: 275px;
     padding-right: 50px;
+    margin-bottom: 0px;
     align-items: center;
     justify-content: center;
 }
 
 .product-image {
     transform: scale(0.5);
+    margin-top: 50px;
 }
 
 .product-name {
@@ -371,7 +377,9 @@ footer {
 }
 
 .review-card {
-    width: 50vw;
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 /* Philosophy Page */
@@ -966,8 +974,8 @@ select option[value=""] {
     }
 
     .product-image {
-        margin-top: 0px !important;
-        margin-bottom: 0px !important;
+        margin-top: -50px !important;
+        margin-bottom: -100px !important;
         transform: scale(0.5) !important;
         padding: 0;
     }
@@ -989,9 +997,15 @@ select option[value=""] {
     }
 
     .review-card {
-        width: 50vw !important;
-        justify-content: left !important;
+        width: 100vw !important;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .review-info {
         margin: 0 !important;
+        width: 80vw;
     }
 
     .review-card h5 {
@@ -1429,11 +1443,16 @@ select option[value=""] {
     }
 
     .product-detail-page {
-        margin-top: 100px;
+        scroll-margin-bottom: 0px !important;
     }
 
     .product-detail {
-        margin-top: 100px;
+        margin-top: 175px;
+        margin-bottom: 75px;
+    }
+
+    .review-card {
+        margin-top: 50px;
     }
 
     .shop-button {
