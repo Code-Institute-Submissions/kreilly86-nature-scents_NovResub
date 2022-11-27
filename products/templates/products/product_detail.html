@@ -91,19 +91,21 @@
     </h3>
     {% endif %}
 
+   
     <div class="review-details row text-center mb-5">
         <div class="card col-xs-9 col-md-6 mx-auto">
+            {% for review in reviews %}  
             <div class="card-body cust-reviews text-center">
-                {% for review in reviews %}
                 <h3 class="mb-1 review-subject"><strong>{{ review.subject }}</strong></h3>
                 <div class="card-text text-center">
-                    <p>
-                        <em>{{ review.review }}</em>  
-                        <hr>
+                    <p class="review-text">
+                        <em>"{{ review.review }}"</em>  
                     </p>
-                </div>
+                    <span>by user {{ review.user }}</span>
+                    <hr>
+                </div>    
+            {% endfor %}
             </div>
-                {% endfor %}
         </div>
     </div>
 </div>

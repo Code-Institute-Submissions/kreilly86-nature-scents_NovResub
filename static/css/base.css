@@ -393,6 +393,10 @@ footer {
     padding: 10px;
 }
 
+.review-text {
+    font-size: 1.5rem;
+}
+
 /* Philosophy Page */
 
 .philosophy {
