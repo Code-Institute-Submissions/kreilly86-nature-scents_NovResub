@@ -48,14 +48,14 @@
       </div>
       <br>
       <div class="icon-bar row text-center d-flex p-0">
-        <div class="dropdown col-4 justify-content-center">
+        <div class="dropdown col-4 mx-auto">
           <a class="icons account-icon" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false" aria-label="account-user-icon">
             <i class="fa-solid fa-user"></i>
           </a>
           <!--Code from Code Institute Boutique Ado Project-->
-          <div class="dropdown-menu account-dropdown text-center" aria-labelledby="dropdownMenuLink">
-            {% if request.user.is_authenticated %}
+          <div class="dropdown-menu account-dropdown" aria-labelledby="dropdownMenuLink">
+          {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
             {% endif %}
@@ -64,7 +64,7 @@
             {% else %}
             <a href="{% url 'account_signup' %}" class="dropdown-item">Sign-up</a>
             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-            {% endif %}
+          {% endif %}
           </div>
         </div>
 
