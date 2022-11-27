@@ -756,10 +756,10 @@ select option[value=""] {
         flex-direction: row;
     }
 
-    .nav-nature-mobile {
+    .nav-icons {
         padding: 0;
         width: 100vw !important;
-        background-color: #7D8E95 !important;
+        height: fit-content !important;
     }
 
     .mobile-collapse-bar {
@@ -768,12 +768,13 @@ select option[value=""] {
     }
 
     .dropdown-menu.show {
-        width: 60vw !important;
-        z-index: 2;
+        width: 60vw !important;  
     }
 
     .dropdown-menu.account-dropdown.show {
-        position: absolute;
+        position: relative;
+        height: fit-content;
+        margin-bottom: 50px !important;
     }
 
     .navbar-toggler {
@@ -823,7 +824,7 @@ select option[value=""] {
     }
 
     .search-bar-mobile {
-        margin-top: 290px !important;
+        margin-top: 350px !important;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0;
@@ -939,7 +940,6 @@ select option[value=""] {
     }
 
     .sign-up-form {
-        width: 80vw;
         height: fit-content;
         margin: 0;
     }
@@ -970,7 +970,7 @@ select option[value=""] {
     }
 
     .signup-form-email {
-        width: 80vw;
+        width: 70vw !important;
     }
 
     .copyright {
@@ -1028,7 +1028,7 @@ select option[value=""] {
     }
 
     .shop-button {
-        font-size: 1rem;
+        font-size: 1.25rem !important;
     }
 
     .philosophy-title {
@@ -1178,7 +1178,7 @@ select option[value=""] {
     }
 
     .search-bar-mobile {
-        margin-top: 300px;
+        margin-top: 320px;
         margin-left: 0px;
         margin-right: 0px;
         padding: 0;
@@ -1268,6 +1268,10 @@ select option[value=""] {
         text-align: center;
     }
 
+    .signup-form-email {
+        width: 75vw !important;
+    }
+
     .copyright {
         margin: 50px 0px 50px 0px;
         padding: 0;
@@ -1320,7 +1324,7 @@ select option[value=""] {
     }
 
     .shop-button {
-        font-size: 1rem;
+        font-size: 1.5rem !important;
     }
 
     .philosophy-title {
@@ -1423,6 +1427,10 @@ select option[value=""] {
         margin-top: 0;
     }
 
+    .shop-button {
+        font-size: 1.5rem !important;
+    }
+
     .footer-line {
         display: inline-flex;
         width: 80vw !important;
@@ -1447,6 +1455,10 @@ select option[value=""] {
 
     .footer-content {
         justify-content: center;
+    }
+
+    .signup-form-email {
+        width: 80vw !important;
     }
 
     .product-page {
