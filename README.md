@@ -558,6 +558,10 @@ reviews = Review.objects.filter(product_id=product.id, status=True)
 <br>
 <br>
 
+### AWS
+<hr>
+For a previous version of the project I was using AWS to host my media and static files. I came into issues with this, as a,days after I had deployed there was a security alert, this was dealt with but I came to learn that the account had been disabled and my site images, and static files were not serving. After this I decided to change to Cloudinary to host my static and media files, so have since converted the project to link to Cloudinary.
+
 ## Testing
 <hr>
 <br>
@@ -582,7 +586,7 @@ reviews = Review.objects.filter(product_id=product.id, status=True)
 - Google Developer Tools - I used google developer tools throughout the build process to test the site, fix issues etc
 - Font Awesome - Used for navigation icons and social links
 - SQLite - Was used to run the project localy
-- AWS - Amazon Web Services S3  was used to host static files
+- Cloudinary - Was used to host static files
 - PostgreSQL - Heroku's PostgreSQL was used to store data of the deployed site
 - Stripe- For payment processing
 - Balsamiq - Used for wireframe drawings and planning
@@ -602,7 +606,7 @@ CSS errors were found but have since been fixed.
 
 - Lighthouse
 <br>
-Lighthouse showed room for improvement, but nothing scored lower than 83
+Lighthouse showed room for improvement with accessibility. I improved this by adding aria-labels, changing colours to rgba format, etc
 
 <br>
 
