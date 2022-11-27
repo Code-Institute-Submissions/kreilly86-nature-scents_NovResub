@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from django.http import HttpResponse
 
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
@@ -122,23 +121,23 @@ def delete_product(request, product_id):
 
 @login_required
 def submit_review(request, product_id):
-        url = request.META.get('HTTP_REFERER')
-        if request.method == 'POST':
-            try:
-                reviews = Review.objects.get(user=request.user.userprofile, product__id=product_id)
-                form = ReviewForm(request.POST, instance=reviews)
-                form.save()
-                messages.success(request, 'Thank you! Your review has been updated')
-                return redirect(url)
+    url = request.META.get('HTTP_REFERER')
+    if request.method == 'POST':
+        try:
+            reviews = Review.objects.get(user=request.user.userprofile, product__id=product_id)
+            form = ReviewForm(request.POST, instance=reviews)
+            form.save()
+            messages.success(request, 'Thank you! Your review has been updated')
+            return redirect(url)
 
-            except Review.DoesNotExist:
-                form = ReviewForm(request.POST)
-                if form.is_valid():
-                    data = Review()
-                    data.subject = form['subject']
-                    data.review = form['review']
-                    data.product_id = product_id
-                    data.user = request.user.userprofile
-                    data.save()
-                    messages.success(request, 'Thank you! Your review has been submitted')
-                    return redirect(url)
+        except Review.DoesNotExist:
+            form = ReviewForm(request.POST)
+            if form.is_valid():
+                data = Review()
+                data.subject = form['subject']
+                data.review = form['review']
+                data.product_id = product_id
+                data.user = request.user.userprofile
+                data.save()
+                messages.success(request, 'Thank you! Your review has been submitted')
+                return redirect(url)
