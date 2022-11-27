@@ -61,7 +61,7 @@
             <div class="review-info card-body">
                 <form action="{% url 'submit_review' product.id %}" method="POST">
                     {% csrf_token %}
-                    <h5 class="card-title review-title m-3">Write Your Review</h5>
+                    <h1 class="review-title m-3 text-center">Write Your Review</h1>
                     <div class>
                         <p>Review Title:</p>
                         <input type="text" class="form-control" name="subject" required>
@@ -72,7 +72,7 @@
                         {% if user.is_authenticated %}
                         <input type="submit" value="Submit Review" class="mb-5">
                         {% else %}
-                        <p>You must be logged in to post a review. <span><a href="{% url 'login' %}">Login
+                        <p>You must be logged in to post a review. <span><a href="{% url 'account_login' %}">Login
                                     now</a></span></p>
                         {% endif %}
                     </div>
@@ -80,22 +80,35 @@
             </div>
         </div>
     </div>
+    <hr class="page-underline text-center mb-5">
+    {% if reviews %}
+    <h2 class="review-title m-3 text-center">
+        Product Reviews
+    </h2>
+    {% else %}
+    <h3 class="review-title m-3 text-center">
+        No Reviews Yet..
+    </h3>
+    {% endif %}
 
-<div class="row justify-content-center mt-5">
-    {% for review in reviews %}
-        <div class="col-12-xs p-0 mb-5">
-            <h6 class="card-title review-title m-3">
-                Product Reviews
-            </h6>
-            <div>
-                <h6 class="mb-1">{{ review.subject }}</h6>
+    <div class="row text-center mb-5">
+        <div class="card col-xs-12 col-md-4 cust-review mx-auto">
+            <div class="card-body">
+                {% for review in reviews %}
+                <h3 class="mb-1 review-subject"><strong>{{ review.subject }}</strong></h3>
+                <div class="card-text text-center">
+                    <p>
+                        <em>{{ review.review }}</em>  
+                        <hr>
+                    </p>
+                </div>
+                {% if forloop.counter|divisibleby:3 %} 
             </div>
-            <p>
-                {{ review.review }}
-            </p>
-    {% endfor %}
+            <div class="cust-review">
+                {% endif %}
+                {% endfor %}
+            </div>
         </div>
-</div>
-
+    </div>
 </div>
 {% endblock %}

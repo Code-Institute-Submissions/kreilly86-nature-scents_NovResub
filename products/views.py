@@ -41,11 +41,12 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
-
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product_id=product.id, status=True)
 
     context = {
         'product': product,
+        'reviews': reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -139,6 +140,6 @@ def submit_review(request, product_id):
                 review.product_id = product_id
                 review.user = request.user.userprofile
                 review.save()
-                
+
                 messages.success(request, 'Thank you! Your review has been submitted')
                 return redirect(url)
